@@ -35,9 +35,11 @@ class CustomParser : SectionsParser
    # comment
 ```
 
-**2.** Any line with whitespace will be ignored by the parser.
+**2.** A section starts with an opening square bracket (`[`) and ends with a closing square bracket (`]`).
 
-**3.** The name of a section cannot be empty or have only blanks.
+**3.** Any line with whitespace will be ignored by the parser.
+
+**4.** The name of a section cannot be empty or have only blanks.
 
 **Example:**
 ```ini
@@ -45,7 +47,7 @@ class CustomParser : SectionsParser
 [    ]
 ```
 
-**4.** There can be no lines that are not part of any section, unless they are comments.
+**5.** There can be no lines that are not part of any section, unless they are comments.
 
 **Example:**
 
@@ -65,7 +67,7 @@ foofoo
 2
 ```
 
-**5.** If the section has spaces at the beginning and at the end, the parser ignores it.
+**6.** If the section has spaces at the beginning and at the end, the parser ignores it.
 
 **Example:**
 ```ini
@@ -74,7 +76,7 @@ foofoo
 2  
 ```
 
-**6.** A section cannot be without data, the parser will throw an error.
+**7.** A section cannot be without data, the parser will throw an error.
 
 **Example:**
 ```ini
@@ -84,7 +86,7 @@ foofoo
 #empty
 ```
 
-**7.** The name of the section can have spaces at the beginning and at the end.
+**8.** The name of the section can have spaces at the beginning and at the end.
 
 **Example:**
 ```ini
@@ -94,7 +96,7 @@ foofoo
 2
 ```
 
-**8.** A repeated section is not allowed.
+**9.** A repeated section is not allowed.
 
 **Example:**
 
@@ -112,4 +114,4 @@ foofoo
 [section2]
 2
 ```
-**9.** If the **data source** (such as a **file**) is empty or has only blanks, the parser will throw an error.
+**10.** If the **data source** (such as a **file**) is empty or has only blanks, the parser will throw an error.
