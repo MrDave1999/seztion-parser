@@ -1,0 +1,452 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/syslan/Desktop/seztion-parser/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.ParserException.html",
+          "hash": "WJLz+lxHQIGvfszzVjcIwnwoui5d9jr1kg5XjH22mcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.SectionNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.SectionNotFoundException.html",
+          "hash": "HvQibIjv8xS69v4SIjSDiisyk+wnk4ScweA4PaKObgw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.html",
+          "hash": "rZ5qGLrm83q5lqB+ahbsQem2hkEgswVcECOQP1kOkaE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Facades.SectionsFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Facades.SectionsFile.html",
+          "hash": "qZvoOAfg3Kr8RDyvWJsQkgvVZBcNmDncZVDWDco8Cw4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Facades.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Facades.html",
+          "hash": "xTedlwm1wFZAjXhpUbPR0t1e01XlU6mxtN+c7r7MW1I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.html",
+          "hash": "wqIfDPzXKtwXq2sbzNnBj/lfG1Zd1/bmpPlOJkJ7M5k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.html",
+          "hash": "x/ZFiERZqF8W1ya1k3CDChkaq6SKhF/UXQEelaOt3tk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.html",
+          "hash": "evj6bEHBdI1OzhcwGTUv4t2IXBsouf/WRnfRGtOSM2Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionData.html",
+          "hash": "uhoZpCeK698z4r1WyQ5euutvRJ5ZX2s8uf38aL6ydS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsData.html",
+          "hash": "ySzm+mz42Ae/oZXVy1ZnogBdZZZrlrjIFGj5DeSOeJE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsParser.html",
+          "hash": "qq1qCxtcRsclEk/6wJ2gjbDRhdGVZ/i6KYL5ToFWOe0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.html",
+          "hash": "dFb4p5cVrvDr8gEVuTDYSkHWiU6L7RF06DYpMSk5eT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.html",
+          "hash": "kAGrGDUNBhAD2wi/xBNCyzSGlAIoUxvYvjlqq0UbDOE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.html",
+          "hash": "QQ/HidY8UN0I+FuCE4uDAba40tB5NHbL39/+8v8sR7I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.SectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.SectionsParser.html",
+          "hash": "AohZWgc3O3DVC8CoOHGCvFX1RmdoDAymurzJeCb3r2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.html",
+          "hash": "Z0Db3z7rX3pKo/OKW1vWWC68dgKFtfIzgnFn+/IXuDs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "IUMcNzz0MwHtezDThVPd/ECd5II688BRNXDdWXfTjdg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/dependency_injection.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/dependency_injection.html",
+          "hash": "fvoAThb4tD6PodTAVeUic2JRQKAPrVkDVyjbkunIIVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started.html",
+          "hash": "AZmpmoR8k/t8gd49u3+fAGPh9n5QDOcw8mTEOvsnxRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/parser.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/parser.html",
+          "hash": "f4ipEBUqKf4BD6zaNdRVKniYl8s8naoirwsc18mJwes="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/section_data_conversion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/section_data_conversion.html",
+          "hash": "yIj/g+nsxAgJZNcHpncFPQUYMnUSLENUKYRGlDU+qZE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/single_line_section.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/single_line_section.html",
+          "hash": "0f0Ngjt1ilbd4NQOtxqiaV7ILGqof8O6/ZXFzM9X7I0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "q24gGbS1N9QJJvQe4Jyp9AkGxCsvxxCfGejGAlm7vug="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "diagrams/class_diagram.md",
+      "output": {
+        ".html": {
+          "relative_path": "diagrams/class_diagram.html",
+          "hash": "VtGqDAqrLzIB1duIQix4VYeU5yj6nOk6Qb1dw4VAdBk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "diagrams/package_diagram.md",
+      "output": {
+        ".html": {
+          "relative_path": "diagrams/package_diagram.html",
+          "hash": "S79W5hA/bHCRdpF0gacY14irNl1ie9XdO8hNd39hmeg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "diagrams/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "diagrams/toc.html",
+          "hash": "lDOFVAeAx0Y7g/qUZCeKynBcrHKbnzu93cw8S0YhuzE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/seztion-parser-class-diagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/seztion-parser-class-diagram.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/seztion-parser-package-diagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/seztion-parser-package-diagram.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/seztionparser-icon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/seztionparser-icon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/seztionparser-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/seztionparser-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "BGZ1WuPxkbWsydeUkCNWvdpnKJfLMzY7xLYObt8Zl+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "61PBP5Q26uwtEPTUx8yEtnqc8IO9mU4d7cpeh8qsZZw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

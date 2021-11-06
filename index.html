@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> | seztion-parser </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" | seztion-parser ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="images/seztionparser-icon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><a href="https://github.com/mrdave1999/seztion-parser"><img src="images/seztionparser-logo.png" alt="seztion-parser"></a></p>
+<p><a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/.NET%20Standard-2.0-red" alt="seztion-parser"></a>
+<a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/.NET%20Standard-2.1-green" alt="seztion-parser"></a>
+<a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/Class%20Library-Project-yellow" alt="seztion-parser"></a></p>
+<p><strong>seztion-parser</strong> is a class library used to read data from each section of a file (the file extension can be any, e.g. <code>.INI</code>).</p>
+<p>There is a history behind why this library exists.</p>
+<p>Some time ago I was creating a gamemode in <a href="https://www.sa-mp.com/">SA-MP</a> (San Andreas Multiplayer, a multiplayer mod for GTA San Andrea) that was based on two teams (Alpha and Beta), so I needed to somehow store the <strong>spawn positions</strong> (is the location where the player appears on the map) of a given map (the place where the player plays).</p>
+<p>Then it occurred to me that I could save the spawn positions in a file in this way:</p>
+<pre><code class="lang-ini">#section(1)
+[Alpha]
+#spawn positions - Alpha Team:
+2548.7009,-1283.2224,1060.9844,230.3022
+2565.8301,-1281.7773,1065.3672,238.1356
+2575.7759,-1283.3206,1065.3672,177.9750
+2580.8525,-1284.6443,1065.3579,88.0476
+2568.5518,-1283.6564,1060.9844,181.0851
+
+#section(2)
+[Beta]
+#spawn positions - Beta Team:
+2532.1660,-1283.6971,1031.4219,270.0725
+2532.5823,-1292.2178,1031.4219,275.7126
+2532.9485,-1302.3477,1031.4219,269.4458
+2541.2852,-1303.9135,1031.4219,269.4458
+2542.1389,-1293.7726,1031.4219,262.8658
+</code></pre>
+<p>And this is where the <strong>seztion-parzer</strong> library comes into play, as it is simple to extract this data with this library. I didn't want to use a database for this, I wanted something very simple and this is what I came up with at the time.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2021 <b>seztion-parser</b>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

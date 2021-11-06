@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISectionsData
+   | seztion-parser </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISectionsData
+   | seztion-parser ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SeztionParser.Interfaces.ISectionsData">
+  
+  
+  <h1 id="SeztionParser_Interfaces_ISectionsData" data-uid="SeztionParser.Interfaces.ISectionsData" class="text-break">Interface ISectionsData
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a collection of sections.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator#System_Collections_Generic_IEnumerable_1_GetEnumerator">IEnumerable&lt;SectionModel&gt;.GetEnumerator()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SeztionParser.Interfaces.html">SeztionParser.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: SeztionParser.dll</h6>
+  <h5 id="SeztionParser_Interfaces_ISectionsData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISectionsData : IEnumerable&lt;SectionModel&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MrDave1999/seztion-parser/new/main/apiSpec/new?filename=SeztionParser_Interfaces_ISectionsData_Item_System_String_.md&amp;value=---%0Auid%3A%20SeztionParser.Interfaces.ISectionsData.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/src/SeztionParser/Interfaces/ISectionsData.cs/#L37">View Source</a>
+  </span>
+  <a id="SeztionParser_Interfaces_ISectionsData_Item_" data-uid="SeztionParser.Interfaces.ISectionsData.Item*"></a>
+  <h4 id="SeztionParser_Interfaces_ISectionsData_Item_System_String_" data-uid="SeztionParser.Interfaces.ISectionsData.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Gets the data of a section with the specified section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISectionData this[string section] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>The name of the section to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SeztionParser.Interfaces.ISectionData.html">ISectionData</a></td>
+        <td><p>The collection with the specified section.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code>section</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SeztionParser.Exceptions.SectionNotFoundException.html">SectionNotFoundException</a></td>
+        <td><p>If the <code>section</code> does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MrDave1999/seztion-parser/new/main/apiSpec/new?filename=SeztionParser_Interfaces_ISectionsData_GetAll.md&amp;value=---%0Auid%3A%20SeztionParser.Interfaces.ISectionsData.GetAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/src/SeztionParser/Interfaces/ISectionsData.cs/#L49">View Source</a>
+  </span>
+  <a id="SeztionParser_Interfaces_ISectionsData_GetAll_" data-uid="SeztionParser.Interfaces.ISectionsData.GetAll*"></a>
+  <h4 id="SeztionParser_Interfaces_ISectionsData_GetAll" data-uid="SeztionParser.Interfaces.ISectionsData.GetAll">GetAll()</h4>
+  <div class="markdown level1 summary"><p>Gets the data from all sections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICollection&lt;ISectionData&gt; GetAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="SeztionParser.Interfaces.ISectionData.html">ISectionData</a>&gt;</td>
+        <td><p>The data from all sections.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MrDave1999/seztion-parser/new/main/apiSpec/new?filename=SeztionParser_Interfaces_ISectionsData_GetNames.md&amp;value=---%0Auid%3A%20SeztionParser.Interfaces.ISectionsData.GetNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/src/SeztionParser/Interfaces/ISectionsData.cs/#L43">View Source</a>
+  </span>
+  <a id="SeztionParser_Interfaces_ISectionsData_GetNames_" data-uid="SeztionParser.Interfaces.ISectionsData.GetNames*"></a>
+  <h4 id="SeztionParser_Interfaces_ISectionsData_GetNames" data-uid="SeztionParser.Interfaces.ISectionsData.GetNames">GetNames()</h4>
+  <div class="markdown level1 summary"><p>Gets the names of all sections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICollection&lt;string&gt; GetNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>The names of all sections.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MrDave1999/seztion-parser/new/main/apiSpec/new?filename=SeztionParser_Interfaces_ISectionsData_TryGetData_System_String_SeztionParser_Interfaces_ISectionData__.md&amp;value=---%0Auid%3A%20SeztionParser.Interfaces.ISectionsData.TryGetData(System.String%2CSeztionParser.Interfaces.ISectionData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/src/SeztionParser/Interfaces/ISectionsData.cs/#L26">View Source</a>
+  </span>
+  <a id="SeztionParser_Interfaces_ISectionsData_TryGetData_" data-uid="SeztionParser.Interfaces.ISectionsData.TryGetData*"></a>
+  <h4 id="SeztionParser_Interfaces_ISectionsData_TryGetData_System_String_SeztionParser_Interfaces_ISectionData__" data-uid="SeztionParser.Interfaces.ISectionsData.TryGetData(System.String,SeztionParser.Interfaces.ISectionData@)">TryGetData(String, out ISectionData)</h4>
+  <div class="markdown level1 summary"><p>Gets the data of a section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetData(string section, out ISectionData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>The name of the section to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SeztionParser.Interfaces.ISectionData.html">ISectionData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>When this method returns, the data associated with the specified section, if the <code>section</code> is found; otherwise, the default value is <code>null</code>.
+This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the section exists, otherwise, returns <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code>section</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SectionDataConversion.html#SeztionParser_Helpers_SectionDataConversion_ToDecimal_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SectionDataConversion.ToDecimal(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SectionDataConversion.html#SeztionParser_Helpers_SectionDataConversion_ToDouble_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SectionDataConversion.ToDouble(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SectionDataConversion.html#SeztionParser_Helpers_SectionDataConversion_ToFloat_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SectionDataConversion.ToFloat(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SectionDataConversion.html#SeztionParser_Helpers_SectionDataConversion_ToInt_SeztionParser_Interfaces_ISectionsData_System_String_">SectionDataConversion.ToInt(ISectionsData, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SectionDataConversion.html#SeztionParser_Helpers_SectionDataConversion_ToLong_SeztionParser_Interfaces_ISectionsData_System_String_">SectionDataConversion.ToLong(ISectionsData, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineDecimal_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SingleLineSection.GetFirstLineDecimal(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineDouble_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SingleLineSection.GetFirstLineDouble(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineFloat_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_">SingleLineSection.GetFirstLineFloat(ISectionsData, String, IFormatProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineInt_SeztionParser_Interfaces_ISectionsData_System_String_">SingleLineSection.GetFirstLineInt(ISectionsData, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineLong_SeztionParser_Interfaces_ISectionsData_System_String_">SingleLineSection.GetFirstLineLong(ISectionsData, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="SeztionParser.Helpers.SingleLineSection.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineString_SeztionParser_Interfaces_ISectionsData_System_String_">SingleLineSection.GetFirstLineString(ISectionsData, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MrDave1999/seztion-parser/new/main/apiSpec/new?filename=SeztionParser_Interfaces_ISectionsData.md&amp;value=---%0Auid%3A%20SeztionParser.Interfaces.ISectionsData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/src/SeztionParser/Interfaces/ISectionsData.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2021 <b>seztion-parser</b>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
