@@ -1,0 +1,4 @@
+apiRules:
+- exclude:
+    uidRegex: ^SeztionParser\.Constants\.ExceptionMessages
+    type: class
