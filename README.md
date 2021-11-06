@@ -1,6 +1,6 @@
 # seztion-parser
 
-[![seztion-parser-logo](https://github.com/MrDave1999/seztion-parser/raw/main/Documentation/images/seztionparser-logo.png)](https://github.com/mrdave1999/seztion-parser)
+[![seztion-parser-logo](https://github.com/MrDave1999/seztion-parser/raw/main/docs/images/seztionparser-logo.png)](https://github.com/mrdave1999/seztion-parser)
 
 [![seztion-parser](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/mrdave1999/seztion-parser)
 [![seztion-parser](https://img.shields.io/badge/.NET%20Standard-2.1-green)](https://github.com/mrdave1999/seztion-parser)
