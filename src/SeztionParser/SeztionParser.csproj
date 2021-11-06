@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <Authors>David Román Amariles</Authors>
+    <Product>Seztion Parser</Product>
+    <Copyright>David Román Amariles</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://mrdave1999.github.io/seztion-parser/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MrDave1999/seztion-parser</RepositoryUrl>
+    <PackageTags>parser, sections file, sections data</PackageTags>
+    <PackageId>seztion-parser</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Description>seztion-parser is a class library used to read data from each section of a file (the file extension can be any, e.g. .INI).</Description>
+    <PackageIcon>seztionparser-icon-nuget.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../seztionparser-icon-nuget.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  
+</Project>
