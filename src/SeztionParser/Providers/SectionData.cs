@@ -64,7 +64,7 @@ namespace SeztionParser.Providers
                 sb.Append($"]{NewLine}");
                 return sb.ToString();
             }
-            return $"[{this[0]}]{NewLine}";
+            return Count == 0 ? $"[]{NewLine}" : $"[{this[0]}]{NewLine}";
         }
     }
 }
