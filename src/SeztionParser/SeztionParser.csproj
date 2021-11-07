@@ -14,10 +14,16 @@
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Description>seztion-parser is a class library used to read data from each section of a file (the file extension can be any, e.g. .INI).</Description>
     <PackageIcon>seztionparser-icon-nuget.png</PackageIcon>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="../../seztionparser-icon-nuget.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+	<None Include="../../README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
