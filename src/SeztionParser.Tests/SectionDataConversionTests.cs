@@ -12,7 +12,7 @@ namespace SeztionParser.Tests
     public class SectionDataConversionTests
     {
         [TestMethod]
-        public void ToDecimal_IsTheConversionValid_ReturnsAnEnumerable()
+        public void ToDecimal_WhenTheConversionIsValid_ShouldReturnsAnEnumerable()
         {
             // Arrange
             string data = @"
@@ -35,7 +35,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void ToDouble_IsTheConversionValid_ReturnsAnEnumerable()
+        public void ToDouble_WhenTheConversionIsValid_ShouldReturnsAnEnumerable()
         {
             // Arrange
             string data = @"
@@ -58,7 +58,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void ToFloat_IsTheConversionValid_ReturnsAnEnumerable()
+        public void ToFloat_WhenTheConversionIsValid_ShouldReturnsAnEnumerable()
         {
             // Arrange
             string data = @"
@@ -81,7 +81,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void ToInt_IsTheConversionValid_ReturnsAnEnumerable()
+        public void ToInt_WhenTheConversionIsValid_ShouldReturnsAnEnumerable()
         {
             // Arrange
             string data = @"
@@ -104,7 +104,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void ToLong_IsTheConversionValid_ReturnsAnEnumerable()
+        public void ToLong_WhenTheConversionIsValid_ShouldReturnsAnEnumerable()
         {
             // Arrange
             string data = @"
