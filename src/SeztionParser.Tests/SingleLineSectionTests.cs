@@ -11,7 +11,7 @@ namespace SeztionParser.Tests
     public class SingleLineSectionTests
     {
         [TestMethod]
-        public void GetFirstLineDecimal_IsTheConversionValid_ReturnDecimal()
+        public void GetFirstLineDecimal_WhenTheConversionIsValid_ShouldReturnDecimal()
         {
             // Arrange
             string data = @"
@@ -29,7 +29,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void GetFirstLineDouble_IsTheConversionValid_ReturnDouble()
+        public void GetFirstLineDouble_WhenTheConversionIsValid_ShouldReturnDouble()
         {
             // Arrange
             string data = @"
@@ -47,7 +47,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void GetFirstLineFloat_IsTheConversionValid_ReturnFloat()
+        public void GetFirstLineFloat_WhenTheConversionIsValid_ShouldReturnFloat()
         {
             // Arrange
             string data = @"
@@ -65,7 +65,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void GetFirstLineInt_IsTheConversionValid_ReturnInt()
+        public void GetFirstLineInt_WhenTheConversionIsValid_ShouldReturnInt()
         {
             // Arrange
             string data = @"
@@ -83,7 +83,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void GetFirstLineLong_IsTheConversionValid_ReturnLong()
+        public void GetFirstLineLong_WhenTheConversionIsValid_ShouldReturnLong()
         {
             // Arrange
             string data = @"
