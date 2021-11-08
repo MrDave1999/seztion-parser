@@ -11,10 +11,10 @@
     <PackageTags>parser, sections file, sections data</PackageTags>
     <PackageId>seztion-parser</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Description>seztion-parser is a class library used to read data from each section of a file (the file extension can be any, e.g. .INI).</Description>
     <PackageIcon>seztionparser-icon-nuget.png</PackageIcon>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.1</Version>
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-	<None Include="../../README.md">
+    <None Include="../../README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
