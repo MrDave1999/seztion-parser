@@ -31,7 +31,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void Parse_WhenReadAValidSection_GetsSectionName()
+        public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
         {
             // Arrange
             string data = @"
@@ -57,7 +57,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void Parse_WhenNotReadASection_GetItemOfSection()
+        public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
         {
             string data = @"
                 [section1]   
@@ -90,7 +90,7 @@ namespace SeztionParser.Tests
         }
 
         [TestMethod]
-        public void Parse_WhenReadAComment_IgnoreTheComment()
+        public void Parse_WhenReadAComment_ShouldIgnoreTheComment()
         {
             // Arrange
             string data = @"
