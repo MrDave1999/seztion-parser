@@ -72,7 +72,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-	  "plugins/memberpage/content"
+      "plugins/memberpage/content"
     ],
     "postProcessors": ["ExtractSearchIndex"],
     "markdownEngineName": "markdig",
