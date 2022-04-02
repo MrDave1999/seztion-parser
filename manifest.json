@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/syslan/Desktop/seztion-parser/docs",
+  "source_base_path": "C:/Users/syslan/Documents/Visual Studio 2022/seztion-parser/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -17,8 +17,56 @@
       "source_relative_path": "api/SeztionParser.Exceptions.ParserException.yml",
       "output": {
         ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.ParserException.ActualValue.html",
+          "hash": "pcxpP7Y2/CUaKrz+FNYdomolX6JZTM2rbyYCEPdW3uA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.ParserException.-ctor.html",
+          "hash": "KJX2FZmcPPfTYAY6DQZQRQxv6AWYQRT0RIktCowdwt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.ParserException.Message.html",
+          "hash": "Q11IjvKrpi7O0AAaf5V98M6ukGTGlLe+8tzf7sJ/l2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.ParserException.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/SeztionParser.Exceptions.ParserException.html",
-          "hash": "WJLz+lxHQIGvfszzVjcIwnwoui5d9jr1kg5XjH22mcc="
+          "hash": "KMxpY5i2/HuT4BnM0plCgvS0HZQdTS5SqEW5Xtlkn5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Exceptions.SectionNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Exceptions.SectionNotFoundException.-ctor.html",
+          "hash": "TR4JaAJNVl3jJpQYgk2jfNPqCO4oS3mAk3dy052ZuDU="
         }
       },
       "is_incremental": false,
@@ -30,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Exceptions.SectionNotFoundException.html",
-          "hash": "HvQibIjv8xS69v4SIjSDiisyk+wnk4ScweA4PaKObgw="
+          "hash": "m9+Ib0nLqNJxSwXezCo6gWUmOh8vrdW4FcqAS1R09YI="
         }
       },
       "is_incremental": false,
@@ -42,7 +90,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Exceptions.html",
-          "hash": "rZ5qGLrm83q5lqB+ahbsQem2hkEgswVcECOQP1kOkaE="
+          "hash": "bBc7FaR9Gc/0l2t+lItNgP4lIokVPE8IVR/ysMlIedE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Facades.SectionsFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Facades.SectionsFile.Load.html",
+          "hash": "4yQ/siNcmFxt3LlLBnMtFQf41dc4NuRpiBKRZnpE6es="
         }
       },
       "is_incremental": false,
@@ -54,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Facades.SectionsFile.html",
-          "hash": "qZvoOAfg3Kr8RDyvWJsQkgvVZBcNmDncZVDWDco8Cw4="
+          "hash": "ZpxnOYgcMSa+AOrZ3njsbrPYiQrbbIBeLTmlOb7i8tk="
         }
       },
       "is_incremental": false,
@@ -66,7 +126,43 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Facades.html",
-          "hash": "xTedlwm1wFZAjXhpUbPR0t1e01XlU6mxtN+c7r7MW1I="
+          "hash": "yi+5pxa4aib/auJWhd14Kc8V8qBxZDdKm07nhwlkU3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.ToFloat.html",
+          "hash": "BNlraFCTq/Zns2tgC7k4/ZgukEhn8gzUeUJkY/FC5Hc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.ToInt.html",
+          "hash": "bn4wuWoiZS4COXTK9q8QbvxIp3KgJDcD3k8OapVWAsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.ToLong.html",
+          "hash": "8G/Nmk8GrslfTVE3bUMSMNOcZFGT8g4Zl/db/K85uow="
         }
       },
       "is_incremental": false,
@@ -78,7 +174,103 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.html",
-          "hash": "wqIfDPzXKtwXq2sbzNnBj/lfG1Zd1/bmpPlOJkJ7M5k="
+          "hash": "dXm1nd3MWBKSQ0NaqNsBRw0jfas64rL77KErTbfRJWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.ToDouble.html",
+          "hash": "lA8EQLacg2+zdF6vH4WuoK+RNQuZ2BwhAxUAg69tHxo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SectionDataConversion.ToDecimal.html",
+          "hash": "qGUHx+iUlcvVSZMWP3nbgrle9xIA+8uKqrqsDsb4VBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal.html",
+          "hash": "prc03VfIGlZ5RH1jre6qUGD9fxdwX+4oXpx52zCTvxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble.html",
+          "hash": "vN2GXky0hXlfgvX5gu40M9Fh/Cs94daNHK/JV7enTJI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat.html",
+          "hash": "Cv05rAwqjpNEzU3SdmJCtazSlPp1HWmrJF14uZPCnFA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineInt.html",
+          "hash": "GaR07pq1wT2arz1WoXzNJDW+clVSIb50Va4hw4gwoKE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineLong.html",
+          "hash": "bK1M5KdPLwtHiLJc0XIH8ZwD6d8PJBC3rjeRTVlN7TE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Helpers.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineString.html",
+          "hash": "0othU6C52WNrK4ZNk/wxOCAZJqYMqkpBK0ZGoFicseY="
         }
       },
       "is_incremental": false,
@@ -90,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Helpers.SingleLineSection.html",
-          "hash": "x/ZFiERZqF8W1ya1k3CDChkaq6SKhF/UXQEelaOt3tk="
+          "hash": "Y6eN2LbLGmMx7fdQxpXUpbKYJ+DD6RaBA+0guM/c0S8="
         }
       },
       "is_incremental": false,
@@ -102,7 +294,43 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Helpers.html",
-          "hash": "evj6bEHBdI1OzhcwGTUv4t2IXBsouf/WRnfRGtOSM2Q="
+          "hash": "tBeKP/NijITB9tYEOaiWVc/yEyeYQBqwSAtAC43y9Hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionData.Item.html",
+          "hash": "nnR1HCjQmsl3lvST1SSlenbOOMvvZxWpPIzGk3OhSpw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionData.Count.html",
+          "hash": "0CJziOXKMfZ1JlptolaUx7/RG6ng9KljZWfXVSne1f4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionData.Contains.html",
+          "hash": "hwlnbWEwttTo90RvWss9ydyiezXKpXxGt8iWNDY3z+c="
         }
       },
       "is_incremental": false,
@@ -114,7 +342,55 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Interfaces.ISectionData.html",
-          "hash": "uhoZpCeK698z4r1WyQ5euutvRJ5ZX2s8uf38aL6ydS4="
+          "hash": "PXv5L7FVlB1YOcBb9DlBik7NxWFVzZ/kU8O8jfi+avM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsData.TryGetData.html",
+          "hash": "afZ9tYT29tQzpFWBB8VmK35mNIOlwQ8n1vIi4VjPD2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsData.Item.html",
+          "hash": "/YBLfLxPBE4FZI3o4nDQUrlsMC4yO9qhFeiQzlkwy8I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsData.GetNames.html",
+          "hash": "JQiJkhFvR91LjFHV0VFk5OIwXMVtMjJeAsjx2fju6DY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsData.GetAll.html",
+          "hash": "psfQs9zbVnwsRjH8se8h1TXPbi+sCWxbTg3tWtCcVO0="
         }
       },
       "is_incremental": false,
@@ -126,7 +402,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Interfaces.ISectionsData.html",
-          "hash": "ySzm+mz42Ae/oZXVy1ZnogBdZZZrlrjIFGj5DeSOeJE="
+          "hash": "gYkd+wM4rS7Wrytm6ECW8de0bTER6n4K/a0kZF+jR80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Interfaces.ISectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Interfaces.ISectionsParser.Parse.html",
+          "hash": "btdnnZr0/U4ovnowmNKswF5GOYK6RvYeN/3zoNthcsY="
         }
       },
       "is_incremental": false,
@@ -138,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Interfaces.ISectionsParser.html",
-          "hash": "qq1qCxtcRsclEk/6wJ2gjbDRhdGVZ/i6KYL5ToFWOe0="
+          "hash": "wZV12ZHjuxXJRqzdj7LoIROt7UK6qP2ALqeJ2z0r96Y="
         }
       },
       "is_incremental": false,
@@ -150,7 +438,67 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Interfaces.html",
-          "hash": "dFb4p5cVrvDr8gEVuTDYSkHWiU6L7RF06DYpMSk5eT0="
+          "hash": "cX/NwECkFLTtpDPLNUhzALJ51XcAwGfCelKdrjWKvo8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.Name.html",
+          "hash": "JcyTG6fInrAB9zNWAFIox88n3OmKkAk1fDGIx3vyyIg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.Data.html",
+          "hash": "sDZb89ixXjhhm3aLF8nnA44e1qQ3pLyx72JSir04jLA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.-ctor.html",
+          "hash": "28xw4S0TnVIvAz/CxHE/r5OoC/YzuuLXV9/pJ+CDP5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.Deconstruct.html",
+          "hash": "SWbcpYXW3R+k6fetZBYXZoqLH7KoIegE68Ocai6CyHA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Models.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Models.SectionModel.ToString.html",
+          "hash": "IY7Rajxqq3rhPeErVOSNZ3ZJcTXxrppNsrjuk4RBcrU="
         }
       },
       "is_incremental": false,
@@ -162,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Models.SectionModel.html",
-          "hash": "kAGrGDUNBhAD2wi/xBNCyzSGlAIoUxvYvjlqq0UbDOE="
+          "hash": "tW9Ck4nTNJ8xPPHt8VBOaBP8f3Q5J8KnzgDKRK1Iwik="
         }
       },
       "is_incremental": false,
@@ -174,7 +522,55 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Models.html",
-          "hash": "QQ/HidY8UN0I+FuCE4uDAba40tB5NHbL39/+8v8sR7I="
+          "hash": "KZwdcoCGy/Ck7xMZS+7QUiozPxVeu1jVw1Mic1kVE+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.SectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.SectionsParser.IsComment.html",
+          "hash": "WV1J4KUYJkGlOYVtSoI0zOiAvzyz258tmFKZ95ESQNI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.SectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.SectionsParser.IsSection.html",
+          "hash": "zwmn4Df91o4Sqb32xLc78bsgiFgksTnaNrQJryBIijQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.SectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.SectionsParser.ExtractSection.html",
+          "hash": "cTRstBtGHuSHWr11qyTSMEc2iKj/3oTF0hhCWKQ7rqk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.Providers.SectionsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.Providers.SectionsParser.Parse.html",
+          "hash": "t/I9xekVXZxU3LkyAzF4pHGGrLVbzIIAUNMmq02mwak="
         }
       },
       "is_incremental": false,
@@ -186,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Providers.SectionsParser.html",
-          "hash": "AohZWgc3O3DVC8CoOHGCvFX1RmdoDAymurzJeCb3r2o="
+          "hash": "gP8YiLtXpzuUsESWnEUhLUJ7KGMsDq3JfTS9bGKpshM="
         }
       },
       "is_incremental": false,
@@ -198,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SeztionParser.Providers.html",
-          "hash": "Z0Db3z7rX3pKo/OKW1vWWC68dgKFtfIzgnFn+/IXuDs="
+          "hash": "HlNaO0DUHsoDQp+1ttAeDWxzy3LEs4LQgjQDNDgoqVM="
         }
       },
       "is_incremental": false,
@@ -210,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IUMcNzz0MwHtezDThVPd/ECd5II688BRNXDdWXfTjdg="
+          "hash": "IX3ME+1MRJAWreV/EU5XlaRx3lpm0tK/QLqJiKT10fQ="
         }
       },
       "is_incremental": false,
@@ -222,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/dependency_injection.html",
-          "hash": "fvoAThb4tD6PodTAVeUic2JRQKAPrVkDVyjbkunIIVk="
+          "hash": "LXF5dn30X77iGwyZCh86RuABWImZZmPjH++4GLXHOJA="
         }
       },
       "is_incremental": false,
@@ -234,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/getting_started.html",
-          "hash": "AZmpmoR8k/t8gd49u3+fAGPh9n5QDOcw8mTEOvsnxRs="
+          "hash": "cqUpUkPOeYKqngUmebxS4ly8fwtwcG7gWP4P8CmtEwY="
         }
       },
       "is_incremental": false,
@@ -246,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/parser.html",
-          "hash": "f4ipEBUqKf4BD6zaNdRVKniYl8s8naoirwsc18mJwes="
+          "hash": "+cNyTDIWNxjBbaEt9fwxpcF9phGTQaN5NegCfjGgg/c="
         }
       },
       "is_incremental": false,
@@ -258,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/section_data_conversion.html",
-          "hash": "yIj/g+nsxAgJZNcHpncFPQUYMnUSLENUKYRGlDU+qZE="
+          "hash": "FBY24qmjAw0Q8AuSH9Cv/IJYJk/y096tEUmE0m50wPg="
         }
       },
       "is_incremental": false,
@@ -270,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/single_line_section.html",
-          "hash": "0f0Ngjt1ilbd4NQOtxqiaV7ILGqof8O6/ZXFzM9X7I0="
+          "hash": "D8xJ9RCIcSZwVZOYCzc4zXLf4kYYQ8ax8GWA5gG7Lw8="
         }
       },
       "is_incremental": false,
@@ -294,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "diagrams/class_diagram.html",
-          "hash": "VtGqDAqrLzIB1duIQix4VYeU5yj6nOk6Qb1dw4VAdBk="
+          "hash": "ZvUAWp6bH8LX+IVfAKL666hQNrIO0orZuPJndYTSgLw="
         }
       },
       "is_incremental": false,
@@ -306,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "diagrams/package_diagram.html",
-          "hash": "S79W5hA/bHCRdpF0gacY14irNl1ie9XdO8hNd39hmeg="
+          "hash": "JHHgIG/wIPx0WOWIWNKH1HxXmiKHq/CDlm+s872Rjpc="
         }
       },
       "is_incremental": false,
@@ -374,7 +770,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "BGZ1WuPxkbWsydeUkCNWvdpnKJfLMzY7xLYObt8Zl+I="
+          "hash": "xjvmbxSGxhn7MknIB2z0b5PGFY+MSTcslzzzS7D/Pt4="
         }
       },
       "is_incremental": false,
@@ -396,25 +792,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 8,
-          "skipped_file_count": 0
+          "skipped_file_count": 8
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 16,
-          "skipped_file_count": 0
+          "skipped_file_count": 11
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
