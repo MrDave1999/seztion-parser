@@ -1,40 +1,35 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SeztionParser.Constants;
-using SeztionParser.Exceptions;
-using SeztionParser.Providers;
+namespace SeztionParser.Tests;
 
-namespace SeztionParser.Tests
+[TestClass]
+public class SectionsParserTests
 {
-    [TestClass]
-    public class SectionsParserTests
+    /// <summary>
+    /// Check if the exception is throw with a specific message.
+    /// </summary>
+    private void CheckMessageException(string sections, string message)
     {
-        /// <summary>
-        /// Check if the exception is throw with a specific message.
-        /// </summary>
-        private void CheckMessageException(string sections, string message)
-        {
-            // Arrange
-            var parser = new SectionsParser();
+        // Arrange
+        var parser = new SectionsParser();
 
-            // Act
-            try
-            {
-                parser.Parse(sections);
-            }
-            catch (ParserException e)
-            {
-                // Assert
-                StringAssert.Contains(e.Message, message);
-                return;
-            }
-            Assert.Fail("The expected exception was not thrown.");
+        // Act
+        try
+        {
+            parser.Parse(sections);
         }
-
-        [TestMethod]
-        public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
+        catch (ParserException e)
         {
-            // Arrange
-            string data = @"
+            // Assert
+            StringAssert.Contains(e.Message, message);
+            return;
+        }
+        Assert.Fail("The expected exception was not thrown.");
+    }
+
+    [TestMethod]
+    public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
+    {
+        // Arrange
+        string data = @"
                 [section1]   
                 23
                 15
@@ -44,22 +39,22 @@ namespace SeztionParser.Tests
                 [section3]
                 3
             ";
-            var parser = new SectionsParser();
+        var parser = new SectionsParser();
 
-            // Act
-            var sections = parser.Parse(data);
+        // Act
+        var sections = parser.Parse(data);
 
-            // Assert
-            var sectionNames = sections.GetNames();
-            Assert.IsTrue(sectionNames.Contains("section1"));
-            Assert.IsTrue(sectionNames.Contains("section2"));
-            Assert.IsTrue(sectionNames.Contains("section3"));
-        }
+        // Assert
+        var sectionNames = sections.GetNames();
+        Assert.IsTrue(sectionNames.Contains("section1"));
+        Assert.IsTrue(sectionNames.Contains("section2"));
+        Assert.IsTrue(sectionNames.Contains("section3"));
+    }
 
-        [TestMethod]
-        public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
-        {
-            string data = @"
+    [TestMethod]
+    public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
+    {
+        string data = @"
                 [section1]   
                 1
                 2
@@ -71,29 +66,29 @@ namespace SeztionParser.Tests
                 3
                 4
             ";
-            var parser = new SectionsParser();
+        var parser = new SectionsParser();
 
-            // Act
-            var sections = parser.Parse(data);
+        // Act
+        var sections = parser.Parse(data);
 
-            // Assert
-            var section1 = sections["section1"];
-            var section2 = sections["section2"];
-            Assert.IsTrue(section1.Contains("1"));
-            Assert.IsTrue(section1.Contains("2"));
-            Assert.IsTrue(section1.Contains("3"));
-            Assert.IsTrue(section1.Contains("4"));
-            Assert.IsTrue(section2.Contains("1"));
-            Assert.IsTrue(section2.Contains("2"));
-            Assert.IsTrue(section2.Contains("3"));
-            Assert.IsTrue(section2.Contains("4"));
-        }
+        // Assert
+        var section1 = sections["section1"];
+        var section2 = sections["section2"];
+        Assert.IsTrue(section1.Contains("1"));
+        Assert.IsTrue(section1.Contains("2"));
+        Assert.IsTrue(section1.Contains("3"));
+        Assert.IsTrue(section1.Contains("4"));
+        Assert.IsTrue(section2.Contains("1"));
+        Assert.IsTrue(section2.Contains("2"));
+        Assert.IsTrue(section2.Contains("3"));
+        Assert.IsTrue(section2.Contains("4"));
+    }
 
-        [TestMethod]
-        public void Parse_WhenReadAComment_ShouldIgnoreTheComment()
-        {
-            // Arrange
-            string data = @"
+    [TestMethod]
+    public void Parse_WhenReadAComment_ShouldIgnoreTheComment()
+    {
+        // Arrange
+        string data = @"
                 #comment1
                 [section1]
                 #comment2
@@ -106,28 +101,28 @@ namespace SeztionParser.Tests
                 34
                 #comment6
             ";
-            var parser = new SectionsParser();
+        var parser = new SectionsParser();
 
-            // Act
-            var sections = parser.Parse(data);
+        // Act
+        var sections = parser.Parse(data);
 
-            // Assert
-            var section1 = sections["section1"];
-            var section2 = sections["section2"];
-            Assert.IsFalse(section1.Contains("#comment1"));
-            Assert.IsFalse(section1.Contains("#comment2"));
-            Assert.IsFalse(section1.Contains("#comment3"));
-            Assert.IsFalse(section1.Contains("#comment4"));
-            Assert.IsFalse(section2.Contains("#comment5"));
-            Assert.IsFalse(section2.Contains("#comment6"));
-        }
+        // Assert
+        var section1 = sections["section1"];
+        var section2 = sections["section2"];
+        Assert.IsFalse(section1.Contains("#comment1"));
+        Assert.IsFalse(section1.Contains("#comment2"));
+        Assert.IsFalse(section1.Contains("#comment3"));
+        Assert.IsFalse(section1.Contains("#comment4"));
+        Assert.IsFalse(section2.Contains("#comment5"));
+        Assert.IsFalse(section2.Contains("#comment6"));
+    }
 
-        [TestMethod]
-        [DataRow(@"
+    [TestMethod]
+    [DataRow(@"
              [section1]
                           
         ")]
-        [DataRow(@"
+    [DataRow(@"
              [section1]
              12
              24
@@ -136,7 +131,7 @@ namespace SeztionParser.Tests
              15
              26  
         ")]
-        [DataRow(@"
+    [DataRow(@"
              [section1]
              12
              24
@@ -145,31 +140,31 @@ namespace SeztionParser.Tests
              67
              [section3]
         ")]
-        public void Parse_WhenSectionHasNoData_ShouldThrowParserException(string data)
-        {
-            CheckMessageException(data, ExceptionMessages.SectionWithoutDataMessage);
-        }
+    public void Parse_WhenSectionHasNoData_ShouldThrowParserException(string data)
+    {
+        CheckMessageException(data, ExceptionMessages.SectionWithoutDataMessage);
+    }
 
-        [TestMethod]
-        [DataRow(@"
+    [TestMethod]
+    [DataRow(@"
              []
              15
              67
         ")]
-        [DataRow(@"
+    [DataRow(@"
              [       ]
              15
              78
         ")]
-        public void Parse_WhenTheSectionNameIsEmpty_ShouldThrowParserException(string data)
-        {
-            CheckMessageException(data, ExceptionMessages.SectionNameIsEmptyMessage);
-        }
+    public void Parse_WhenTheSectionNameIsEmpty_ShouldThrowParserException(string data)
+    {
+        CheckMessageException(data, ExceptionMessages.SectionNameIsEmptyMessage);
+    }
 
-        [TestMethod]
-        public void Parse_WhenTheSectionIsRepeated_ShouldThrowParserException()
-        {
-            string data = @"  
+    [TestMethod]
+    public void Parse_WhenTheSectionIsRepeated_ShouldThrowParserException()
+    {
+        string data = @"  
                 [section1]
                 12
                 24
@@ -180,27 +175,26 @@ namespace SeztionParser.Tests
                 15
                 78
             ";
-            CheckMessageException(data, ExceptionMessages.SeccionIsRepeatedMessage);
-        }
+        CheckMessageException(data, ExceptionMessages.SeccionIsRepeatedMessage);
+    }
 
-        [TestMethod]
-        public void Parse_WhenAnElementIsNotPartOfAnySection_ShouldThrowParserException()
-        {
-            string data = @"  
+    [TestMethod]
+    public void Parse_WhenAnElementIsNotPartOfAnySection_ShouldThrowParserException()
+    {
+        string data = @"  
                 Hello World! (this element is not part of any section)
                 [section1]
                 12
                 24
             ";
-            CheckMessageException(data, ExceptionMessages.ElementThatIsNotPartAnySectionMessage);
-        }
+        CheckMessageException(data, ExceptionMessages.ElementThatIsNotPartAnySectionMessage);
+    }
 
-        [TestMethod]
-        [DataRow("       ")]
-        [DataRow("")]
-        public void Parse_WhenTheDataSourceIsEmpty_ShouldThrowParserException(string data)
-        {
-            CheckMessageException(data, ExceptionMessages.DataSourceIsEmptyMessage);
-        }
+    [TestMethod]
+    [DataRow("       ")]
+    [DataRow("")]
+    public void Parse_WhenTheDataSourceIsEmpty_ShouldThrowParserException(string data)
+    {
+        CheckMessageException(data, ExceptionMessages.DataSourceIsEmptyMessage);
     }
 }

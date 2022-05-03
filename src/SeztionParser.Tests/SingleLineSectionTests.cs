@@ -1,103 +1,95 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SeztionParser.Providers;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using SeztionParser.Helpers;
+﻿namespace SeztionParser.Tests;
 
-namespace SeztionParser.Tests
+[TestClass]
+public class SingleLineSectionTests
 {
-    [TestClass]
-    public class SingleLineSectionTests
+    [TestMethod]
+    public void GetFirstLineDecimal_WhenTheConversionIsValid_ShouldReturnDecimal()
     {
-        [TestMethod]
-        public void GetFirstLineDecimal_WhenTheConversionIsValid_ShouldReturnDecimal()
-        {
-            // Arrange
-            string data = @"
+        // Arrange
+        string data = @"
                 [section1]
                 12.456
             ";
-            var sections = new SectionsParser().Parse(data);
-            decimal expected = 12.456M;
+        var sections = new SectionsParser().Parse(data);
+        decimal expected = 12.456M;
 
-            // Act
-            decimal actual = sections.GetFirstLineDecimal("section1");
+        // Act
+        decimal actual = sections.GetFirstLineDecimal("section1");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
 
-        [TestMethod]
-        public void GetFirstLineDouble_WhenTheConversionIsValid_ShouldReturnDouble()
-        {
-            // Arrange
-            string data = @"
+    [TestMethod]
+    public void GetFirstLineDouble_WhenTheConversionIsValid_ShouldReturnDouble()
+    {
+        // Arrange
+        string data = @"
                 [section1]
                 12.456
             ";
-            var sections = new SectionsParser().Parse(data);
-            double expected = 12.456;
+        var sections = new SectionsParser().Parse(data);
+        double expected = 12.456;
 
-            // Act
-            double actual = sections.GetFirstLineDouble("section1");
+        // Act
+        double actual = sections.GetFirstLineDouble("section1");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
 
-        [TestMethod]
-        public void GetFirstLineFloat_WhenTheConversionIsValid_ShouldReturnFloat()
-        {
-            // Arrange
-            string data = @"
+    [TestMethod]
+    public void GetFirstLineFloat_WhenTheConversionIsValid_ShouldReturnFloat()
+    {
+        // Arrange
+        string data = @"
                 [section1]
                 12.456
             ";
-            var sections = new SectionsParser().Parse(data);
-            float expected = 12.456f;
+        var sections = new SectionsParser().Parse(data);
+        float expected = 12.456f;
 
-            // Act
-            float actual = sections.GetFirstLineFloat("section1");
+        // Act
+        float actual = sections.GetFirstLineFloat("section1");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
 
-        [TestMethod]
-        public void GetFirstLineInt_WhenTheConversionIsValid_ShouldReturnInt()
-        {
-            // Arrange
-            string data = @"
+    [TestMethod]
+    public void GetFirstLineInt_WhenTheConversionIsValid_ShouldReturnInt()
+    {
+        // Arrange
+        string data = @"
                 [section1]
                 12
             ";
-            var sections = new SectionsParser().Parse(data);
-            int expected = 12;
+        var sections = new SectionsParser().Parse(data);
+        int expected = 12;
 
-            // Act
-            int actual = sections.GetFirstLineInt("section1");
+        // Act
+        int actual = sections.GetFirstLineInt("section1");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+        // Assert
+        Assert.AreEqual(expected, actual);
+    }
 
-        [TestMethod]
-        public void GetFirstLineLong_WhenTheConversionIsValid_ShouldReturnLong()
-        {
-            // Arrange
-            string data = @"
+    [TestMethod]
+    public void GetFirstLineLong_WhenTheConversionIsValid_ShouldReturnLong()
+    {
+        // Arrange
+        string data = @"
                 [section1]
                 12
             ";
-            var sections = new SectionsParser().Parse(data);
-            long expected = 12;
+        var sections = new SectionsParser().Parse(data);
+        long expected = 12;
 
-            // Act
-            long actual = sections.GetFirstLineLong("section1");
+        // Act
+        long actual = sections.GetFirstLineLong("section1");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+        // Assert
+        Assert.AreEqual(expected, actual);
     }
 }
