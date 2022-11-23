@@ -8,7 +8,7 @@
     <title>Section data conversion | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Section data conversion | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,7 +80,7 @@
 <h1 id="section-data-conversion">Section data conversion</h1>
 
 <p>Given the following file:</p>
-<pre><code class="lang-ini">#Section1
+<pre><code class="lang-ini"># Section(1).
 [Prices1]
 12.4
 45.2
@@ -88,7 +88,7 @@
 56.2
 
 
-#Section2
+# Section(2).
 [Prices2]
 23.423
 53.13
@@ -98,12 +98,16 @@
 <pre><code class="lang-cs">ISectionsData sections = SectionsFile.Load(&quot;prices.ini&quot;);
 </code></pre>
 <p>But the data in each section are by default of type <code>string</code>:</p>
-<pre><code class="lang-cs">string price1 = sections[&quot;Prices1&quot;][0]; //12.4
-string price2 = sections[&quot;Prices2&quot;][0]; //23.423
-//....
+<pre><code class="lang-cs">Console.WriteLine(sections[&quot;Prices1&quot;][0]);
+Console.WriteLine(sections[&quot;Prices2&quot;][0]);
+/*
+    The example displays the following output:
+    12.4
+    23.423
+*/
 </code></pre>
 <p>To convert all the data in a section to a particular type (such as <code>int</code>, <code>double</code> or <code>float</code>), you must write the following:</p>
-<pre><code class="lang-cs">//Import all types to use the extension methods.
+<pre><code class="lang-cs">// Import all types to use the extension methods.
 using SeztionParser.Helpers;
 
 IEnumerable&lt;double&gt; prices = sections.ToDouble(&quot;Prices1&quot;);

@@ -8,7 +8,7 @@
     <title>Dependency Injection | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Dependency Injection | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -108,7 +108,7 @@ class Bar
 
     public Foo()
     {
-        // change #1
+        // Change #1.
         parser = new CustomParser();
     }
 }
@@ -119,7 +119,7 @@ class Bar
 
     public Bar()
     {
-        // change #2
+        // Change #2.
         parser = new CustomParser();
     }
 }
@@ -146,7 +146,7 @@ class Bar
 }
 </code></pre>
 <p>You can also make use of the <code>ISectionsParser</code> interface instead of the base <code>SectionsParser</code> class:</p>
-<pre><code class="lang-cs">//To import the interface.
+<pre><code class="lang-cs">// To import the interface.
 using SeztionParser.Interfaces;
 
 class Foo
@@ -176,13 +176,12 @@ class Bar
     {
         var foo = new Foo(new SectionsParser());
         var bar = new Bar(new CustomParser());
-        //...
     }
 }
 </code></pre>
 <p>So in the end we would consider using a service container to handle dependency injection. Microsoft has created a <a href="https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection">package</a> in NuGet specifically for this.</p>
 <p>The above example could be done in this way using the container DI:</p>
-<pre><code class="lang-cs">// import all types.
+<pre><code class="lang-cs">// Import all types.
 using Microsoft.Extensions.DependencyInjection;
 using SeztionParser.Interfaces;
 using SeztionParser.Providers;
@@ -201,9 +200,6 @@ class Program
         // Retrieves an instance of the service and the container resolves the dependencies.
         var foo = serviceProvider.GetRequiredService&lt;Foo&gt;();
         var bar = serviceProvider.GetRequiredService&lt;Bar&gt;();
-        /*
-            more code...
-        */
         serviceProvider.Dispose();
     }
 }

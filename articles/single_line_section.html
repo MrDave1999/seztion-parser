@@ -8,7 +8,7 @@
     <title>Single line section | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Single line section | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,26 +80,36 @@
 <h1 id="single-line-section">Single line section</h1>
 
 <p>Given the following file:</p>
-<pre><code class="lang-ini">#Section1
+<pre><code class="lang-ini"># Section(1).
 [WorldTime]
 23
 
-#Section2
+# Section(2).
 [Weather]
 45
 </code></pre>
 <p>The sections have only one data, so you can retrieve the data in this way:</p>
 <pre><code class="lang-cs">ISectionsData sections = SectionsFile.Load(&quot;test.ini&quot;);
 
-int worldTime = int.Parse(sections[&quot;WorldTime&quot;][0]); //23
-int weather = int.Parse(sections[&quot;Weather&quot;][0]); //45
+Console.WriteLine(int.Parse(sections[&quot;WorldTime&quot;][0]));
+Console.WriteLine(int.Parse(sections[&quot;Weather&quot;][0]));
+/*
+    The example displays the following output:
+    23
+    45
+*/
 </code></pre>
 <p>Or we can also do it this way:</p>
-<pre><code class="lang-cs">//Import all types to use the extension methods.
+<pre><code class="lang-cs">// Import all types to use the extension methods.
 using SeztionParser.Helpers;
 
-int worldTime = sections.GetFirstLineInt(&quot;WorldTime&quot;); //23
-int weather = sections.GetFirstLineInt(&quot;Weather&quot;); //45
+Console.WriteLine(sections.GetFirstLineInt(&quot;WorldTime&quot;));
+Console.WriteLine(sections.GetFirstLineInt(&quot;Weather&quot;));
+/*
+    The example displays the following output:
+    23
+    45
+*/
 </code></pre>
 <p>If the <code>Weather</code> section has more than one piece of data, the <code>GetFirstLineInt</code> method will always return the data from the first line of <code>Weather</code>.</p>
 <p>You can review all extension methods at this <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.Helpers.SingleLineSection.html">link</a>.</p>

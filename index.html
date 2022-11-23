@@ -8,7 +8,7 @@
     <title> | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="images/seztionparser-icon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -73,24 +73,26 @@
 
 <p><a href="https://github.com/mrdave1999/seztion-parser"><img src="images/seztionparser-logo.png" alt="seztion-parser"></a></p>
 <p><a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/.NET%20Standard-2.0-red" alt="seztion-parser"></a>
-<a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/.NET%20Standard-2.1-green" alt="seztion-parser"></a>
-<a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/Class%20Library-Project-yellow" alt="seztion-parser"></a></p>
+<a href="https://raw.githubusercontent.com/MrDave1999/seztion-parser/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green" alt="seztion-parser"></a>
+<a href="https://github.com/mrdave1999/seztion-parser"><img src="https://img.shields.io/badge/Project-Class%20Library-yellow" alt="seztion-parser"></a>
+<a href="https://www.nuget.org/packages/seztion-parser/"><img src="https://buildstats.info/nuget/seztion-parser" alt="Nuget-Badges"></a>
+<a href="https://www.paypal.com/paypalme/DavidRomanAmariles"><img src="https://img.shields.io/badge/paypal-donate-orange" alt="PayPal-donate-button"></a></p>
 <p><strong>seztion-parser</strong> is a class library used to read data from each section of a file (the file extension can be any, e.g. <code>.INI</code>).</p>
 <p>There is a history behind why this library exists.</p>
 <p>Some time ago I was creating a gamemode in <a href="https://www.sa-mp.com/">SA-MP</a> (San Andreas Multiplayer, a multiplayer mod for GTA San Andrea) that was based on two teams (Alpha and Beta), so I needed to somehow store the <strong>spawn positions</strong> (is the location where the player appears on the map) of a given map (the place where the player plays).</p>
 <p>Then it occurred to me that I could save the spawn positions in a file in this way:</p>
-<pre><code class="lang-ini">#section(1)
+<pre><code class="lang-ini"># Section(1).
 [Alpha]
-#spawn positions - Alpha Team:
+# Spawn positions - Alpha Team.
 2548.7009,-1283.2224,1060.9844,230.3022
 2565.8301,-1281.7773,1065.3672,238.1356
 2575.7759,-1283.3206,1065.3672,177.9750
 2580.8525,-1284.6443,1065.3579,88.0476
 2568.5518,-1283.6564,1060.9844,181.0851
 
-#section(2)
+# Section(2).
 [Beta]
-#spawn positions - Beta Team:
+# Spawn positions - Beta Team.
 2532.1660,-1283.6971,1031.4219,270.0725
 2532.5823,-1292.2178,1031.4219,275.7126
 2532.9485,-1302.3477,1031.4219,269.4458

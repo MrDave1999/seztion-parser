@@ -8,7 +8,7 @@
     <title>Parser | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Parser | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,7 +93,7 @@ var sections = parser.Parse(File.ReadAllText(&quot;test.ini&quot;));
 {
     public override string ExtractSection(string text)
     {
-        //You can propose your own implementation..
+        // You can propose your own implementation.
     }
 }
 </code></pre>
@@ -133,9 +133,9 @@ var sections = parser.Parse(File.ReadAllText(&quot;test.ini&quot;));
 <p><strong>7.</strong> A section cannot be without data, the parser will throw an error.</p>
 <p><strong>Example:</strong></p>
 <pre><code class="lang-ini">[section]
-#empty
+# Empty.
 [section2]
-#empty
+# Empty.
 </code></pre>
 <p><strong>8.</strong> The name of the section can have spaces at the beginning and at the end.</p>
 <p><strong>Example:</strong></p>

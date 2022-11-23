@@ -8,7 +8,7 @@
     <title>Getting Started with seztion parser | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Getting Started with seztion parser | seztion-parser ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,7 +81,7 @@
 
 <h2 id="installation">Installation</h2>
 <p>If you're an hardcore and want to do it manually, you must add the following to the <code>csproj</code> file:</p>
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;seztion-parser&quot; Version=&quot;1.0.0&quot; /&gt;
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;seztion-parser&quot; Version=&quot;1.0.2&quot; /&gt;
 </code></pre>
 <p>If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the <strong>Tools</strong> &gt; <strong>NuGet Package Manager</strong> &gt; <strong>Package Manager Console</strong> command and run the install command:</p>
 <pre><code>Install-Package seztion-parser
@@ -91,18 +91,18 @@
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>Let's imagine that there is this file named <code>Aim_Headshot.ini</code>:</p>
-<pre><code class="lang-ini">#Section1
+<pre><code class="lang-ini"># Section(1).
 [Positions1]
-#data:
+# Data:
 -129.5612,81.0056,3.1172,156.7189
 -127.6526,87.7695,3.1172,156.7189
 -134.9525,90.2646,3.1172,167.0590
 -138.4023,83.5352,3.1172,163.6123
 -145.3216,85.1476,3.1172,163.6123
 
-#Section2
+# Section(2).
 [Positions2]
-#data:
+# Data:
 -277.0338,-85.0175,2.8617,345.0341
 -277.7510,-90.4126,2.7030,345.0341
 -270.0297,-92.0674,3.0969,345.0341
@@ -115,7 +115,7 @@
 <pre><code class="lang-cs">using SeztionParser.Facades;
 </code></pre>
 <p>You can then use the <code>Load</code> method of the <code>SectionsFile</code> class to load the <strong>sections file</strong> and it will return an instance of type <code>ISectionsData</code> that will allow you to access the <strong>sections data</strong>.</p>
-<pre><code class="lang-cs">//Load the sections file.
+<pre><code class="lang-cs">// Load the sections file.
 var sections = SectionsFile.Load(&quot;Aim_Headshot.ini&quot;);
 </code></pre>
 <p>You can then gets the data for a specific section:</p>
@@ -124,19 +124,19 @@ ISectionData positions2 = sections[&quot;Positions2&quot;];
 </code></pre>
 <p>You can then iterate over the data in a specified section:</p>
 <pre><code class="lang-cs">Console.WriteLine(&quot;[Positions1]&quot;);
-//This prints the data of the &quot;Positions1&quot; section.
+// This prints the data of the 'Positions1' section.
 foreach (string data in sections[&quot;Positions1&quot;])
     Console.WriteLine(data);
 
 Console.WriteLine();
 
 Console.WriteLine(&quot;[Positions2]&quot;);
-//This prints the data of the &quot;Positions2&quot; section.
+// This prints the data of the 'Positions2' section.
 foreach (string data in sections[&quot;Positions2&quot;])
     Console.WriteLine(data);
 
 /*
-    -&gt; Output:
+    The example displays the following output:
     [Positions1]
     -129.5612,81.0056,3.1172,156.7189
     -127.6526,87.7695,3.1172,156.7189
@@ -157,7 +157,7 @@ foreach (string data in sections[&quot;Positions2&quot;])
 <pre><code class="lang-cs">foreach (string sectionName in sections.GetNames())
     Console.WriteLine($&quot;Section: {sectionName}&quot;);
 /*
-    -&gt; Output:
+    The example displays the following output:
     Section: Positions1
     Section: Positions2
 */
@@ -167,7 +167,7 @@ foreach (string data in sections[&quot;Positions2&quot;])
 <pre><code class="lang-cs">foreach (ISectionData data in sections.GetAll())
     Console.Write(data.ToString());
 /*
-    -&gt; Output:
+    The example displays the following output:
     [
         -129.5612,81.0056,3.1172,156.7189
         -127.6526,87.7695,3.1172,156.7189
@@ -189,7 +189,7 @@ foreach (string data in sections[&quot;Positions2&quot;])
 <pre><code class="lang-cs">foreach (SectionModel section in sections)
     Console.Write(section.ToString());
 /*
-    -&gt; Output:
+    The example displays the following output:
     Section: Positions1 -&gt; 
     [
         -129.5612,81.0056,3.1172,156.7189
@@ -215,7 +215,7 @@ foreach (string data in sections[&quot;Positions2&quot;])
 <p>You can also convert the instance of type <code>ISectionsData</code> into an object of type <code>String</code>:</p>
 <pre><code class="lang-cs">Console.WriteLine(sections.ToString());
 /*
-    Output:
+    The example displays the following output:
     Section: Positions1 -&gt; 
     [
         -129.5612,81.0056,3.1172,156.7189
@@ -236,14 +236,13 @@ foreach (string data in sections[&quot;Positions2&quot;])
 </code></pre>
 <h3 id="properties-sectionmodel-class">Properties SectionModel class</h3>
 <p>You can also gets the <strong>amount of data</strong> and <strong>name</strong> for each section:</p>
-<pre><code class="lang-cs">//You must import all the types:
+<pre><code class="lang-cs">// You must import all the types.
 using SeztionParser.Models;
-//...
 
 foreach (SectionModel section in sections)
     Console.WriteLine($&quot;{section.Name}, {section.Data.Count}&quot;);
 /*
-    -&gt; Output:
+    The example displays the following output:
     Positions1, 5
     Positions2, 5
 */
@@ -252,7 +251,7 @@ foreach (SectionModel section in sections)
 <pre><code class="lang-cs">foreach (var(name, data) in sections)
     Console.WriteLine($&quot;{name}, {data.Count}&quot;);
 /*
-    -&gt; Output:
+    The example displays the following output:
     Positions1, 5
     Positions2, 5
 */
