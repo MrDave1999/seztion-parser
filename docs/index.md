@@ -1,7 +1,10 @@
 [![seztion-parser](images/seztionparser-logo.png)](https://github.com/mrdave1999/seztion-parser)
 
 [![seztion-parser](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/mrdave1999/seztion-parser)
-[![seztion-parser](https://img.shields.io/badge/Class%20Library-Project-yellow)](https://github.com/mrdave1999/seztion-parser)
+[![seztion-parser](https://img.shields.io/badge/License-MIT-green)](https://raw.githubusercontent.com/MrDave1999/seztion-parser/master/LICENSE)
+[![seztion-parser](https://img.shields.io/badge/Project-Class%20Library-yellow)](https://github.com/mrdave1999/seztion-parser)
+[![Nuget-Badges](https://buildstats.info/nuget/seztion-parser)](https://www.nuget.org/packages/seztion-parser/)
+[![PayPal-donate-button](https://img.shields.io/badge/paypal-donate-orange)](https://www.paypal.com/paypalme/DavidRomanAmariles)
 
 
 **seztion-parser** is a class library used to read data from each section of a file (the file extension can be any, e.g. `.INI`).
