@@ -3,7 +3,6 @@
 [![seztion-parser-logo](https://raw.githubusercontent.com/MrDave1999/seztion-parser/main/docs/images/seztionparser-logo.png)](https://github.com/mrdave1999/seztion-parser)
 
 [![seztion-parser](https://img.shields.io/badge/.NET%20Standard-2.0-red)](https://github.com/mrdave1999/seztion-parser)
-[![seztion-parser](https://img.shields.io/badge/.NET%20Standard-2.1-green)](https://github.com/mrdave1999/seztion-parser)
 [![seztion-parser](https://img.shields.io/badge/Class%20Library-Project-yellow)](https://github.com/mrdave1999/seztion-parser)
 [![Nuget-Badges](https://buildstats.info/nuget/seztion-parser)](https://www.nuget.org/packages/seztion-parser/)
 
