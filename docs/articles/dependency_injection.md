@@ -32,7 +32,7 @@ class Foo
 
     public Foo()
     {
-        // change #1
+        // Change #1.
         parser = new CustomParser();
     }
 }
@@ -43,7 +43,7 @@ class Bar
 
     public Bar()
     {
-        // change #2
+        // Change #2.
         parser = new CustomParser();
     }
 }
@@ -73,7 +73,7 @@ class Bar
 ```
 You can also make use of the `ISectionsParser` interface instead of the base `SectionsParser` class:
 ```cs
-//To import the interface.
+// To import the interface.
 using SeztionParser.Interfaces;
 
 class Foo
@@ -104,7 +104,6 @@ class Program
     {
         var foo = new Foo(new SectionsParser());
         var bar = new Bar(new CustomParser());
-        //...
     }
 }
 ```
@@ -112,7 +111,7 @@ So in the end we would consider using a service container to handle dependency i
 
 The above example could be done in this way using the container DI:
 ```cs
-// import all types.
+// Import all types.
 using Microsoft.Extensions.DependencyInjection;
 using SeztionParser.Interfaces;
 using SeztionParser.Providers;
@@ -131,9 +130,6 @@ class Program
         // Retrieves an instance of the service and the container resolves the dependencies.
         var foo = serviceProvider.GetRequiredService<Foo>();
         var bar = serviceProvider.GetRequiredService<Bar>();
-        /*
-            more code...
-        */
         serviceProvider.Dispose();
     }
 }

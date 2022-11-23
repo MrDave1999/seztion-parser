@@ -2,11 +2,11 @@
 
 Given the following file:
 ```ini
-#Section1
+# Section(1).
 [WorldTime]
 23
 
-#Section2
+# Section(2).
 [Weather]
 45
 ```
@@ -14,16 +14,26 @@ The sections have only one data, so you can retrieve the data in this way:
 ```cs
 ISectionsData sections = SectionsFile.Load("test.ini");
 
-int worldTime = int.Parse(sections["WorldTime"][0]); //23
-int weather = int.Parse(sections["Weather"][0]); //45
+Console.WriteLine(int.Parse(sections["WorldTime"][0]));
+Console.WriteLine(int.Parse(sections["Weather"][0]));
+/*
+    The example displays the following output:
+    23
+    45
+*/
 ```
 Or we can also do it this way:
 ```cs
-//Import all types to use the extension methods.
+// Import all types to use the extension methods.
 using SeztionParser.Helpers;
 
-int worldTime = sections.GetFirstLineInt("WorldTime"); //23
-int weather = sections.GetFirstLineInt("Weather"); //45
+Console.WriteLine(sections.GetFirstLineInt("WorldTime"));
+Console.WriteLine(sections.GetFirstLineInt("Weather"));
+/*
+    The example displays the following output:
+    23
+    45
+*/
 ```
 If the `Weather` section has more than one piece of data, the `GetFirstLineInt` method will always return the data from the first line of `Weather`.
 
