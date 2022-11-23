@@ -35,7 +35,9 @@ public class ParserException : Exception
         this.actualValue = actualValue;
     }
 
-    /// <inheritdoc  />  
+    /// <summary>
+    /// Gets a message that describes the current exception.
+    /// </summary>
     public override string Message
         => actualValue != null ? base.Message + " (Actual Value: " + actualValue + ")" : base.Message;
 }
