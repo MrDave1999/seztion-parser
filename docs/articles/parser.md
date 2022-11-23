@@ -20,7 +20,7 @@ class CustomParser : SectionsParser
 {
     public override string ExtractSection(string text)
     {
-        //You can propose your own implementation..
+        // You can propose your own implementation.
     }
 }
 ```
@@ -81,9 +81,9 @@ foofoo
 **Example:**
 ```ini
 [section]
-#empty
+# Empty.
 [section2]
-#empty
+# Empty.
 ```
 
 **8.** The name of the section can have spaces at the beginning and at the end.

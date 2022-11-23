@@ -15,18 +15,18 @@ Some time ago I was creating a gamemode in [SA-MP](https://www.sa-mp.com/) (San 
 
 Then it occurred to me that I could save the spawn positions in a file in this way:
 ```ini
-#section(1)
+# Section(1).
 [Alpha]
-#spawn positions - Alpha Team:
+# Spawn positions - Alpha Team.
 2548.7009,-1283.2224,1060.9844,230.3022
 2565.8301,-1281.7773,1065.3672,238.1356
 2575.7759,-1283.3206,1065.3672,177.9750
 2580.8525,-1284.6443,1065.3579,88.0476
 2568.5518,-1283.6564,1060.9844,181.0851
 
-#section(2)
+# Section(2).
 [Beta]
-#spawn positions - Beta Team:
+# Spawn positions - Beta Team.
 2532.1660,-1283.6971,1031.4219,270.0725
 2532.5823,-1292.2178,1031.4219,275.7126
 2532.9485,-1302.3477,1031.4219,269.4458
@@ -41,7 +41,7 @@ Don't forget to visit the official library [website](https://mrdave1999.github.i
 
 If you're an hardcore and want to do it manually, you must add the following to the `csproj` file:
 ```xml
-<PackageReference Include="seztion-parser" Version="1.0.0" />
+<PackageReference Include="seztion-parser" Version="1.0.2" />
 ```
 If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the **Tools** > **NuGet Package Manager** > **Package Manager Console** command and run the install command:
 ```
@@ -55,12 +55,12 @@ dotnet add package seztion-parser
 ## Usage
 
 ```cs
-//Import all namespace types
+// Import all namespace types.
 using SeztionParser.Facades;
-//...
-//Load the sections file.
+
+// Load the sections file.
 var sections = SectionsFile.Load("my_file.ini");
-//This prints the data of the "Alpha" section.
+// This prints the data of the 'Alpha' section.
 foreach (var data in sections["Alpha"])
     Console.WriteLine(data);
 ```

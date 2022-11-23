@@ -4,7 +4,7 @@
 
 If you're an hardcore and want to do it manually, you must add the following to the `csproj` file:
 ```xml
-<PackageReference Include="seztion-parser" Version="1.0.0" />
+<PackageReference Include="seztion-parser" Version="1.0.2" />
 ```
 If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the **Tools** > **NuGet Package Manager** > **Package Manager Console** command and run the install command:
 ```
@@ -19,18 +19,18 @@ dotnet add package seztion-parser
 
 Let's imagine that there is this file named `Aim_Headshot.ini`:
 ```ini
-#Section1
+# Section(1).
 [Positions1]
-#data:
+# Data:
 -129.5612,81.0056,3.1172,156.7189
 -127.6526,87.7695,3.1172,156.7189
 -134.9525,90.2646,3.1172,167.0590
 -138.4023,83.5352,3.1172,163.6123
 -145.3216,85.1476,3.1172,163.6123
 
-#Section2
+# Section(2).
 [Positions2]
-#data:
+# Data:
 -277.0338,-85.0175,2.8617,345.0341
 -277.7510,-90.4126,2.7030,345.0341
 -270.0297,-92.0674,3.0969,345.0341
@@ -46,7 +46,7 @@ using SeztionParser.Facades;
 ```
 You can then use the `Load` method of the `SectionsFile` class to load the **sections file** and it will return an instance of type `ISectionsData` that will allow you to access the **sections data**.
 ```cs
-//Load the sections file.
+// Load the sections file.
 var sections = SectionsFile.Load("Aim_Headshot.ini");
 ```
 You can then gets the data for a specific section:
@@ -57,19 +57,19 @@ ISectionData positions2 = sections["Positions2"];
 You can then iterate over the data in a specified section:
 ```cs
 Console.WriteLine("[Positions1]");
-//This prints the data of the "Positions1" section.
+// This prints the data of the 'Positions1' section.
 foreach (string data in sections["Positions1"])
     Console.WriteLine(data);
 
 Console.WriteLine();
 
 Console.WriteLine("[Positions2]");
-//This prints the data of the "Positions2" section.
+// This prints the data of the 'Positions2' section.
 foreach (string data in sections["Positions2"])
     Console.WriteLine(data);
 
 /*
-    -> Output:
+    The example displays the following output:
     [Positions1]
     -129.5612,81.0056,3.1172,156.7189
     -127.6526,87.7695,3.1172,156.7189
@@ -91,7 +91,7 @@ If you want to gets the names of all the sections, use the `GetNames` method of 
 foreach (string sectionName in sections.GetNames())
     Console.WriteLine($"Section: {sectionName}");
 /*
-    -> Output:
+    The example displays the following output:
     Section: Positions1
     Section: Positions2
 */
@@ -102,7 +102,7 @@ If you want to gets the data of all sections, use the `GetAll` method of the `IS
 foreach (ISectionData data in sections.GetAll())
     Console.Write(data.ToString());
 /*
-    -> Output:
+    The example displays the following output:
     [
         -129.5612,81.0056,3.1172,156.7189
         -127.6526,87.7695,3.1172,156.7189
@@ -125,7 +125,7 @@ You can iterate over all sections using the `SectionModel` class:
 foreach (SectionModel section in sections)
     Console.Write(section.ToString());
 /*
-    -> Output:
+    The example displays the following output:
     Section: Positions1 -> 
     [
         -129.5612,81.0056,3.1172,156.7189
@@ -153,7 +153,7 @@ You can also convert the instance of type `ISectionsData` into an object of type
 ```cs
 Console.WriteLine(sections.ToString());
 /*
-    Output:
+    The example displays the following output:
     Section: Positions1 -> 
     [
         -129.5612,81.0056,3.1172,156.7189
@@ -175,14 +175,13 @@ Console.WriteLine(sections.ToString());
 ### Properties SectionModel class
 You can also gets the **amount of data** and **name** for each section:
 ```cs
-//You must import all the types:
+// You must import all the types.
 using SeztionParser.Models;
-//...
 
 foreach (SectionModel section in sections)
     Console.WriteLine($"{section.Name}, {section.Data.Count}");
 /*
-    -> Output:
+    The example displays the following output:
     Positions1, 5
     Positions2, 5
 */
@@ -192,7 +191,7 @@ Or you can also [deconstruct](https://docs.microsoft.com/en-us/dotnet/csharp/fun
 foreach (var(name, data) in sections)
     Console.WriteLine($"{name}, {data.Count}");
 /*
-    -> Output:
+    The example displays the following output:
     Positions1, 5
     Positions2, 5
 */
