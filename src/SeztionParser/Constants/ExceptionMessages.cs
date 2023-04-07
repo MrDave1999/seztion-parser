@@ -7,7 +7,7 @@ namespace SeztionParser.Constants;
 /// <summary>
 /// Represents error messages that can be used by the library.
 /// </summary>
-public class ExceptionMessages
+internal class ExceptionMessages
 {
     public const string SectionNameIsEmptyMessage = "Parser found an empty section name";
     public const string SectionWithoutDataMessage = "Parser found a section without data"; 
