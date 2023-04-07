@@ -18,12 +18,10 @@ public class SectionDataConversionTests
 
         // Act
         var enumerable = sections.ToDecimal("section1");
+        var actual = enumerable.ToArray();
 
         // Assert
-        var actual = enumerable.ToArray();
-        Assert.AreEqual(expected[0], actual[0]);
-        Assert.AreEqual(expected[1], actual[1]);
-        Assert.AreEqual(expected[2], actual[2]);
+        actual.Should().BeEquivalentTo(expected);
     }
 
     [TestMethod]
@@ -41,12 +39,10 @@ public class SectionDataConversionTests
 
         // Act
         var enumerable = sections.ToDouble("section1");
+        var actual = enumerable.ToArray();
 
         // Assert
-        var actual = enumerable.ToArray();
-        Assert.AreEqual(expected[0], actual[0]);
-        Assert.AreEqual(expected[1], actual[1]);
-        Assert.AreEqual(expected[2], actual[2]);
+        actual.Should().BeEquivalentTo(expected);
     }
 
     [TestMethod]
@@ -64,12 +60,10 @@ public class SectionDataConversionTests
 
         // Act
         var enumerable = sections.ToFloat("section1");
+        var actual = enumerable.ToArray();
 
         // Assert
-        var actual = enumerable.ToArray();
-        Assert.AreEqual(expected[0], actual[0]);
-        Assert.AreEqual(expected[1], actual[1]);
-        Assert.AreEqual(expected[2], actual[2]);
+        actual.Should().BeEquivalentTo(expected);
     }
 
     [TestMethod]
@@ -87,12 +81,10 @@ public class SectionDataConversionTests
 
         // Act
         var enumerable = sections.ToInt("section1");
-
-        // Assert
         var actual = enumerable.ToArray();
-        Assert.AreEqual(expected[0], actual[0]);
-        Assert.AreEqual(expected[1], actual[1]);
-        Assert.AreEqual(expected[2], actual[2]);
+        
+        // Assert
+        actual.Should().BeEquivalentTo(expected);
     }
 
     [TestMethod]
@@ -110,11 +102,9 @@ public class SectionDataConversionTests
 
         // Act
         var enumerable = sections.ToLong("section1");
+        var actual = enumerable.ToArray();
 
         // Assert
-        var actual = enumerable.ToArray();
-        Assert.AreEqual(expected[0], actual[0]);
-        Assert.AreEqual(expected[1], actual[1]);
-        Assert.AreEqual(expected[2], actual[2]);
+        actual.Should().BeEquivalentTo(expected);
     }
 }

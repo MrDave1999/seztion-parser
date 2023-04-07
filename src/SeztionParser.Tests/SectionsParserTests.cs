@@ -3,28 +3,6 @@ namespace SeztionParser.Tests;
 [TestClass]
 public class SectionsParserTests
 {
-    /// <summary>
-    /// Check if the exception is throw with a specific message.
-    /// </summary>
-    private void CheckMessageException(string sections, string message)
-    {
-        // Arrange
-        var parser = new SectionsParser();
-
-        // Act
-        try
-        {
-            parser.Parse(sections);
-        }
-        catch (ParserException e)
-        {
-            // Assert
-            StringAssert.Contains(e.Message, message);
-            return;
-        }
-        Assert.Fail("The expected exception was not thrown.");
-    }
-
     [TestMethod]
     public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
     {
@@ -40,15 +18,14 @@ public class SectionsParserTests
                 3
             ";
         var parser = new SectionsParser();
+        var expected = new[] { "section1", "section2", "section3" };
 
         // Act
         var sections = parser.Parse(data);
+        var sectionNames = sections.GetNames();
 
         // Assert
-        var sectionNames = sections.GetNames();
-        Assert.IsTrue(sectionNames.Contains("section1"));
-        Assert.IsTrue(sectionNames.Contains("section2"));
-        Assert.IsTrue(sectionNames.Contains("section3"));
+        sectionNames.Should().BeEquivalentTo(expected);
     }
 
     [TestMethod]
@@ -67,21 +44,14 @@ public class SectionsParserTests
                 4
             ";
         var parser = new SectionsParser();
+        var expected = new[] { "1", "2", "3", "4" };
 
         // Act
         var sections = parser.Parse(data);
 
         // Assert
-        var section1 = sections["section1"];
-        var section2 = sections["section2"];
-        Assert.IsTrue(section1.Contains("1"));
-        Assert.IsTrue(section1.Contains("2"));
-        Assert.IsTrue(section1.Contains("3"));
-        Assert.IsTrue(section1.Contains("4"));
-        Assert.IsTrue(section2.Contains("1"));
-        Assert.IsTrue(section2.Contains("2"));
-        Assert.IsTrue(section2.Contains("3"));
-        Assert.IsTrue(section2.Contains("4"));
+        sections["section1"].Should().Contain(expected);
+        sections["section2"].Should().Contain(expected);;
     }
 
     [TestMethod]
@@ -107,14 +77,14 @@ public class SectionsParserTests
         var sections = parser.Parse(data);
 
         // Assert
-        var section1 = sections["section1"];
-        var section2 = sections["section2"];
-        Assert.IsFalse(section1.Contains("#comment1"));
-        Assert.IsFalse(section1.Contains("#comment2"));
-        Assert.IsFalse(section1.Contains("#comment3"));
-        Assert.IsFalse(section1.Contains("#comment4"));
-        Assert.IsFalse(section2.Contains("#comment5"));
-        Assert.IsFalse(section2.Contains("#comment6"));
+        sections["section1"].Should().NotContain(new[] 
+        { 
+            "#comment1", 
+            "#comment2", 
+            "#comment3", 
+            "#comment4" 
+        });
+        sections["section2"].Should().NotContain(new [] { "#comment5", "#comment6" });
     }
 
     [TestMethod]
@@ -142,7 +112,17 @@ public class SectionsParserTests
         ")]
     public void Parse_WhenSectionHasNoData_ShouldThrowParserException(string data)
     {
-        CheckMessageException(data, ExceptionMessages.SectionWithoutDataMessage);
+        // Arrange
+        var parser = new SectionsParser();
+        var expectedMessage = $"*{ExceptionMessages.SectionWithoutDataMessage}*";
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ParserException>()
+           .WithMessage(expectedMessage);
     }
 
     [TestMethod]
@@ -158,12 +138,23 @@ public class SectionsParserTests
         ")]
     public void Parse_WhenTheSectionNameIsEmpty_ShouldThrowParserException(string data)
     {
-        CheckMessageException(data, ExceptionMessages.SectionNameIsEmptyMessage);
+        // Arrange
+        var parser = new SectionsParser();
+        var expectedMessage = $"*{ExceptionMessages.SectionNameIsEmptyMessage}*";
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ParserException>()
+           .WithMessage(expectedMessage);
     }
 
     [TestMethod]
     public void Parse_WhenTheSectionIsRepeated_ShouldThrowParserException()
     {
+        // Arrange
         string data = @"  
                 [section1]
                 12
@@ -175,19 +166,38 @@ public class SectionsParserTests
                 15
                 78
             ";
-        CheckMessageException(data, ExceptionMessages.SeccionIsRepeatedMessage);
+        var parser = new SectionsParser();
+        var expectedMessage = $"*{ExceptionMessages.SeccionIsRepeatedMessage}*";
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ParserException>()
+           .WithMessage(expectedMessage);
     }
 
     [TestMethod]
     public void Parse_WhenAnElementIsNotPartOfAnySection_ShouldThrowParserException()
     {
+        // Arrange
         string data = @"  
                 Hello World! (this element is not part of any section)
                 [section1]
                 12
                 24
             ";
-        CheckMessageException(data, ExceptionMessages.ElementThatIsNotPartAnySectionMessage);
+        var parser = new SectionsParser();
+        var expectedMessage = $"*{ExceptionMessages.ElementThatIsNotPartAnySectionMessage}*";
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ParserException>()
+           .WithMessage(expectedMessage);
     }
 
     [TestMethod]
@@ -195,6 +205,16 @@ public class SectionsParserTests
     [DataRow("")]
     public void Parse_WhenTheDataSourceIsEmpty_ShouldThrowParserException(string data)
     {
-        CheckMessageException(data, ExceptionMessages.DataSourceIsEmptyMessage);
+        // Arrange
+        var parser = new SectionsParser();
+        var expectedMessage = $"*{ExceptionMessages.DataSourceIsEmptyMessage}*";
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ParserException>()
+           .WithMessage(expectedMessage);
     }
 }
