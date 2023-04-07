@@ -18,7 +18,7 @@ public class SingleLineSectionTests
         decimal actual = sections.GetFirstLineDecimal("section1");
 
         // Assert
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [TestMethod]
@@ -36,7 +36,7 @@ public class SingleLineSectionTests
         double actual = sections.GetFirstLineDouble("section1");
 
         // Assert
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [TestMethod]
@@ -54,7 +54,7 @@ public class SingleLineSectionTests
         float actual = sections.GetFirstLineFloat("section1");
 
         // Assert
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [TestMethod]
@@ -72,7 +72,7 @@ public class SingleLineSectionTests
         int actual = sections.GetFirstLineInt("section1");
 
         // Assert
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [TestMethod]
@@ -90,6 +90,6 @@ public class SingleLineSectionTests
         long actual = sections.GetFirstLineLong("section1");
 
         // Assert
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected);
     }
 }
