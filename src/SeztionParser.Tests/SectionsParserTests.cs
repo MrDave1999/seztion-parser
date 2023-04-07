@@ -114,7 +114,7 @@ public class SectionsParserTests
     {
         // Arrange
         var parser = new SectionsParser();
-        var expectedMessage = $"*{ExceptionMessages.SectionWithoutDataMessage}*";
+        var expectedSubstring = $"*{ExceptionMessages.SectionWithoutDataMessage}*";
 
         // Act
         Action act = () => parser.Parse(data);
@@ -122,7 +122,7 @@ public class SectionsParserTests
         // Assert
         act.Should()
            .Throw<ParserException>()
-           .WithMessage(expectedMessage);
+           .WithMessage(expectedSubstring);
     }
 
     [TestMethod]
@@ -140,7 +140,7 @@ public class SectionsParserTests
     {
         // Arrange
         var parser = new SectionsParser();
-        var expectedMessage = $"*{ExceptionMessages.SectionNameIsEmptyMessage}*";
+        var expectedSubstring = $"*{ExceptionMessages.SectionNameIsEmptyMessage}*";
 
         // Act
         Action act = () => parser.Parse(data);
@@ -148,7 +148,7 @@ public class SectionsParserTests
         // Assert
         act.Should()
            .Throw<ParserException>()
-           .WithMessage(expectedMessage);
+           .WithMessage(expectedSubstring);
     }
 
     [TestMethod]
@@ -167,7 +167,7 @@ public class SectionsParserTests
                 78
             ";
         var parser = new SectionsParser();
-        var expectedMessage = $"*{ExceptionMessages.SeccionIsRepeatedMessage}*";
+        var expectedSubstring = $"*{ExceptionMessages.SeccionIsRepeatedMessage}*";
 
         // Act
         Action act = () => parser.Parse(data);
@@ -175,7 +175,7 @@ public class SectionsParserTests
         // Assert
         act.Should()
            .Throw<ParserException>()
-           .WithMessage(expectedMessage);
+           .WithMessage(expectedSubstring);
     }
 
     [TestMethod]
@@ -189,7 +189,7 @@ public class SectionsParserTests
                 24
             ";
         var parser = new SectionsParser();
-        var expectedMessage = $"*{ExceptionMessages.ElementThatIsNotPartAnySectionMessage}*";
+        var expectedSubstring = $"*{ExceptionMessages.ElementThatIsNotPartAnySectionMessage}*";
 
         // Act
         Action act = () => parser.Parse(data);
@@ -197,7 +197,7 @@ public class SectionsParserTests
         // Assert
         act.Should()
            .Throw<ParserException>()
-           .WithMessage(expectedMessage);
+           .WithMessage(expectedSubstring);
     }
 
     [TestMethod]
@@ -207,7 +207,7 @@ public class SectionsParserTests
     {
         // Arrange
         var parser = new SectionsParser();
-        var expectedMessage = $"*{ExceptionMessages.DataSourceIsEmptyMessage}*";
+        var expectedSubstring = $"*{ExceptionMessages.DataSourceIsEmptyMessage}*";
 
         // Act
         Action act = () => parser.Parse(data);
@@ -215,6 +215,6 @@ public class SectionsParserTests
         // Assert
         act.Should()
            .Throw<ParserException>()
-           .WithMessage(expectedMessage);
+           .WithMessage(expectedSubstring);
     }
 }
