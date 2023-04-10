@@ -11,4 +11,10 @@
     <ProjectReference Include="..\SeztionParser\SeztionParser.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Aim_Headshot.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
