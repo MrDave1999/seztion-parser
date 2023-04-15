@@ -8,15 +8,15 @@ public class SectionsParserTests
     {
         // Arrange
         string data = @"
-                [section1]   
-                23
-                15
-                [section2]
-                32
-                11
-                [section3]
-                3
-            ";
+            [section1]   
+            23
+            15
+            [section2]
+            32
+            11
+            [section3]
+            3
+        ";
         var parser = new SectionsParser();
         var expected = new[] { "section1", "section2", "section3" };
 
@@ -32,17 +32,17 @@ public class SectionsParserTests
     public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
     {
         string data = @"
-                [section1]   
-                1
-                2
-                3
-                4
-                [section2]
-                1
-                2
-                3
-                4
-            ";
+            [section1]   
+            1
+            2
+            3
+            4
+            [section2]
+            1
+            2
+            3
+            4
+        ";
         var parser = new SectionsParser();
         var expected = new[] { "1", "2", "3", "4" };
 
@@ -59,18 +59,18 @@ public class SectionsParserTests
     {
         // Arrange
         string data = @"
-                #comment1
-                [section1]
-                #comment2
-                23
-                #comment3       
-                15
-                #comment4
-                [section2]
-                #comment5
-                34
-                #comment6
-            ";
+            #comment1
+            [section1]
+            #comment2
+            23
+            #comment3       
+            15
+            #comment4
+            [section2]
+            #comment5
+            34
+            #comment6
+        ";
         var parser = new SectionsParser();
 
         // Act
@@ -89,27 +89,27 @@ public class SectionsParserTests
 
     [TestMethod]
     [DataRow(@"
-             [section1]
+        [section1]
                           
-        ")]
+    ")]
     [DataRow(@"
-             [section1]
-             12
-             24
-             [section2]
-             [section3]
-             15
-             26  
-        ")]
+        [section1]
+        12
+        24
+        [section2]
+        [section3]
+        15
+        26  
+    ")]
     [DataRow(@"
-             [section1]
-             12
-             24
-             [section2]
-             15
-             67
-             [section3]
-        ")]
+        [section1]
+        12
+        24
+        [section2]
+        15
+        67
+        [section3]
+    ")]
     public void Parse_WhenSectionHasNoData_ShouldThrowParserException(string data)
     {
         // Arrange
@@ -127,15 +127,15 @@ public class SectionsParserTests
 
     [TestMethod]
     [DataRow(@"
-             []
-             15
-             67
-        ")]
+        []
+        15
+        67
+    ")]
     [DataRow(@"
-             [       ]
-             15
-             78
-        ")]
+        [       ]
+        15
+        78
+    ")]
     public void Parse_WhenTheSectionNameIsEmpty_ShouldThrowParserException(string data)
     {
         // Arrange
@@ -156,16 +156,16 @@ public class SectionsParserTests
     {
         // Arrange
         string data = @"  
-                [section1]
-                12
-                24
-                [section2]
-                15
-                67
-                [section1]
-                15
-                78
-            ";
+            [section1]
+            12
+            24
+            [section2]
+            15
+            67
+            [section1]
+            15
+            78
+        ";
         var parser = new SectionsParser();
         var expectedSubstring = $"*{ExceptionMessages.SeccionIsRepeatedMessage}*";
 
@@ -183,11 +183,11 @@ public class SectionsParserTests
     {
         // Arrange
         string data = @"  
-                Hello World! (this element is not part of any section)
-                [section1]
-                12
-                24
-            ";
+            Hello World! (this element is not part of any section)
+            [section1]
+            12
+            24
+        ";
         var parser = new SectionsParser();
         var expectedSubstring = $"*{ExceptionMessages.ElementThatIsNotPartAnySectionMessage}*";
 

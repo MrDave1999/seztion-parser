@@ -8,9 +8,9 @@ public class SingleLineSectionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-            ";
+            [section1]
+            12.456
+        ";
         var sections = new SectionsParser().Parse(data);
         decimal expected = 12.456M;
 
@@ -26,9 +26,9 @@ public class SingleLineSectionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-            ";
+            [section1]
+            12.456
+        ";
         var sections = new SectionsParser().Parse(data);
         double expected = 12.456;
 
@@ -44,9 +44,9 @@ public class SingleLineSectionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-            ";
+            [section1]
+            12.456
+        ";
         var sections = new SectionsParser().Parse(data);
         float expected = 12.456f;
 
@@ -62,9 +62,9 @@ public class SingleLineSectionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12
-            ";
+            [section1]
+            12
+        ";
         var sections = new SectionsParser().Parse(data);
         int expected = 12;
 
@@ -80,9 +80,9 @@ public class SingleLineSectionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12
-            ";
+            [section1]
+            12
+        ";
         var sections = new SectionsParser().Parse(data);
         long expected = 12;
 

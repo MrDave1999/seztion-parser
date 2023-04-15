@@ -8,11 +8,11 @@ public class SectionDataConversionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-                13.564
-                67.21
-            ";
+            [section1]
+            12.456
+            13.564
+            67.21
+        ";
         var sections = new SectionsParser().Parse(data);
         var expected = new decimal[] { 12.456M, 13.564M, 67.21M };
 
@@ -29,11 +29,11 @@ public class SectionDataConversionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-                13.564
-                67.21
-            ";
+            [section1]
+            12.456
+            13.564
+            67.21
+        ";
         var sections = new SectionsParser().Parse(data);
         var expected = new double[] { 12.456, 13.564, 67.21 };
 
@@ -50,11 +50,11 @@ public class SectionDataConversionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12.456
-                13.564
-                67.21
-            ";
+            [section1]
+            12.456
+            13.564
+            67.21
+        ";
         var sections = new SectionsParser().Parse(data);
         var expected = new float[] { 12.456f, 13.564f, 67.21f };
 
@@ -71,11 +71,11 @@ public class SectionDataConversionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12
-                13
-                67
-            ";
+            [section1]
+            12
+            13
+            67
+        ";
         var sections = new SectionsParser().Parse(data);
         var expected = new int[] { 12, 13, 67 };
 
@@ -92,11 +92,11 @@ public class SectionDataConversionTests
     {
         // Arrange
         string data = @"
-                [section1]
-                12
-                13
-                67
-            ";
+            [section1]
+            12
+            13
+            67
+        ";
         var sections = new SectionsParser().Parse(data);
         var expected = new long[] { 12, 13, 67 };
 
