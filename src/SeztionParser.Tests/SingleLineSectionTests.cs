@@ -7,7 +7,7 @@ public class SingleLineSectionTests
     public void GetFirstLineDecimal_WhenTheConversionIsValid_ShouldReturnDecimal()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]
             12.456
         ";
@@ -25,7 +25,7 @@ public class SingleLineSectionTests
     public void GetFirstLineDouble_WhenTheConversionIsValid_ShouldReturnDouble()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]
             12.456
         ";
@@ -43,7 +43,7 @@ public class SingleLineSectionTests
     public void GetFirstLineFloat_WhenTheConversionIsValid_ShouldReturnFloat()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]
             12.456
         ";
@@ -61,7 +61,7 @@ public class SingleLineSectionTests
     public void GetFirstLineInt_WhenTheConversionIsValid_ShouldReturnInt()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]
             12
         ";
@@ -79,7 +79,7 @@ public class SingleLineSectionTests
     public void GetFirstLineLong_WhenTheConversionIsValid_ShouldReturnLong()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]
             12
         ";

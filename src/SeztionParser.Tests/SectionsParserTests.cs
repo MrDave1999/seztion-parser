@@ -7,7 +7,7 @@ public class SectionsParserTests
     public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
     {
         // Arrange
-        string data = @"
+        var data = @"
             [section1]   
             23
             15
@@ -31,7 +31,7 @@ public class SectionsParserTests
     [TestMethod]
     public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
     {
-        string data = @"
+        var data = @"
             [section1]   
             1
             2
@@ -58,7 +58,7 @@ public class SectionsParserTests
     public void Parse_WhenReadAComment_ShouldIgnoreTheComment()
     {
         // Arrange
-        string data = @"
+        var data = @"
             #comment1
             [section1]
             #comment2
@@ -155,7 +155,7 @@ public class SectionsParserTests
     public void Parse_WhenTheSectionIsRepeated_ShouldThrowParserException()
     {
         // Arrange
-        string data = @"  
+        var data = @"  
             [section1]
             12
             24
@@ -182,7 +182,7 @@ public class SectionsParserTests
     public void Parse_WhenAnElementIsNotPartOfAnySection_ShouldThrowParserException()
     {
         // Arrange
-        string data = @"  
+        var data = @"  
             Hello World! (this element is not part of any section)
             [section1]
             12
