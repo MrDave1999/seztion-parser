@@ -11,7 +11,7 @@
 
 There is a history behind why this library exists.
 
-Some time ago I was creating a gamemode in [SA-MP](https://www.sa-mp.com/) (San Andreas Multiplayer, a multiplayer mod for GTA San Andrea) that was based on two teams (Alpha and Beta), so I needed to somehow store the **spawn positions** (is the location where the player appears on the map) of a given map (the place where the player plays).
+Some time ago I was creating a gamemode in [SA-MP](https://sa-mp.mp/) (San Andreas Multiplayer, a multiplayer mod for GTA San Andrea) that was based on two teams (Alpha and Beta), so I needed to somehow store the **spawn positions** (is the location where the player appears on the map) of a given map (the place where the player plays).
 
 Then it occurred to me that I could save the spawn positions in a file in this way:
 ```ini
