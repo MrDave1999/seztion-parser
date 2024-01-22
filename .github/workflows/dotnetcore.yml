@@ -22,4 +22,4 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
     - name: Test 
-      run: dotnet test ./src/SeztionParser.Tests/SeztionParser.Tests.csproj
+      run: dotnet test ./src/SeztionParser.Tests/SeztionParser.Tests.csproj -c Release
