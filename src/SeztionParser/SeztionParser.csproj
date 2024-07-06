@@ -16,7 +16,8 @@
     <Description>seztion-parser is a class library used to read data from each section of a file (the file extension can be any, e.g. .INI).</Description>
     <PackageIcon>seztionparser-icon-nuget.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.2</Version>
+    <Version>2.0.0</Version>
+    <PackageReleaseNotes>See https://github.com/MrDave1999/seztion-parser/releases</PackageReleaseNotes>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
 
