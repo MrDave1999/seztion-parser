@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeztionParser.Exceptions;
+namespace SeztionParser;
 
 /// <summary>
 /// The exception that is thrown when the specified section does not exist in the collection.

@@ -1,5 +1,4 @@
-﻿using SeztionParser.Facades;
-using SeztionParser.Helpers;
+﻿using SeztionParser;
 
 var sections = SectionsFile.Load("Aim_Headshot.ini");
 

@@ -1,4 +1,4 @@
-﻿namespace SeztionParser.Tests;
+﻿namespace SeztionParser.Tests.Reader;
 
 [TestClass]
 public class SectionDataConversionTests
@@ -82,7 +82,7 @@ public class SectionDataConversionTests
         // Act
         var enumerable = sections.ToInt("section1");
         var actual = enumerable.ToArray();
-        
+
         // Assert
         actual.Should().BeEquivalentTo(expected);
     }

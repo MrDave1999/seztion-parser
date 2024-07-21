@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeztionParser.Exceptions;
+namespace SeztionParser;
 
 /// <summary>
 /// The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section.

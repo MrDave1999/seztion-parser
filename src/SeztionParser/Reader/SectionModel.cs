@@ -1,10 +1,9 @@
-﻿using SeztionParser.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using static System.Environment;
 
-namespace SeztionParser.Models;
+namespace SeztionParser;
 
 /// <summary>
 /// Represents a section.

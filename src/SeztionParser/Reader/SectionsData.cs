@@ -1,13 +1,10 @@
-﻿using SeztionParser.Exceptions;
-using SeztionParser.Interfaces;
-using SeztionParser.Models;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using static SeztionParser.Constants.ExceptionMessages;
+using static SeztionParser.ExceptionMessages;
 
-namespace SeztionParser.Providers;
+namespace SeztionParser;
 
 /// <inheritdoc cref="ISectionsData" />
 /// <remarks>

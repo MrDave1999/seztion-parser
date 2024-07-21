@@ -1,12 +1,9 @@
-﻿using SeztionParser.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using SeztionParser.Providers;
 using System.Text;
 using System.Globalization;
-using SeztionParser.Exceptions;
 
-namespace SeztionParser.Helpers;
+namespace SeztionParser;
 
 /// <summary>
 /// Defines operations that serve to convert a section data to another data type.

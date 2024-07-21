@@ -1,12 +1,9 @@
-﻿using SeztionParser.Interfaces;
-using static System.Environment;
-using SeztionParser.Constants;
-using SeztionParser.Exceptions;
+﻿using static System.Environment;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeztionParser.Providers;
+namespace SeztionParser;
 
 /// <summary>
 /// Defines the operations that control the parser behavior.

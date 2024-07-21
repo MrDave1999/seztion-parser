@@ -1,11 +1,9 @@
-﻿using SeztionParser.Exceptions;
-using SeztionParser.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace SeztionParser.Helpers;
+namespace SeztionParser;
 
 /// <summary>
 /// Defines operations used to gets the first line of a section in a specific format.

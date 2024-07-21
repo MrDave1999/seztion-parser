@@ -1,11 +1,9 @@
-﻿using SeztionParser.Interfaces;
-using SeztionParser.Providers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace SeztionParser.Facades;
+namespace SeztionParser;
 
 /// <summary>
 /// Defines the operations that can be applied to a sections file.

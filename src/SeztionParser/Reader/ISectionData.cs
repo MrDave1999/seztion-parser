@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeztionParser.Interfaces;
+namespace SeztionParser;
 
 /// <summary>
 /// Represents a collection of data from a specific section.

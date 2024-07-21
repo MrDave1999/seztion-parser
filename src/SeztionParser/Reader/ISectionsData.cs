@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SeztionParser.Exceptions;
-using SeztionParser.Models;
 
-namespace SeztionParser.Interfaces;
+namespace SeztionParser;
 
 /// <summary>
 /// Represents a collection of sections.
