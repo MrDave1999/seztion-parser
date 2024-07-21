@@ -1,7 +1,7 @@
-﻿using static System.Environment;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Environment;
 
 namespace SeztionParser;
 
@@ -10,33 +10,6 @@ namespace SeztionParser;
 /// </summary>
 public class SectionsParser : ISectionsParser
 {
-    /// <summary>
-    /// Check if the text is a comment.
-    /// </summary>
-    /// <param name="text">The text to validate.</param>
-    /// <returns><c>true</c> if is comment, otherwise <c>false</c>.</returns>
-    protected virtual bool IsComment(string text)
-        => text.TrimStart()[0] == '#';
-
-    /// <summary>
-    /// Check if the section has the correct format.
-    /// </summary>
-    /// <param name="text">The text to validate.</param>
-    /// <returns><c>true</c> if the section is correctly format, otherwise <c>false</c>.</returns>
-    protected virtual bool IsSection(ref string text)
-    {
-        text = text.Trim();
-        return text[0] == '[' && text[text.Length - 1] == ']';
-    }
-
-    /// <summary>
-    /// Extracts the name of the section.
-    /// </summary>
-    /// <param name="text">The section to extract.</param>
-    /// <returns>The name of the extracted section.</returns>
-    protected virtual string ExtractSection(string text)
-         => text.Substring(1, text.Length - 2);
-
     /// <inheritdoc />
     public ISectionsData Parse(string data)
     {
@@ -80,4 +53,31 @@ public class SectionsParser : ISectionsParser
 
     private Exception Create(string message) => new ParserException(message);
     private Exception Create(string message, object actualValue) => new ParserException(message, actualValue);
+
+    /// <summary>
+    /// Check if the text is a comment.
+    /// </summary>
+    /// <param name="text">The text to validate.</param>
+    /// <returns><c>true</c> if is comment, otherwise <c>false</c>.</returns>
+    private bool IsComment(string text)
+        => text.TrimStart()[0] == '#';
+
+    /// <summary>
+    /// Check if the section has the correct format.
+    /// </summary>
+    /// <param name="text">The text to validate.</param>
+    /// <returns><c>true</c> if the section is correctly format, otherwise <c>false</c>.</returns>
+    private bool IsSection(ref string text)
+    {
+        text = text.Trim();
+        return text[0] == '[' && text[text.Length - 1] == ']';
+    }
+
+    /// <summary>
+    /// Extracts the name of the section.
+    /// </summary>
+    /// <param name="text">The section to extract.</param>
+    /// <returns>The name of the extracted section.</returns>
+    private string ExtractSection(string text)
+         => text.Substring(1, text.Length - 2);
 }
