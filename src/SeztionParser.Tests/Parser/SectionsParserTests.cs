@@ -1,4 +1,4 @@
-namespace SeztionParser.Tests;
+namespace SeztionParser.Tests.Parser;
 
 [TestClass]
 public class SectionsParserTests
@@ -51,7 +51,7 @@ public class SectionsParserTests
 
         // Assert
         sections["section1"].Should().Contain(expected);
-        sections["section2"].Should().Contain(expected);;
+        sections["section2"].Should().Contain(expected); ;
     }
 
     [TestMethod]
@@ -77,14 +77,14 @@ public class SectionsParserTests
         var sections = parser.Parse(data);
 
         // Assert
-        sections["section1"].Should().NotContain(new[] 
-        { 
-            "#comment1", 
-            "#comment2", 
-            "#comment3", 
-            "#comment4" 
+        sections["section1"].Should().NotContain(new[]
+        {
+            "#comment1",
+            "#comment2",
+            "#comment3",
+            "#comment4"
         });
-        sections["section2"].Should().NotContain(new [] { "#comment5", "#comment6" });
+        sections["section2"].Should().NotContain(new[] { "#comment5", "#comment6" });
     }
 
     [TestMethod]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeztionParser.Constants;
+namespace SeztionParser;
 
 /// <summary>
 /// Represents error messages that can be used by the library.

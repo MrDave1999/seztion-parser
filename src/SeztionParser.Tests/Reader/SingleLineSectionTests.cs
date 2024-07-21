@@ -1,4 +1,4 @@
-﻿namespace SeztionParser.Tests;
+﻿namespace SeztionParser.Tests.Reader;
 
 [TestClass]
 public class SingleLineSectionTests

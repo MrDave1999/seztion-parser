@@ -1,11 +1,10 @@
-﻿using SeztionParser.Interfaces;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using static System.Environment;
 
-namespace SeztionParser.Providers;
+namespace SeztionParser;
 
 /// <inheritdoc cref="ISectionData" />
 class SectionData : ISectionData
