@@ -39,5 +39,7 @@ public class ParserException : Exception
     /// Gets a message that describes the current exception.
     /// </summary>
     public override string Message
-        => actualValue != null ? base.Message + " (Actual Value: " + actualValue + ")" : base.Message;
+        => actualValue != null ? 
+            base.Message + $" ({ExceptionMessages.ActualValue}: {actualValue})" : 
+            base.Message;
 }
