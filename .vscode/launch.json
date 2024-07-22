@@ -14,7 +14,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/SeztionParser.Example/bin/Debug/net6.0/SeztionParser.Example.dll",
+            "program": "${workspaceFolder}/src/SeztionParser.Example/bin/Debug/net8.0/SeztionParser.Example.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/SeztionParser.Example",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
