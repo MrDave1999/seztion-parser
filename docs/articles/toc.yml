@@ -6,5 +6,3 @@
   href: single_line_section.md
 - name: Parser
   href: parser.md
-- name: Dependency injection
-  href: dependency_injection.md
