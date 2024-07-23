@@ -36,7 +36,7 @@ Then it occurred to me that I could save the spawn positions in a file in this w
 ```
 And this is where the **seztion-parzer** library comes into play, as it is simple to extract this data with this library. I didn't want to use a database for this, I wanted something very simple and this is what I came up with at the time.
 
-Don't forget to visit the official library [website](https://mrdave1999.github.io/seztion-parser) where you can find [API documentation](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.html), [articles](https://mrdave1999.github.io/seztion-parser/articles/getting_started.html) and [diagrams](https://mrdave1999.github.io/seztion-parser/diagrams/package_diagram.html).
+Don't forget to visit the official library [website](https://mrdave1999.github.io/seztion-parser) where you can find [API documentation](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.html) and [articles](https://mrdave1999.github.io/seztion-parser/articles/getting_started.html).
 
 ## Installation
 
