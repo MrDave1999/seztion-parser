@@ -4,7 +4,7 @@
 
 If you're an hardcore and want to do it manually, you must add the following to the `csproj` file:
 ```xml
-<PackageReference Include="seztion-parser" Version="1.0.2" />
+<PackageReference Include="seztion-parser" Version="3.0.0" />
 ```
 If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the **Tools** > **NuGet Package Manager** > **Package Manager Console** command and run the install command:
 ```
@@ -42,7 +42,7 @@ This file has comments and sections. `Positions1` and `Positions2` are sections 
 ### Load
 You must import all namespace types:
 ```cs
-using SeztionParser.Facades;
+using SeztionParser;
 ```
 You can then use the `Load` method of the `SectionsFile` class to load the **sections file** and it will return an instance of type `ISectionsData` that will allow you to access the **sections data**.
 ```cs
@@ -144,10 +144,6 @@ foreach (SectionModel section in sections)
     ]
 */
 ```
-**Note:** Do not forget to import all namespace types:
-```cs
-using SeztionParser.Models;
-```
 ### SectionsData To String
 You can also convert the instance of type `ISectionsData` into an object of type `String`:
 ```cs
@@ -175,9 +171,6 @@ Console.WriteLine(sections.ToString());
 ### Properties SectionModel class
 You can also gets the **amount of data** and **name** for each section:
 ```cs
-// You must import all the types.
-using SeztionParser.Models;
-
 foreach (SectionModel section in sections)
     Console.WriteLine($"{section.Name}, {section.Data.Count}");
 /*
@@ -197,5 +190,5 @@ foreach (var(name, data) in sections)
 */
 ```
 
-**Note:** If you don't know what each class does, don't forget to check the [API documentation](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.Exceptions.html).
+**Note:** If you don't know what each class does, don't forget to check the [API documentation](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.html).
 

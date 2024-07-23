@@ -34,7 +34,7 @@ Console.WriteLine(sections["Prices2"][0]);
 To convert all the data in a section to a particular type (such as `int`, `double` or `float`), you must write the following:
 ```cs
 // Import all types to use the extension methods.
-using SeztionParser.Helpers;
+using SeztionParser;
 
 IEnumerable<double> prices = sections.ToDouble("Prices1");
 foreach (double data in prices)
@@ -42,4 +42,4 @@ foreach (double data in prices)
 ```
 The methods `ToDouble`, `ToInt`, etc. do not return all the data in a collection and this is to avoid memory consumption, so it returns an instance that implements the `IEnumerable` interface and this way, you can retrieve a data every time you need it.
 
-You can review all extension methods at this [link](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.Helpers.SectionDataConversion.html).
+You can review all extension methods at this [link](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.SectionDataConversion.html).

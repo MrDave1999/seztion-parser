@@ -4,25 +4,13 @@ You can also gets the section data using the parser.
 
 You must import all namespace types:
 ```cs
-using SeztionParser.Providers;
+using SeztionParser;
 ```
 
 You must use the `Parse` method of the `SectionsParser` class to return an instance of type `ISectionsData`:
 ```cs
 var parser = new SectionsParser();
 var sections = parser.Parse(File.ReadAllText("test.ini"));
-```
-You can also customize the parser by inheriting from `SectionsParser` and override methods such as: `IsComment`, `IsSection` and `ExtractSection`.
-
-**Example:**
-```cs
-class CustomParser : SectionsParser
-{
-    public override string ExtractSection(string text)
-    {
-        // You can propose your own implementation.
-    }
-}
 ```
 
 ## Parser rules
