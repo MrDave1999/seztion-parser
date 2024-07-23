@@ -11,7 +11,7 @@
       ],
       "properties": 
        { 
-           "TargetFramework": "netstandard2.0"
+          "TargetFramework": "netstandard2.0"
        },
       "dest": "api",
       "filter": "filterConfig.yml",  
@@ -29,8 +29,6 @@
       },
       {
         "files": [
-          "diagrams/**.md",
-          "diagrams/**/toc.yml",
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
