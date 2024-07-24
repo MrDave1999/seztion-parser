@@ -17,6 +17,14 @@ public class ParserException : Exception
     public object ActualValue => actualValue;
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="ParserException" /> class with a default message.
+    /// </summary>
+    public ParserException() : base(ExceptionMessages.ParserDefaultMessage)
+    {
+        
+    }
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="ParserException" /> class with a specified error message.
     /// </summary>
     /// <param name="message">The message that describes the error.</param>
