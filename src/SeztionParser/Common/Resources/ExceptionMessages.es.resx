@@ -126,11 +126,17 @@
   <data name="ElementThatIsNotPartAnySectionMessage" xml:space="preserve">
     <value>El analizador ha encontrado un elemento que no forma parte de ninguna sección</value>
   </data>
+  <data name="ParserDefaultMessage" xml:space="preserve">
+    <value>Se ha producido un error al analizar una fuente de datos con secciones</value>
+  </data>
   <data name="SeccionIsRepeatedMessage" xml:space="preserve">
     <value>El analizador ha encontrado una sección repetida</value>
   </data>
   <data name="SectionNameIsEmptyMessage" xml:space="preserve">
     <value>El analizador ha encontrado un nombre de sección vacío</value>
+  </data>
+  <data name="SectionNotFoundDefaultMessage" xml:space="preserve">
+    <value>No se ha encontrado la sección</value>
   </data>
   <data name="SectionWithoutDataMessage" xml:space="preserve">
     <value>El analizador ha encontrado una sección sin datos</value>

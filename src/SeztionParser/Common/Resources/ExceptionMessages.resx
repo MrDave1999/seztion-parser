@@ -126,11 +126,17 @@
   <data name="ElementThatIsNotPartAnySectionMessage" xml:space="preserve">
     <value>Parser found an element that is not part of any section</value>
   </data>
+  <data name="ParserDefaultMessage" xml:space="preserve">
+    <value>An error occurred while parsing a data source with sections</value>
+  </data>
   <data name="SeccionIsRepeatedMessage" xml:space="preserve">
     <value>Parser found a repeated section</value>
   </data>
   <data name="SectionNameIsEmptyMessage" xml:space="preserve">
     <value>Parser found an empty section name</value>
+  </data>
+  <data name="SectionNotFoundDefaultMessage" xml:space="preserve">
+    <value>The section was not found</value>
   </data>
   <data name="SectionWithoutDataMessage" xml:space="preserve">
     <value>Parser found a section without data</value>

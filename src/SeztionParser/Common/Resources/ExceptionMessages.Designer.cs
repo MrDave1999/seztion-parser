@@ -88,6 +88,15 @@ namespace SeztionParser {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred while parsing a data source with sections.
+        /// </summary>
+        internal static string ParserDefaultMessage {
+            get {
+                return ResourceManager.GetString("ParserDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Parser found a repeated section.
         /// </summary>
         internal static string SeccionIsRepeatedMessage {
@@ -102,6 +111,15 @@ namespace SeztionParser {
         internal static string SectionNameIsEmptyMessage {
             get {
                 return ResourceManager.GetString("SectionNameIsEmptyMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The section was not found.
+        /// </summary>
+        internal static string SectionNotFoundDefaultMessage {
+            get {
+                return ResourceManager.GetString("SectionNotFoundDefaultMessage", resourceCulture);
             }
         }
         
