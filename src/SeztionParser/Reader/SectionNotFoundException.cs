@@ -18,6 +18,15 @@ public class SectionNotFoundException : ArgumentException
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="SectionNotFoundException" /> class with a specified error message.
+    /// </summary>
+    /// <param name="message">The message that describes the error.</param>
+    public SectionNotFoundException(string message) : base(message)
+    {
+        
+    }
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="SectionNotFoundException" /> class with a specified error message and the name of the parameter that causes this exception.
     /// </summary>
     /// <param name="message">The message that describes the error.</param>
