@@ -10,6 +10,14 @@ namespace SeztionParser;
 public class SectionNotFoundException : ArgumentException
 {
     /// <summary>
+    /// Initializes a new instance of the <see cref="SectionNotFoundException" /> class with a default message.
+    /// </summary>
+    public SectionNotFoundException() : base(ExceptionMessages.SectionNotFoundDefaultMessage)
+    {
+        
+    }
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="SectionNotFoundException" /> class with a specified error message and the name of the parameter that causes this exception.
     /// </summary>
     /// <param name="message">The message that describes the error.</param>
