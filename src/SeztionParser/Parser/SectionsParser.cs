@@ -18,8 +18,8 @@ public class SectionsParser : ISectionsParser
 
         var lines = data.Split(NewLine.ToCharArray());
         var sections = new SectionsData();
-        SectionData sectionData = null;
-        string sectionName = null;
+        SectionData sectionData = default;
+        string sectionName = string.Empty;
         int len = lines.Length;
         for (int i = 0; i < len; ++i)
         {
