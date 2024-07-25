@@ -48,8 +48,8 @@ public class SectionsParser : ISectionsParser
                 sectionData.Add(lines[i]);
             }
         }
-        bool IsEmptyLastSection = sectionData.Count == 0;
-        if (IsEmptyLastSection)
+        bool isEmptyLastSection = sectionData.Count == 0;
+        if (isEmptyLastSection)
             throw new ParserException(ExceptionMessages.SectionWithoutDataMessage, sectionName);
 
         return sections;
