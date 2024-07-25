@@ -31,8 +31,11 @@ internal class SectionData : ISectionData
     public int Count => _section.Count;
 
     /// <inheritdoc />
-    public bool Contains(string item) 
-        => _section.Contains(item);
+    public bool Contains(string item)
+    {
+        ThrowHelper.ThrowIfNull(item, nameof(item));
+        return _section.Contains(item);
+    }
 
     /// <summary>
     /// Returns an enumerator used to traverse the data of a specified section.

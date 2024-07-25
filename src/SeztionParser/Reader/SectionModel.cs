@@ -34,8 +34,13 @@ public readonly struct SectionModel
     /// </summary>
     /// <param name="name">The name of the section.</param>
     /// <param name="data">The section data.</param>
+    /// <exception cref="ArgumentNullException">
+    /// <paramref name="name"/> or <paramref name="data"/> is <c>null</c>.
+    /// </exception>
     public SectionModel(string name, ISectionData data)
     {
+        ThrowHelper.ThrowIfNull(name, nameof(name));
+        ThrowHelper.ThrowIfNull(data, nameof(data));
         _name = name;
         _data = data;
     }

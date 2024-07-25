@@ -201,8 +201,25 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    [DataRow("       ")]
+    public void Parse_WhenArgumentIsNull_ShouldThrowArgumentNullException()
+    {
+        // Arrange
+        var parser = new SectionsParser();
+        var data = default(string);
+
+        // Act
+        Action act = () => parser.Parse(data);
+
+        // Assert
+        act.Should()
+           .Throw<ArgumentNullException>()
+           .WithParameterName(nameof(data));
+    }
+
+    [TestMethod]
     [DataRow("")]
+    [DataRow(" ")]
+    [DataRow("       ")]
     public void Parse_WhenTheDataSourceIsEmpty_ShouldThrowParserException(string data)
     {
         // Arrange
