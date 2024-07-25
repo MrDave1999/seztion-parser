@@ -23,16 +23,18 @@ public class SectionsParser : ISectionsParser
         int len = lines.Length;
         for (int i = 0; i < len; ++i)
         {
-            if (string.IsNullOrWhiteSpace(lines[i]) || IsComment(lines[i]))
+            var line = lines[i];
+
+            if (string.IsNullOrWhiteSpace(line) || IsComment(line))
                 continue;
 
-            if (IsSection(ref lines[i]))
+            if (IsSection(ref line))
             {
                 bool isEmptyPreviousSection = sectionData?.Count == 0;
                 if (isEmptyPreviousSection)
                     throw new ParserException(ExceptionMessages.SectionWithoutDataMessage, sectionName);
 
-                sectionName = ExtractSection(lines[i]);
+                sectionName = ExtractSection(line);
                 if (string.IsNullOrWhiteSpace(sectionName))
                     throw new ParserException(ExceptionMessages.SectionNameIsEmptyMessage);
 
@@ -44,9 +46,9 @@ public class SectionsParser : ISectionsParser
             else
             {
                 if (sectionData is null)
-                    throw new ParserException(ExceptionMessages.ElementThatIsNotPartAnySectionMessage, lines[i]);
+                    throw new ParserException(ExceptionMessages.ElementThatIsNotPartAnySectionMessage, line);
 
-                sectionData.Add(lines[i]);
+                sectionData.Add(line);
             }
         }
         bool isEmptyLastSection = sectionData.Count == 0;
