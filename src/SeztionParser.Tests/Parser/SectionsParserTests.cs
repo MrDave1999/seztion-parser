@@ -185,7 +185,7 @@ public class SectionsParserTests
             [section2]
             15
             67
-            [section1]
+            [SECTION1]
             15
             78
         ";
