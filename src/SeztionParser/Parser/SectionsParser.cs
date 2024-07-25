@@ -27,8 +27,8 @@ public class SectionsParser : ISectionsParser
                 continue;
             if (IsSection(ref lines[i]))
             {
-                bool IsEmptyPreviousSection = sectionData?.Count == 0;
-                if (IsEmptyPreviousSection)
+                bool isEmptyPreviousSection = sectionData?.Count == 0;
+                if (isEmptyPreviousSection)
                     throw new ParserException(ExceptionMessages.SectionWithoutDataMessage, sectionName);
 
                 sectionName = ExtractSection(lines[i]);
