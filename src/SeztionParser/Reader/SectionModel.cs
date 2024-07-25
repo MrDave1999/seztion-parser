@@ -10,8 +10,8 @@ namespace SeztionParser;
 /// </summary>
 public readonly struct SectionModel
 {
-    private readonly string name;
-    private readonly ISectionData data;
+    private readonly string _name;
+    private readonly ISectionData _data;
 
     /// <summary>
     /// Allows access to the section name.
@@ -19,7 +19,7 @@ public readonly struct SectionModel
     /// <value>
     /// The name of the section.
     /// </value>
-    public string Name => name;
+    public string Name => _name;
 
     /// <summary>
     /// Allows access to the section data.
@@ -27,7 +27,7 @@ public readonly struct SectionModel
     /// <value>
     /// An collection of section data.
     /// </value>
-    public ISectionData Data => data;
+    public ISectionData Data => _data;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="SectionModel" /> structure with the specified name and data.
@@ -36,8 +36,8 @@ public readonly struct SectionModel
     /// <param name="data">The section data.</param>
     public SectionModel(string name, ISectionData data)
     {
-        this.name = name;
-        this.data = data;
+        _name = name;
+        _data = data;
     }
 
     /// <summary>

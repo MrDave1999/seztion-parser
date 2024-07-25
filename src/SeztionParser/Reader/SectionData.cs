@@ -15,31 +15,31 @@ internal class SectionData : ISectionData
     /// <value>
     /// The list with the data of a specific section.
     /// </value>
-    private readonly List<string> section = [];
+    private readonly List<string> _section = [];
 
     /// <summary>
     /// Adds an element in the section.
     /// </summary>
     /// <param name="item">The item to add in the section.</param>
     public void Add(string item)
-        => section.Add(item);
+        => _section.Add(item);
 
     /// <inheritdoc />
-    public string this[int index] => section[index];
+    public string this[int index] => _section[index];
 
     /// <inheritdoc />
-    public int Count => section.Count;
+    public int Count => _section.Count;
 
     /// <inheritdoc />
     public bool Contains(string item) 
-        => section.Contains(item);
+        => _section.Contains(item);
 
     /// <summary>
     /// Returns an enumerator used to traverse the data of a specified section.
     /// </summary>
     /// <returns>An enumerator used to traverse the data of a specified section.</returns>
     public IEnumerator<string> GetEnumerator()
-        => section.GetEnumerator();
+        => _section.GetEnumerator();
 
     /// <summary>
     /// Returns an enumerator used to traverse the data of a specified section.

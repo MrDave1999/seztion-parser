@@ -9,12 +9,12 @@ namespace SeztionParser;
 /// </summary>
 public class ParserException : Exception
 {
-    private readonly object actualValue;
+    private readonly object _actualValue;
 
     /// <summary>
     /// Allows access to the actual value causing the exception.
     /// </summary>
-    public object ActualValue => actualValue;
+    public object ActualValue => _actualValue;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ParserException" /> class with a default message.
@@ -40,14 +40,14 @@ public class ParserException : Exception
     /// <param name="actualValue">The actual value that caused the exception.</param>
     public ParserException(string message, object actualValue) : base(message)
     {
-        this.actualValue = actualValue;
+        _actualValue = actualValue;
     }
 
     /// <summary>
     /// Gets a message that describes the current exception.
     /// </summary>
     public override string Message
-        => actualValue != null ? 
-            base.Message + $" ({ExceptionMessages.ActualValue}: {actualValue})" : 
+        => _actualValue != null ? 
+            base.Message + $" ({ExceptionMessages.ActualValue}: {_actualValue})" : 
             base.Message;
 }

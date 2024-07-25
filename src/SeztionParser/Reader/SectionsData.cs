@@ -8,7 +8,8 @@ namespace SeztionParser;
 
 /// <inheritdoc cref="ISectionsData" />
 /// <remarks>
-/// This class uses the <see cref="IDictionary{TKey,TValue}" /> interface, where <c>TKey</c> represents the name of the section and the <c>TValue</c> represents the data of the section.
+/// This class uses the <see cref="IDictionary{TKey,TValue}" /> interface, where <c>TKey</c> represents 
+/// the name of the section and the <c>TValue</c> represents the data of the section.
 /// </remarks>
 internal class SectionsData : ISectionsData
 {
@@ -18,14 +19,14 @@ internal class SectionsData : ISectionsData
     /// <value>
     /// The dictionary with the data of each section.
     /// </value>
-    private readonly Dictionary<string, ISectionData> sections = [];
+    private readonly Dictionary<string, ISectionData> _sections = [];
 
     /// <inheritdoc />
     public ISectionData this[string section]
     {
         get
         {
-            if (sections.TryGetValue(section, out var value))
+            if (_sections.TryGetValue(section, out var value))
                 return value;
             throw new SectionNotFoundException(SpecifiedSectionDoesNotExistMessage, nameof(section));
         }
@@ -44,7 +45,7 @@ internal class SectionsData : ISectionsData
     {
         try
         {
-            sections.Add(section, data);
+            _sections.Add(section, data);
             return true;
         }
         catch(ArgumentException)
@@ -55,15 +56,15 @@ internal class SectionsData : ISectionsData
 
     /// <inheritdoc />
     public bool TryGetData(string section, out ISectionData data)
-        => sections.TryGetValue(section, out data);
+        => _sections.TryGetValue(section, out data);
 
     /// <inheritdoc />
     public ICollection<string> GetNames()
-        => sections.Keys;
+        => _sections.Keys;
 
     /// <inheritdoc />
     public ICollection<ISectionData> GetAll()
-        => sections.Values;
+        => _sections.Values;
 
     /// <summary>
     /// Return an enumerator used to traverse all sections of the collection.
@@ -71,7 +72,7 @@ internal class SectionsData : ISectionsData
     /// <returns>An enumerator used to traverse all sections of the collection.</returns>
     public IEnumerator<SectionModel> GetEnumerator()
     {
-        foreach(var section in sections)
+        foreach(var section in _sections)
             yield return new SectionModel(section.Key, section.Value);
     }
 
