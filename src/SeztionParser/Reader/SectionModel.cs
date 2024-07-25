@@ -8,10 +8,10 @@ namespace SeztionParser;
 /// <summary>
 /// Represents a section.
 /// </summary>
-public struct SectionModel
+public readonly struct SectionModel
 {
-    private string name;
-    private ISectionData data;
+    private readonly string name;
+    private readonly ISectionData data;
 
     /// <summary>
     /// Allows access to the section name.
