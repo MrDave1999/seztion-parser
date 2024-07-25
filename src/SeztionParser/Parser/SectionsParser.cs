@@ -25,6 +25,7 @@ public class SectionsParser : ISectionsParser
         {
             if (string.IsNullOrWhiteSpace(lines[i]) || IsComment(lines[i]))
                 continue;
+
             if (IsSection(ref lines[i]))
             {
                 bool isEmptyPreviousSection = sectionData?.Count == 0;
@@ -42,7 +43,7 @@ public class SectionsParser : ISectionsParser
             }
             else
             {
-                if (sectionData == null)
+                if (sectionData is null)
                     throw new ParserException(ExceptionMessages.ElementThatIsNotPartAnySectionMessage, lines[i]);
 
                 sectionData.Add(lines[i]);
