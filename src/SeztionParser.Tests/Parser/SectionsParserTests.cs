@@ -4,6 +4,27 @@ namespace SeztionParser.Tests.Parser;
 public class SectionsParserTests
 {
     [TestMethod]
+    public void Parse_WhenSectionNameIsCaseInsensitive_ShouldReturnsSectionValues()
+    {
+        // Arrange
+        var data = @"
+            [Section]   
+            A
+            B
+        ";
+        var parser = new SectionsParser();
+        string[] expectedValues = ["A", "B"];
+
+        // Act
+        var sections = parser.Parse(data);
+
+        // Asserts
+        sections["Section"].Should().BeEquivalentTo(expectedValues);
+        sections["section"].Should().BeEquivalentTo(expectedValues);
+        sections["SECTION"].Should().BeEquivalentTo(expectedValues);
+    }
+
+    [TestMethod]
     public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
     {
         // Arrange
