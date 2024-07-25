@@ -39,14 +39,14 @@ public class SectionsParserTests
             3
         ";
         var parser = new SectionsParser();
-        var expected = new[] { "section1", "section2", "section3" };
+        string[] expectedSections = ["section1", "section2", "section3"];
 
         // Act
         var sections = parser.Parse(data);
         var sectionNames = sections.GetNames();
 
         // Assert
-        sectionNames.Should().BeEquivalentTo(expected);
+        sectionNames.Should().BeEquivalentTo(expectedSections);
     }
 
     [TestMethod]
@@ -65,14 +65,14 @@ public class SectionsParserTests
             4
         ";
         var parser = new SectionsParser();
-        var expected = new[] { "1", "2", "3", "4" };
+        string[] expectedValues = ["1", "2", "3", "4"];
 
         // Act
         var sections = parser.Parse(data);
 
         // Assert
-        sections["section1"].Should().Contain(expected);
-        sections["section2"].Should().Contain(expected); ;
+        sections["section1"].Should().Contain(expectedValues);
+        sections["section2"].Should().Contain(expectedValues);
     }
 
     [TestMethod]
@@ -93,19 +93,21 @@ public class SectionsParserTests
             #comment6
         ";
         var parser = new SectionsParser();
+        string[] unexpected1 = 
+        [
+            "#comment1",
+            "#comment2",
+            "#comment3",
+            "#comment4"
+        ];
+        string[] unexpected2 = ["#comment5", "#comment6"];
 
         // Act
         var sections = parser.Parse(data);
 
         // Assert
-        sections["section1"].Should().NotContain(new[]
-        {
-            "#comment1",
-            "#comment2",
-            "#comment3",
-            "#comment4"
-        });
-        sections["section2"].Should().NotContain(new[] { "#comment5", "#comment6" });
+        sections["section1"].Should().NotContain(unexpected1);
+        sections["section2"].Should().NotContain(unexpected2);
     }
 
     [TestMethod]
