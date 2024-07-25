@@ -25,7 +25,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    public void Parse_WhenReadAValidSection_ShouldGetsSectionName()
+    public void Parse_WhenSectionNameIsRead_ShouldReturnsSections()
     {
         // Arrange
         var data = @"
@@ -50,7 +50,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    public void Parse_WhenNotReadASection_ShouldGetItemOfSection()
+    public void Parse_WhenSectionValueIsRead_ShouldReturnsSectionValues()
     {
         var data = @"
             [section1]   
@@ -76,7 +76,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    public void Parse_WhenReadAComment_ShouldIgnoreTheComment()
+    public void Parse_WhenCommentIsRead_ShouldIgnoreComments()
     {
         // Arrange
         var data = @"
@@ -159,7 +159,7 @@ public class SectionsParserTests
         15
         78
     ")]
-    public void Parse_WhenTheSectionNameIsEmpty_ShouldThrowParserException(string data)
+    public void Parse_WhenSectionNameIsEmpty_ShouldThrowParserException(string data)
     {
         // Arrange
         var parser = new SectionsParser();
@@ -175,7 +175,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    public void Parse_WhenTheSectionIsRepeated_ShouldThrowParserException()
+    public void Parse_WhenSectionIsRepeated_ShouldThrowParserException()
     {
         // Arrange
         var data = @"  
@@ -243,7 +243,7 @@ public class SectionsParserTests
     [DataRow("")]
     [DataRow(" ")]
     [DataRow("       ")]
-    public void Parse_WhenTheDataSourceIsEmpty_ShouldThrowParserException(string data)
+    public void Parse_WhenDataSourceIsEmpty_ShouldThrowParserException(string data)
     {
         // Arrange
         var parser = new SectionsParser();

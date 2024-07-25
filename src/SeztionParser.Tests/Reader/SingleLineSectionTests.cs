@@ -4,7 +4,7 @@
 public class SingleLineSectionTests
 {
     [TestMethod]
-    public void GetFirstLineDecimal_WhenTheConversionIsValid_ShouldReturnDecimal()
+    public void GetFirstLineDecimal_WhenConversionIsValid_ShouldReturnsDecimal()
     {
         // Arrange
         var data = @"
@@ -22,7 +22,7 @@ public class SingleLineSectionTests
     }
 
     [TestMethod]
-    public void GetFirstLineDouble_WhenTheConversionIsValid_ShouldReturnDouble()
+    public void GetFirstLineDouble_WhenConversionIsValid_ShouldReturnsDouble()
     {
         // Arrange
         var data = @"
@@ -40,7 +40,7 @@ public class SingleLineSectionTests
     }
 
     [TestMethod]
-    public void GetFirstLineFloat_WhenTheConversionIsValid_ShouldReturnFloat()
+    public void GetFirstLineFloat_WhenConversionIsValid_ShouldReturnsFloat()
     {
         // Arrange
         var data = @"
@@ -58,7 +58,7 @@ public class SingleLineSectionTests
     }
 
     [TestMethod]
-    public void GetFirstLineInt_WhenTheConversionIsValid_ShouldReturnInt()
+    public void GetFirstLineInt_WhenConversionIsValid_ShouldReturnsInt()
     {
         // Arrange
         var data = @"
@@ -76,7 +76,7 @@ public class SingleLineSectionTests
     }
 
     [TestMethod]
-    public void GetFirstLineLong_WhenTheConversionIsValid_ShouldReturnLong()
+    public void GetFirstLineLong_WhenConversionIsValid_ShouldReturnsLong()
     {
         // Arrange
         var data = @"
