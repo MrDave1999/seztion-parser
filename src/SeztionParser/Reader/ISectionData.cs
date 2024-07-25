@@ -27,5 +27,8 @@ public interface ISectionData : IEnumerable<string>
     /// </summary>
     /// <param name="item">The item to locate in the section.</param>
     /// <returns><c>true</c> if item is found in the section; otherwise, <c>false</c>.</returns>
+    /// <exception cref="ArgumentNullException">
+    /// <paramref name="item"/> is <c>null</c>.
+    /// </exception>
     bool Contains(string item);
 }

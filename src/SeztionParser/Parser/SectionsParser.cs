@@ -5,14 +5,13 @@ using static System.Environment;
 
 namespace SeztionParser;
 
-/// <summary>
-/// Defines the operations that control the parser behavior.
-/// </summary>
+/// <inheritdoc cref="ISectionsParser" />
 public class SectionsParser : ISectionsParser
 {
     /// <inheritdoc />
     public ISectionsData Parse(string data)
     {
+        ThrowHelper.ThrowIfNull(data, nameof(data));
         if (string.IsNullOrWhiteSpace(data))
             throw new ParserException(ExceptionMessages.DataSourceIsEmptyMessage);
 

@@ -26,6 +26,7 @@ internal class SectionsData : ISectionsData
     {
         get
         {
+            ThrowHelper.ThrowIfNull(section, nameof(section));
             if (_sections.TryGetValue(section, out var value))
                 return value;
             throw new SectionNotFoundException(SpecifiedSectionDoesNotExistMessage, nameof(section));
@@ -56,7 +57,10 @@ internal class SectionsData : ISectionsData
 
     /// <inheritdoc />
     public bool TryGetData(string section, out ISectionData data)
-        => _sections.TryGetValue(section, out data);
+    {
+        ThrowHelper.ThrowIfNull(section, nameof(section));
+        return _sections.TryGetValue(section, out data);
+    }
 
     /// <inheritdoc />
     public ICollection<string> GetNames()
