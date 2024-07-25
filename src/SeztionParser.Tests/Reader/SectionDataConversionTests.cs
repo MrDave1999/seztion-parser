@@ -14,7 +14,7 @@ public class SectionDataConversionTests
             67.21
         ";
         var sections = new SectionsParser().Parse(data);
-        var expected = new decimal[] { 12.456M, 13.564M, 67.21M };
+        decimal[] expected = [12.456M, 13.564M, 67.21M];
 
         // Act
         var enumerable = sections.ToDecimal("section1");
@@ -35,7 +35,7 @@ public class SectionDataConversionTests
             67.21
         ";
         var sections = new SectionsParser().Parse(data);
-        var expected = new double[] { 12.456, 13.564, 67.21 };
+        double[] expected = [12.456, 13.564, 67.21];
 
         // Act
         var enumerable = sections.ToDouble("section1");
@@ -56,7 +56,7 @@ public class SectionDataConversionTests
             67.21
         ";
         var sections = new SectionsParser().Parse(data);
-        var expected = new float[] { 12.456f, 13.564f, 67.21f };
+        float[] expected = [12.456f, 13.564f, 67.21f];
 
         // Act
         var enumerable = sections.ToFloat("section1");
@@ -77,7 +77,7 @@ public class SectionDataConversionTests
             67
         ";
         var sections = new SectionsParser().Parse(data);
-        var expected = new int[] { 12, 13, 67 };
+        int[] expected = [12, 13, 67];
 
         // Act
         var enumerable = sections.ToInt("section1");
@@ -98,7 +98,7 @@ public class SectionDataConversionTests
             67
         ";
         var sections = new SectionsParser().Parse(data);
-        var expected = new long[] { 12, 13, 67 };
+        long[] expected = [12, 13, 67];
 
         // Act
         var enumerable = sections.ToLong("section1");
