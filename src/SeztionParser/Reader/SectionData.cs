@@ -15,7 +15,7 @@ internal class SectionData : ISectionData
     /// <value>
     /// The list with the data of a specific section.
     /// </value>
-    private readonly List<string> section = new List<string>(16);
+    private readonly List<string> section = [];
 
     /// <summary>
     /// Adds an element in the section.

@@ -38,7 +38,7 @@ public class SectionsParser : ISectionsParser
                 if (string.IsNullOrWhiteSpace(sectionName))
                     throw new ParserException(ExceptionMessages.SectionNameIsEmptyMessage);
 
-                sectionData = new SectionData();
+                sectionData = [];
                 bool isRepeatedSection = !sections.Add(sectionName, sectionData);
                 if (isRepeatedSection)
                     throw new ParserException(ExceptionMessages.SeccionIsRepeatedMessage, sectionName);

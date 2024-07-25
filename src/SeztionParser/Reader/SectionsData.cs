@@ -18,7 +18,7 @@ internal class SectionsData : ISectionsData
     /// <value>
     /// The dictionary with the data of each section.
     /// </value>
-    private readonly Dictionary<string, ISectionData> sections = new Dictionary<string, ISectionData>();
+    private readonly Dictionary<string, ISectionData> sections = [];
 
     /// <inheritdoc />
     public ISectionData this[string section]
