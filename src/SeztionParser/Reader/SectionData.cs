@@ -7,7 +7,7 @@ using static System.Environment;
 namespace SeztionParser;
 
 /// <inheritdoc cref="ISectionData" />
-class SectionData : ISectionData
+internal class SectionData : ISectionData
 {
     /// <summary>
     /// Allows access to the data of a specific section.

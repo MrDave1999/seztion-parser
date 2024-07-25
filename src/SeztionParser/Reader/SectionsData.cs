@@ -10,7 +10,7 @@ namespace SeztionParser;
 /// <remarks>
 /// This class uses the <see cref="IDictionary{TKey,TValue}" /> interface, where <c>TKey</c> represents the name of the section and the <c>TValue</c> represents the data of the section.
 /// </remarks>
-class SectionsData : ISectionsData
+internal class SectionsData : ISectionsData
 {
     /// <summary>
     /// Allows access to the data of each section.
