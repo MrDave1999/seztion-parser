@@ -14,7 +14,8 @@ public class SectionsParser : ISectionsParser
     public ISectionsData Parse(string data)
     {
         if (string.IsNullOrWhiteSpace(data))
-            throw Create(ExceptionMessages.DataSourceIsEmptyMessage);
+            throw new ParserException(ExceptionMessages.DataSourceIsEmptyMessage);
+
         var lines = data.Split(NewLine.ToCharArray());
         var sections = new SectionsData();
         SectionData sectionData = null;
@@ -28,31 +29,31 @@ public class SectionsParser : ISectionsParser
             {
                 bool IsEmptyPreviousSection = sectionData?.Count == 0;
                 if (IsEmptyPreviousSection)
-                    throw Create(ExceptionMessages.SectionWithoutDataMessage, sectionName);
+                    throw new ParserException(ExceptionMessages.SectionWithoutDataMessage, sectionName);
 
                 sectionName = ExtractSection(lines[i]);
                 if (string.IsNullOrWhiteSpace(sectionName))
-                    throw Create(ExceptionMessages.SectionNameIsEmptyMessage);
+                    throw new ParserException(ExceptionMessages.SectionNameIsEmptyMessage);
+
                 sectionData = new SectionData();
                 bool isRepeatedSection = !sections.Add(sectionName, sectionData);
                 if (isRepeatedSection)
-                    throw Create(ExceptionMessages.SeccionIsRepeatedMessage, sectionName);
+                    throw new ParserException(ExceptionMessages.SeccionIsRepeatedMessage, sectionName);
             }
             else
             {
                 if (sectionData == null)
-                    throw Create(ExceptionMessages.ElementThatIsNotPartAnySectionMessage, lines[i]);
+                    throw new ParserException(ExceptionMessages.ElementThatIsNotPartAnySectionMessage, lines[i]);
+
                 sectionData.Add(lines[i]);
             }
         }
         bool IsEmptyLastSection = sectionData.Count == 0;
         if (IsEmptyLastSection)
-            throw Create(ExceptionMessages.SectionWithoutDataMessage, sectionName);
+            throw new ParserException(ExceptionMessages.SectionWithoutDataMessage, sectionName);
+
         return sections;
     }
-
-    private Exception Create(string message) => new ParserException(message);
-    private Exception Create(string message, object actualValue) => new ParserException(message, actualValue);
 
     /// <summary>
     /// Check if the text is a comment.
