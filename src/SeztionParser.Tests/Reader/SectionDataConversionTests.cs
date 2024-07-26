@@ -7,12 +7,13 @@ public class SectionDataConversionTests
     public void ToDecimal_WhenConversionIsValid_ShouldReturnsEnumerable()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-            13.564
-            67.21
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+         13.564
+         67.21
+        """;
         var sections = new SectionsParser().Parse(data);
         decimal[] expected = [12.456M, 13.564M, 67.21M];
 
@@ -28,12 +29,13 @@ public class SectionDataConversionTests
     public void ToDouble_WhenConversionIsValid_ShouldReturnsEnumerable()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-            13.564
-            67.21
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+         13.564
+         67.21
+        """;
         var sections = new SectionsParser().Parse(data);
         double[] expected = [12.456, 13.564, 67.21];
 
@@ -49,12 +51,13 @@ public class SectionDataConversionTests
     public void ToFloat_WhenConversionIsValid_ShouldReturnsEnumerable()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-            13.564
-            67.21
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+         13.564
+         67.21
+        """;
         var sections = new SectionsParser().Parse(data);
         float[] expected = [12.456f, 13.564f, 67.21f];
 
@@ -70,12 +73,13 @@ public class SectionDataConversionTests
     public void ToInt_WhenConversionIsValid_ShouldReturnsEnumerable()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12
-            13
-            67
-        ";
+        var data =
+        """
+         [section1]
+         12
+         13
+         67
+        """;
         var sections = new SectionsParser().Parse(data);
         int[] expected = [12, 13, 67];
 
@@ -91,12 +95,13 @@ public class SectionDataConversionTests
     public void ToLong_WhenConversionIsValid_ShouldReturnsEnumerable()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12
-            13
-            67
-        ";
+        var data =
+        """
+         [section1]
+         12
+         13
+         67
+        """;
         var sections = new SectionsParser().Parse(data);
         long[] expected = [12, 13, 67];
 

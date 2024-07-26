@@ -7,11 +7,12 @@ public class SectionsParserTests
     public void Parse_WhenSectionNameIsCaseInsensitive_ShouldReturnsSectionValues()
     {
         // Arrange
-        var data = @"
-            [Section]   
-            A
-            B
-        ";
+        var data =
+        """
+          [Section]   
+          A
+          B
+        """;
         var parser = new SectionsParser();
         string[] expectedValues = ["A", "B"];
 
@@ -28,16 +29,17 @@ public class SectionsParserTests
     public void Parse_WhenSectionNameIsRead_ShouldReturnsSections()
     {
         // Arrange
-        var data = @"
-            [section1]   
-            23
-            15
-            [section2]
-            32
-            11
-            [section3]
-            3
-        ";
+        var data =
+        """
+          [section1]   
+          23
+          15
+          [section2]
+          32
+          11
+          [section3]
+          3
+        """;
         var parser = new SectionsParser();
         string[] expectedSections = ["section1", "section2", "section3"];
 
@@ -52,18 +54,19 @@ public class SectionsParserTests
     [TestMethod]
     public void Parse_WhenSectionValueIsRead_ShouldReturnsSectionValues()
     {
-        var data = @"
-            [section1]   
-            1
-            2
-            3
-            4
-            [section2]
-            1
-            2
-            3
-            4
-        ";
+        var data =
+        """
+          [section1]   
+          1
+          2
+          3
+          4
+          [section2]
+          1
+          2
+          3
+          4
+        """;
         var parser = new SectionsParser();
         string[] expectedValues = ["1", "2", "3", "4"];
 
@@ -79,19 +82,20 @@ public class SectionsParserTests
     public void Parse_WhenCommentIsRead_ShouldIgnoreComments()
     {
         // Arrange
-        var data = @"
-            #comment1
-            [section1]
-            #comment2
-            23
-            #comment3       
-            15
-            #comment4
-            [section2]
-            #comment5
-            34
-            #comment6
-        ";
+        var data =
+        """
+          #comment1
+          [section1]
+          #comment2
+          23
+          #comment3       
+          15
+          #comment4
+          [section2]
+          #comment5
+          34
+          #comment6
+        """;
         var parser = new SectionsParser();
         string[] unexpected1 = 
         [
@@ -148,17 +152,18 @@ public class SectionsParserTests
     public void Parse_WhenSectionIsRepeated_ShouldThrowParserException()
     {
         // Arrange
-        var data = @"  
-            [section1]
-            12
-            24
-            [section2]
-            15
-            67
-            [SECTION1]
-            15
-            78
-        ";
+        var data =
+        """
+          [section1]
+          12
+          24
+          [section2]
+          15
+          67
+          [SECTION1]
+          15
+          78
+        """;
         var parser = new SectionsParser();
         var expectedSubstring = $"*{ExceptionMessages.SeccionIsRepeatedMessage}*";
 
@@ -175,12 +180,13 @@ public class SectionsParserTests
     public void Parse_WhenAnElementIsNotPartOfAnySection_ShouldThrowParserException()
     {
         // Arrange
-        var data = @"  
-            Hello World! (this element is not part of any section)
-            [section1]
-            12
-            24
-        ";
+        var data =
+        """
+          Hello World! (this element is not part of any section)
+          [section1]
+          12
+          24
+        """;
         var parser = new SectionsParser();
         var expectedSubstring = $"*{ExceptionMessages.ElementThatIsNotPartAnySectionMessage}*";
 

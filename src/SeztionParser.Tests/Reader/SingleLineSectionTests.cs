@@ -7,10 +7,11 @@ public class SingleLineSectionTests
     public void GetFirstLineDecimal_WhenConversionIsValid_ShouldReturnsDecimal()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+        """;
         var sections = new SectionsParser().Parse(data);
         decimal expected = 12.456M;
 
@@ -25,10 +26,11 @@ public class SingleLineSectionTests
     public void GetFirstLineDouble_WhenConversionIsValid_ShouldReturnsDouble()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+        """;
         var sections = new SectionsParser().Parse(data);
         double expected = 12.456;
 
@@ -43,10 +45,11 @@ public class SingleLineSectionTests
     public void GetFirstLineFloat_WhenConversionIsValid_ShouldReturnsFloat()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12.456
-        ";
+        var data =
+        """
+         [section1]
+         12.456
+        """;
         var sections = new SectionsParser().Parse(data);
         float expected = 12.456f;
 
@@ -61,10 +64,11 @@ public class SingleLineSectionTests
     public void GetFirstLineInt_WhenConversionIsValid_ShouldReturnsInt()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12
-        ";
+        var data =
+        """
+         [section1]
+         12
+        """;
         var sections = new SectionsParser().Parse(data);
         int expected = 12;
 
@@ -79,10 +83,11 @@ public class SingleLineSectionTests
     public void GetFirstLineLong_WhenConversionIsValid_ShouldReturnsLong()
     {
         // Arrange
-        var data = @"
-            [section1]
-            12
-        ";
+        var data =
+        """
+          [section1]
+          12
+        """;
         var sections = new SectionsParser().Parse(data);
         long expected = 12;
 
