@@ -111,28 +111,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    [DataRow(@"
-        [section1]
-                          
-    ")]
-    [DataRow(@"
-        [section1]
-        12
-        24
-        [section2]
-        [section3]
-        15
-        26  
-    ")]
-    [DataRow(@"
-        [section1]
-        12
-        24
-        [section2]
-        15
-        67
-        [section3]
-    ")]
+    [DynamicData(nameof(ParserTestCases.SectionHasNoData), typeof(ParserTestCases), DynamicDataSourceType.Property)]
     public void Parse_WhenSectionHasNoData_ShouldThrowParserException(string data)
     {
         // Arrange
@@ -149,16 +128,7 @@ public class SectionsParserTests
     }
 
     [TestMethod]
-    [DataRow(@"
-        []
-        15
-        67
-    ")]
-    [DataRow(@"
-        [       ]
-        15
-        78
-    ")]
+    [DynamicData(nameof(ParserTestCases.SectionNameIsEmpty), typeof(ParserTestCases), DynamicDataSourceType.Property)]
     public void Parse_WhenSectionNameIsEmpty_ShouldThrowParserException(string data)
     {
         // Arrange
