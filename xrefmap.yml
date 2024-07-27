@@ -1,516 +1,471 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: SeztionParser.Exceptions
-  name: SeztionParser.Exceptions
-  href: api/SeztionParser.Exceptions.html
-  commentId: N:SeztionParser.Exceptions
-  fullName: SeztionParser.Exceptions
-  nameWithType: SeztionParser.Exceptions
-- uid: SeztionParser.Exceptions.ParserException
-  name: ParserException
-  href: api/SeztionParser.Exceptions.ParserException.html
-  commentId: T:SeztionParser.Exceptions.ParserException
-  fullName: SeztionParser.Exceptions.ParserException
-  nameWithType: ParserException
-- uid: SeztionParser.Exceptions.ParserException.#ctor(System.String)
-  name: ParserException(String)
-  href: api/SeztionParser.Exceptions.ParserException.-ctor.html#SeztionParser_Exceptions_ParserException__ctor_System_String_
-  commentId: M:SeztionParser.Exceptions.ParserException.#ctor(System.String)
-  fullName: SeztionParser.Exceptions.ParserException.ParserException(System.String)
-  nameWithType: ParserException.ParserException(String)
-- uid: SeztionParser.Exceptions.ParserException.#ctor(System.String,System.Object)
-  name: ParserException(String, Object)
-  href: api/SeztionParser.Exceptions.ParserException.-ctor.html#SeztionParser_Exceptions_ParserException__ctor_System_String_System_Object_
-  commentId: M:SeztionParser.Exceptions.ParserException.#ctor(System.String,System.Object)
-  fullName: SeztionParser.Exceptions.ParserException.ParserException(System.String, System.Object)
-  nameWithType: ParserException.ParserException(String, Object)
-- uid: SeztionParser.Exceptions.ParserException.#ctor*
-  name: ParserException
-  href: api/SeztionParser.Exceptions.ParserException.-ctor.html
-  commentId: Overload:SeztionParser.Exceptions.ParserException.#ctor
-  fullName: SeztionParser.Exceptions.ParserException.ParserException
-  nameWithType: ParserException.ParserException
-- uid: SeztionParser.Exceptions.ParserException.ActualValue
-  name: ActualValue
-  href: api/SeztionParser.Exceptions.ParserException.ActualValue.html#SeztionParser_Exceptions_ParserException_ActualValue
-  commentId: P:SeztionParser.Exceptions.ParserException.ActualValue
-  fullName: SeztionParser.Exceptions.ParserException.ActualValue
-  nameWithType: ParserException.ActualValue
-- uid: SeztionParser.Exceptions.ParserException.ActualValue*
-  name: ActualValue
-  href: api/SeztionParser.Exceptions.ParserException.ActualValue.html
-  commentId: Overload:SeztionParser.Exceptions.ParserException.ActualValue
-  fullName: SeztionParser.Exceptions.ParserException.ActualValue
-  nameWithType: ParserException.ActualValue
-- uid: SeztionParser.Exceptions.ParserException.Message
-  name: Message
-  href: api/SeztionParser.Exceptions.ParserException.Message.html#SeztionParser_Exceptions_ParserException_Message
-  commentId: P:SeztionParser.Exceptions.ParserException.Message
-  fullName: SeztionParser.Exceptions.ParserException.Message
-  nameWithType: ParserException.Message
-- uid: SeztionParser.Exceptions.ParserException.Message*
-  name: Message
-  href: api/SeztionParser.Exceptions.ParserException.Message.html
-  commentId: Overload:SeztionParser.Exceptions.ParserException.Message
-  fullName: SeztionParser.Exceptions.ParserException.Message
-  nameWithType: ParserException.Message
-- uid: SeztionParser.Exceptions.SectionNotFoundException
-  name: SectionNotFoundException
-  href: api/SeztionParser.Exceptions.SectionNotFoundException.html
-  commentId: T:SeztionParser.Exceptions.SectionNotFoundException
-  fullName: SeztionParser.Exceptions.SectionNotFoundException
-  nameWithType: SectionNotFoundException
-- uid: SeztionParser.Exceptions.SectionNotFoundException.#ctor(System.String,System.String)
-  name: SectionNotFoundException(String, String)
-  href: api/SeztionParser.Exceptions.SectionNotFoundException.-ctor.html#SeztionParser_Exceptions_SectionNotFoundException__ctor_System_String_System_String_
-  commentId: M:SeztionParser.Exceptions.SectionNotFoundException.#ctor(System.String,System.String)
-  fullName: SeztionParser.Exceptions.SectionNotFoundException.SectionNotFoundException(System.String, System.String)
-  nameWithType: SectionNotFoundException.SectionNotFoundException(String, String)
-- uid: SeztionParser.Exceptions.SectionNotFoundException.#ctor*
-  name: SectionNotFoundException
-  href: api/SeztionParser.Exceptions.SectionNotFoundException.-ctor.html
-  commentId: Overload:SeztionParser.Exceptions.SectionNotFoundException.#ctor
-  fullName: SeztionParser.Exceptions.SectionNotFoundException.SectionNotFoundException
-  nameWithType: SectionNotFoundException.SectionNotFoundException
-- uid: SeztionParser.Facades
-  name: SeztionParser.Facades
-  href: api/SeztionParser.Facades.html
-  commentId: N:SeztionParser.Facades
-  fullName: SeztionParser.Facades
-  nameWithType: SeztionParser.Facades
-- uid: SeztionParser.Facades.SectionsFile
-  name: SectionsFile
-  href: api/SeztionParser.Facades.SectionsFile.html
-  commentId: T:SeztionParser.Facades.SectionsFile
-  fullName: SeztionParser.Facades.SectionsFile
-  nameWithType: SectionsFile
-- uid: SeztionParser.Facades.SectionsFile.Load(System.String)
-  name: Load(String)
-  href: api/SeztionParser.Facades.SectionsFile.Load.html#SeztionParser_Facades_SectionsFile_Load_System_String_
-  commentId: M:SeztionParser.Facades.SectionsFile.Load(System.String)
-  fullName: SeztionParser.Facades.SectionsFile.Load(System.String)
-  nameWithType: SectionsFile.Load(String)
-- uid: SeztionParser.Facades.SectionsFile.Load*
-  name: Load
-  href: api/SeztionParser.Facades.SectionsFile.Load.html
-  commentId: Overload:SeztionParser.Facades.SectionsFile.Load
-  fullName: SeztionParser.Facades.SectionsFile.Load
-  nameWithType: SectionsFile.Load
-- uid: SeztionParser.Helpers
-  name: SeztionParser.Helpers
-  href: api/SeztionParser.Helpers.html
-  commentId: N:SeztionParser.Helpers
-  fullName: SeztionParser.Helpers
-  nameWithType: SeztionParser.Helpers
-- uid: SeztionParser.Helpers.SectionDataConversion
-  name: SectionDataConversion
-  href: api/SeztionParser.Helpers.SectionDataConversion.html
-  commentId: T:SeztionParser.Helpers.SectionDataConversion
-  fullName: SeztionParser.Helpers.SectionDataConversion
-  nameWithType: SectionDataConversion
-- uid: SeztionParser.Helpers.SectionDataConversion.ToDecimal(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: ToDecimal(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToDecimal.html#SeztionParser_Helpers_SectionDataConversion_ToDecimal_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SectionDataConversion.ToDecimal(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToDecimal(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SectionDataConversion.ToDecimal(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SectionDataConversion.ToDecimal*
-  name: ToDecimal
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToDecimal.html
-  commentId: Overload:SeztionParser.Helpers.SectionDataConversion.ToDecimal
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToDecimal
-  nameWithType: SectionDataConversion.ToDecimal
-- uid: SeztionParser.Helpers.SectionDataConversion.ToDouble(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: ToDouble(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToDouble.html#SeztionParser_Helpers_SectionDataConversion_ToDouble_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SectionDataConversion.ToDouble(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToDouble(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SectionDataConversion.ToDouble(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SectionDataConversion.ToDouble*
-  name: ToDouble
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToDouble.html
-  commentId: Overload:SeztionParser.Helpers.SectionDataConversion.ToDouble
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToDouble
-  nameWithType: SectionDataConversion.ToDouble
-- uid: SeztionParser.Helpers.SectionDataConversion.ToFloat(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: ToFloat(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToFloat.html#SeztionParser_Helpers_SectionDataConversion_ToFloat_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SectionDataConversion.ToFloat(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToFloat(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SectionDataConversion.ToFloat(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SectionDataConversion.ToFloat*
-  name: ToFloat
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToFloat.html
-  commentId: Overload:SeztionParser.Helpers.SectionDataConversion.ToFloat
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToFloat
-  nameWithType: SectionDataConversion.ToFloat
-- uid: SeztionParser.Helpers.SectionDataConversion.ToInt(SeztionParser.Interfaces.ISectionsData,System.String)
-  name: ToInt(ISectionsData, String)
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToInt.html#SeztionParser_Helpers_SectionDataConversion_ToInt_SeztionParser_Interfaces_ISectionsData_System_String_
-  commentId: M:SeztionParser.Helpers.SectionDataConversion.ToInt(SeztionParser.Interfaces.ISectionsData,System.String)
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToInt(SeztionParser.Interfaces.ISectionsData, System.String)
-  nameWithType: SectionDataConversion.ToInt(ISectionsData, String)
-- uid: SeztionParser.Helpers.SectionDataConversion.ToInt*
-  name: ToInt
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToInt.html
-  commentId: Overload:SeztionParser.Helpers.SectionDataConversion.ToInt
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToInt
-  nameWithType: SectionDataConversion.ToInt
-- uid: SeztionParser.Helpers.SectionDataConversion.ToLong(SeztionParser.Interfaces.ISectionsData,System.String)
-  name: ToLong(ISectionsData, String)
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToLong.html#SeztionParser_Helpers_SectionDataConversion_ToLong_SeztionParser_Interfaces_ISectionsData_System_String_
-  commentId: M:SeztionParser.Helpers.SectionDataConversion.ToLong(SeztionParser.Interfaces.ISectionsData,System.String)
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToLong(SeztionParser.Interfaces.ISectionsData, System.String)
-  nameWithType: SectionDataConversion.ToLong(ISectionsData, String)
-- uid: SeztionParser.Helpers.SectionDataConversion.ToLong*
-  name: ToLong
-  href: api/SeztionParser.Helpers.SectionDataConversion.ToLong.html
-  commentId: Overload:SeztionParser.Helpers.SectionDataConversion.ToLong
-  fullName: SeztionParser.Helpers.SectionDataConversion.ToLong
-  nameWithType: SectionDataConversion.ToLong
-- uid: SeztionParser.Helpers.SingleLineSection
-  name: SingleLineSection
-  href: api/SeztionParser.Helpers.SingleLineSection.html
-  commentId: T:SeztionParser.Helpers.SingleLineSection
-  fullName: SeztionParser.Helpers.SingleLineSection
-  nameWithType: SingleLineSection
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: GetFirstLineDecimal(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineDecimal_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SingleLineSection.GetFirstLineDecimal(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal*
-  name: GetFirstLineDecimal
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal
-  nameWithType: SingleLineSection.GetFirstLineDecimal
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: GetFirstLineDouble(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineDouble_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SingleLineSection.GetFirstLineDouble(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble*
-  name: GetFirstLineDouble
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble
-  nameWithType: SingleLineSection.GetFirstLineDouble
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  name: GetFirstLineFloat(ISectionsData, String, IFormatProvider)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineFloat_SeztionParser_Interfaces_ISectionsData_System_String_System_IFormatProvider_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat(SeztionParser.Interfaces.ISectionsData,System.String,System.IFormatProvider)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat(SeztionParser.Interfaces.ISectionsData, System.String, System.IFormatProvider)
-  nameWithType: SingleLineSection.GetFirstLineFloat(ISectionsData, String, IFormatProvider)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat*
-  name: GetFirstLineFloat
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat
-  nameWithType: SingleLineSection.GetFirstLineFloat
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineInt(SeztionParser.Interfaces.ISectionsData,System.String)
-  name: GetFirstLineInt(ISectionsData, String)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineInt.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineInt_SeztionParser_Interfaces_ISectionsData_System_String_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineInt(SeztionParser.Interfaces.ISectionsData,System.String)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineInt(SeztionParser.Interfaces.ISectionsData, System.String)
-  nameWithType: SingleLineSection.GetFirstLineInt(ISectionsData, String)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineInt*
-  name: GetFirstLineInt
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineInt.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineInt
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineInt
-  nameWithType: SingleLineSection.GetFirstLineInt
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineLong(SeztionParser.Interfaces.ISectionsData,System.String)
-  name: GetFirstLineLong(ISectionsData, String)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineLong.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineLong_SeztionParser_Interfaces_ISectionsData_System_String_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineLong(SeztionParser.Interfaces.ISectionsData,System.String)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineLong(SeztionParser.Interfaces.ISectionsData, System.String)
-  nameWithType: SingleLineSection.GetFirstLineLong(ISectionsData, String)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineLong*
-  name: GetFirstLineLong
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineLong.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineLong
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineLong
-  nameWithType: SingleLineSection.GetFirstLineLong
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineString(SeztionParser.Interfaces.ISectionsData,System.String)
-  name: GetFirstLineString(ISectionsData, String)
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineString.html#SeztionParser_Helpers_SingleLineSection_GetFirstLineString_SeztionParser_Interfaces_ISectionsData_System_String_
-  commentId: M:SeztionParser.Helpers.SingleLineSection.GetFirstLineString(SeztionParser.Interfaces.ISectionsData,System.String)
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineString(SeztionParser.Interfaces.ISectionsData, System.String)
-  nameWithType: SingleLineSection.GetFirstLineString(ISectionsData, String)
-- uid: SeztionParser.Helpers.SingleLineSection.GetFirstLineString*
-  name: GetFirstLineString
-  href: api/SeztionParser.Helpers.SingleLineSection.GetFirstLineString.html
-  commentId: Overload:SeztionParser.Helpers.SingleLineSection.GetFirstLineString
-  fullName: SeztionParser.Helpers.SingleLineSection.GetFirstLineString
-  nameWithType: SingleLineSection.GetFirstLineString
-- uid: SeztionParser.Interfaces
-  name: SeztionParser.Interfaces
-  href: api/SeztionParser.Interfaces.html
-  commentId: N:SeztionParser.Interfaces
-  fullName: SeztionParser.Interfaces
-  nameWithType: SeztionParser.Interfaces
-- uid: SeztionParser.Interfaces.ISectionData
+- uid: SeztionParser
+  name: SeztionParser
+  href: api/SeztionParser.html
+  commentId: N:SeztionParser
+  fullName: SeztionParser
+  nameWithType: SeztionParser
+- uid: SeztionParser.ISectionData
   name: ISectionData
-  href: api/SeztionParser.Interfaces.ISectionData.html
-  commentId: T:SeztionParser.Interfaces.ISectionData
-  fullName: SeztionParser.Interfaces.ISectionData
+  href: api/SeztionParser.ISectionData.html
+  commentId: T:SeztionParser.ISectionData
+  fullName: SeztionParser.ISectionData
   nameWithType: ISectionData
-- uid: SeztionParser.Interfaces.ISectionData.Contains(System.String)
+- uid: SeztionParser.ISectionData.Contains(System.String)
   name: Contains(String)
-  href: api/SeztionParser.Interfaces.ISectionData.Contains.html#SeztionParser_Interfaces_ISectionData_Contains_System_String_
-  commentId: M:SeztionParser.Interfaces.ISectionData.Contains(System.String)
-  fullName: SeztionParser.Interfaces.ISectionData.Contains(System.String)
+  href: api/SeztionParser.ISectionData.Contains.html#SeztionParser_ISectionData_Contains_System_String_
+  commentId: M:SeztionParser.ISectionData.Contains(System.String)
+  fullName: SeztionParser.ISectionData.Contains(System.String)
   nameWithType: ISectionData.Contains(String)
-- uid: SeztionParser.Interfaces.ISectionData.Contains*
+- uid: SeztionParser.ISectionData.Contains*
   name: Contains
-  href: api/SeztionParser.Interfaces.ISectionData.Contains.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionData.Contains
-  fullName: SeztionParser.Interfaces.ISectionData.Contains
+  href: api/SeztionParser.ISectionData.Contains.html
+  commentId: Overload:SeztionParser.ISectionData.Contains
+  fullName: SeztionParser.ISectionData.Contains
   nameWithType: ISectionData.Contains
-- uid: SeztionParser.Interfaces.ISectionData.Count
+- uid: SeztionParser.ISectionData.Count
   name: Count
-  href: api/SeztionParser.Interfaces.ISectionData.Count.html#SeztionParser_Interfaces_ISectionData_Count
-  commentId: P:SeztionParser.Interfaces.ISectionData.Count
-  fullName: SeztionParser.Interfaces.ISectionData.Count
+  href: api/SeztionParser.ISectionData.Count.html#SeztionParser_ISectionData_Count
+  commentId: P:SeztionParser.ISectionData.Count
+  fullName: SeztionParser.ISectionData.Count
   nameWithType: ISectionData.Count
-- uid: SeztionParser.Interfaces.ISectionData.Count*
+- uid: SeztionParser.ISectionData.Count*
   name: Count
-  href: api/SeztionParser.Interfaces.ISectionData.Count.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionData.Count
-  fullName: SeztionParser.Interfaces.ISectionData.Count
+  href: api/SeztionParser.ISectionData.Count.html
+  commentId: Overload:SeztionParser.ISectionData.Count
+  fullName: SeztionParser.ISectionData.Count
   nameWithType: ISectionData.Count
-- uid: SeztionParser.Interfaces.ISectionData.Item(System.Int32)
+- uid: SeztionParser.ISectionData.Item(System.Int32)
   name: Item[Int32]
-  href: api/SeztionParser.Interfaces.ISectionData.Item.html#SeztionParser_Interfaces_ISectionData_Item_System_Int32_
-  commentId: P:SeztionParser.Interfaces.ISectionData.Item(System.Int32)
+  href: api/SeztionParser.ISectionData.Item.html#SeztionParser_ISectionData_Item_System_Int32_
+  commentId: P:SeztionParser.ISectionData.Item(System.Int32)
   name.vb: Item(Int32)
-  fullName: SeztionParser.Interfaces.ISectionData.Item[System.Int32]
-  fullName.vb: SeztionParser.Interfaces.ISectionData.Item(System.Int32)
+  fullName: SeztionParser.ISectionData.Item[System.Int32]
+  fullName.vb: SeztionParser.ISectionData.Item(System.Int32)
   nameWithType: ISectionData.Item[Int32]
   nameWithType.vb: ISectionData.Item(Int32)
-- uid: SeztionParser.Interfaces.ISectionData.Item*
+- uid: SeztionParser.ISectionData.Item*
   name: Item
-  href: api/SeztionParser.Interfaces.ISectionData.Item.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionData.Item
-  fullName: SeztionParser.Interfaces.ISectionData.Item
+  href: api/SeztionParser.ISectionData.Item.html
+  commentId: Overload:SeztionParser.ISectionData.Item
+  fullName: SeztionParser.ISectionData.Item
   nameWithType: ISectionData.Item
-- uid: SeztionParser.Interfaces.ISectionsData
+- uid: SeztionParser.ISectionsData
   name: ISectionsData
-  href: api/SeztionParser.Interfaces.ISectionsData.html
-  commentId: T:SeztionParser.Interfaces.ISectionsData
-  fullName: SeztionParser.Interfaces.ISectionsData
+  href: api/SeztionParser.ISectionsData.html
+  commentId: T:SeztionParser.ISectionsData
+  fullName: SeztionParser.ISectionsData
   nameWithType: ISectionsData
-- uid: SeztionParser.Interfaces.ISectionsData.GetAll
+- uid: SeztionParser.ISectionsData.GetAll
   name: GetAll()
-  href: api/SeztionParser.Interfaces.ISectionsData.GetAll.html#SeztionParser_Interfaces_ISectionsData_GetAll
-  commentId: M:SeztionParser.Interfaces.ISectionsData.GetAll
-  fullName: SeztionParser.Interfaces.ISectionsData.GetAll()
+  href: api/SeztionParser.ISectionsData.GetAll.html#SeztionParser_ISectionsData_GetAll
+  commentId: M:SeztionParser.ISectionsData.GetAll
+  fullName: SeztionParser.ISectionsData.GetAll()
   nameWithType: ISectionsData.GetAll()
-- uid: SeztionParser.Interfaces.ISectionsData.GetAll*
+- uid: SeztionParser.ISectionsData.GetAll*
   name: GetAll
-  href: api/SeztionParser.Interfaces.ISectionsData.GetAll.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionsData.GetAll
-  fullName: SeztionParser.Interfaces.ISectionsData.GetAll
+  href: api/SeztionParser.ISectionsData.GetAll.html
+  commentId: Overload:SeztionParser.ISectionsData.GetAll
+  fullName: SeztionParser.ISectionsData.GetAll
   nameWithType: ISectionsData.GetAll
-- uid: SeztionParser.Interfaces.ISectionsData.GetNames
+- uid: SeztionParser.ISectionsData.GetNames
   name: GetNames()
-  href: api/SeztionParser.Interfaces.ISectionsData.GetNames.html#SeztionParser_Interfaces_ISectionsData_GetNames
-  commentId: M:SeztionParser.Interfaces.ISectionsData.GetNames
-  fullName: SeztionParser.Interfaces.ISectionsData.GetNames()
+  href: api/SeztionParser.ISectionsData.GetNames.html#SeztionParser_ISectionsData_GetNames
+  commentId: M:SeztionParser.ISectionsData.GetNames
+  fullName: SeztionParser.ISectionsData.GetNames()
   nameWithType: ISectionsData.GetNames()
-- uid: SeztionParser.Interfaces.ISectionsData.GetNames*
+- uid: SeztionParser.ISectionsData.GetNames*
   name: GetNames
-  href: api/SeztionParser.Interfaces.ISectionsData.GetNames.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionsData.GetNames
-  fullName: SeztionParser.Interfaces.ISectionsData.GetNames
+  href: api/SeztionParser.ISectionsData.GetNames.html
+  commentId: Overload:SeztionParser.ISectionsData.GetNames
+  fullName: SeztionParser.ISectionsData.GetNames
   nameWithType: ISectionsData.GetNames
-- uid: SeztionParser.Interfaces.ISectionsData.Item(System.String)
+- uid: SeztionParser.ISectionsData.Item(System.String)
   name: Item[String]
-  href: api/SeztionParser.Interfaces.ISectionsData.Item.html#SeztionParser_Interfaces_ISectionsData_Item_System_String_
-  commentId: P:SeztionParser.Interfaces.ISectionsData.Item(System.String)
+  href: api/SeztionParser.ISectionsData.Item.html#SeztionParser_ISectionsData_Item_System_String_
+  commentId: P:SeztionParser.ISectionsData.Item(System.String)
   name.vb: Item(String)
-  fullName: SeztionParser.Interfaces.ISectionsData.Item[System.String]
-  fullName.vb: SeztionParser.Interfaces.ISectionsData.Item(System.String)
+  fullName: SeztionParser.ISectionsData.Item[System.String]
+  fullName.vb: SeztionParser.ISectionsData.Item(System.String)
   nameWithType: ISectionsData.Item[String]
   nameWithType.vb: ISectionsData.Item(String)
-- uid: SeztionParser.Interfaces.ISectionsData.Item*
+- uid: SeztionParser.ISectionsData.Item*
   name: Item
-  href: api/SeztionParser.Interfaces.ISectionsData.Item.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionsData.Item
-  fullName: SeztionParser.Interfaces.ISectionsData.Item
+  href: api/SeztionParser.ISectionsData.Item.html
+  commentId: Overload:SeztionParser.ISectionsData.Item
+  fullName: SeztionParser.ISectionsData.Item
   nameWithType: ISectionsData.Item
-- uid: SeztionParser.Interfaces.ISectionsData.TryGetData(System.String,SeztionParser.Interfaces.ISectionData@)
+- uid: SeztionParser.ISectionsData.TryGetData(System.String,SeztionParser.ISectionData@)
   name: TryGetData(String, out ISectionData)
-  href: api/SeztionParser.Interfaces.ISectionsData.TryGetData.html#SeztionParser_Interfaces_ISectionsData_TryGetData_System_String_SeztionParser_Interfaces_ISectionData__
-  commentId: M:SeztionParser.Interfaces.ISectionsData.TryGetData(System.String,SeztionParser.Interfaces.ISectionData@)
+  href: api/SeztionParser.ISectionsData.TryGetData.html#SeztionParser_ISectionsData_TryGetData_System_String_SeztionParser_ISectionData__
+  commentId: M:SeztionParser.ISectionsData.TryGetData(System.String,SeztionParser.ISectionData@)
   name.vb: TryGetData(String, ByRef ISectionData)
-  fullName: SeztionParser.Interfaces.ISectionsData.TryGetData(System.String, out SeztionParser.Interfaces.ISectionData)
-  fullName.vb: SeztionParser.Interfaces.ISectionsData.TryGetData(System.String, ByRef SeztionParser.Interfaces.ISectionData)
+  fullName: SeztionParser.ISectionsData.TryGetData(System.String, out SeztionParser.ISectionData)
+  fullName.vb: SeztionParser.ISectionsData.TryGetData(System.String, ByRef SeztionParser.ISectionData)
   nameWithType: ISectionsData.TryGetData(String, out ISectionData)
   nameWithType.vb: ISectionsData.TryGetData(String, ByRef ISectionData)
-- uid: SeztionParser.Interfaces.ISectionsData.TryGetData*
+- uid: SeztionParser.ISectionsData.TryGetData*
   name: TryGetData
-  href: api/SeztionParser.Interfaces.ISectionsData.TryGetData.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionsData.TryGetData
-  fullName: SeztionParser.Interfaces.ISectionsData.TryGetData
+  href: api/SeztionParser.ISectionsData.TryGetData.html
+  commentId: Overload:SeztionParser.ISectionsData.TryGetData
+  fullName: SeztionParser.ISectionsData.TryGetData
   nameWithType: ISectionsData.TryGetData
-- uid: SeztionParser.Interfaces.ISectionsParser
+- uid: SeztionParser.ISectionsParser
   name: ISectionsParser
-  href: api/SeztionParser.Interfaces.ISectionsParser.html
-  commentId: T:SeztionParser.Interfaces.ISectionsParser
-  fullName: SeztionParser.Interfaces.ISectionsParser
+  href: api/SeztionParser.ISectionsParser.html
+  commentId: T:SeztionParser.ISectionsParser
+  fullName: SeztionParser.ISectionsParser
   nameWithType: ISectionsParser
-- uid: SeztionParser.Interfaces.ISectionsParser.Parse(System.String)
+- uid: SeztionParser.ISectionsParser.Parse(System.String)
   name: Parse(String)
-  href: api/SeztionParser.Interfaces.ISectionsParser.Parse.html#SeztionParser_Interfaces_ISectionsParser_Parse_System_String_
-  commentId: M:SeztionParser.Interfaces.ISectionsParser.Parse(System.String)
-  fullName: SeztionParser.Interfaces.ISectionsParser.Parse(System.String)
+  href: api/SeztionParser.ISectionsParser.Parse.html#SeztionParser_ISectionsParser_Parse_System_String_
+  commentId: M:SeztionParser.ISectionsParser.Parse(System.String)
+  fullName: SeztionParser.ISectionsParser.Parse(System.String)
   nameWithType: ISectionsParser.Parse(String)
-- uid: SeztionParser.Interfaces.ISectionsParser.Parse*
+- uid: SeztionParser.ISectionsParser.Parse*
   name: Parse
-  href: api/SeztionParser.Interfaces.ISectionsParser.Parse.html
-  commentId: Overload:SeztionParser.Interfaces.ISectionsParser.Parse
-  fullName: SeztionParser.Interfaces.ISectionsParser.Parse
+  href: api/SeztionParser.ISectionsParser.Parse.html
+  commentId: Overload:SeztionParser.ISectionsParser.Parse
+  fullName: SeztionParser.ISectionsParser.Parse
   nameWithType: ISectionsParser.Parse
-- uid: SeztionParser.Models
-  name: SeztionParser.Models
-  href: api/SeztionParser.Models.html
-  commentId: N:SeztionParser.Models
-  fullName: SeztionParser.Models
-  nameWithType: SeztionParser.Models
-- uid: SeztionParser.Models.SectionModel
+- uid: SeztionParser.ParserException
+  name: ParserException
+  href: api/SeztionParser.ParserException.html
+  commentId: T:SeztionParser.ParserException
+  fullName: SeztionParser.ParserException
+  nameWithType: ParserException
+- uid: SeztionParser.ParserException.#ctor
+  name: ParserException()
+  href: api/SeztionParser.ParserException.-ctor.html#SeztionParser_ParserException__ctor
+  commentId: M:SeztionParser.ParserException.#ctor
+  fullName: SeztionParser.ParserException.ParserException()
+  nameWithType: ParserException.ParserException()
+- uid: SeztionParser.ParserException.#ctor(System.String)
+  name: ParserException(String)
+  href: api/SeztionParser.ParserException.-ctor.html#SeztionParser_ParserException__ctor_System_String_
+  commentId: M:SeztionParser.ParserException.#ctor(System.String)
+  fullName: SeztionParser.ParserException.ParserException(System.String)
+  nameWithType: ParserException.ParserException(String)
+- uid: SeztionParser.ParserException.#ctor(System.String,System.Object)
+  name: ParserException(String, Object)
+  href: api/SeztionParser.ParserException.-ctor.html#SeztionParser_ParserException__ctor_System_String_System_Object_
+  commentId: M:SeztionParser.ParserException.#ctor(System.String,System.Object)
+  fullName: SeztionParser.ParserException.ParserException(System.String, System.Object)
+  nameWithType: ParserException.ParserException(String, Object)
+- uid: SeztionParser.ParserException.#ctor*
+  name: ParserException
+  href: api/SeztionParser.ParserException.-ctor.html
+  commentId: Overload:SeztionParser.ParserException.#ctor
+  fullName: SeztionParser.ParserException.ParserException
+  nameWithType: ParserException.ParserException
+- uid: SeztionParser.ParserException.ActualValue
+  name: ActualValue
+  href: api/SeztionParser.ParserException.ActualValue.html#SeztionParser_ParserException_ActualValue
+  commentId: P:SeztionParser.ParserException.ActualValue
+  fullName: SeztionParser.ParserException.ActualValue
+  nameWithType: ParserException.ActualValue
+- uid: SeztionParser.ParserException.ActualValue*
+  name: ActualValue
+  href: api/SeztionParser.ParserException.ActualValue.html
+  commentId: Overload:SeztionParser.ParserException.ActualValue
+  fullName: SeztionParser.ParserException.ActualValue
+  nameWithType: ParserException.ActualValue
+- uid: SeztionParser.ParserException.Message
+  name: Message
+  href: api/SeztionParser.ParserException.Message.html#SeztionParser_ParserException_Message
+  commentId: P:SeztionParser.ParserException.Message
+  fullName: SeztionParser.ParserException.Message
+  nameWithType: ParserException.Message
+- uid: SeztionParser.ParserException.Message*
+  name: Message
+  href: api/SeztionParser.ParserException.Message.html
+  commentId: Overload:SeztionParser.ParserException.Message
+  fullName: SeztionParser.ParserException.Message
+  nameWithType: ParserException.Message
+- uid: SeztionParser.SectionDataConversion
+  name: SectionDataConversion
+  href: api/SeztionParser.SectionDataConversion.html
+  commentId: T:SeztionParser.SectionDataConversion
+  fullName: SeztionParser.SectionDataConversion
+  nameWithType: SectionDataConversion
+- uid: SeztionParser.SectionDataConversion.ToDecimal(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: ToDecimal(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SectionDataConversion.ToDecimal.html#SeztionParser_SectionDataConversion_ToDecimal_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SectionDataConversion.ToDecimal(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SectionDataConversion.ToDecimal(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SectionDataConversion.ToDecimal(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SectionDataConversion.ToDecimal*
+  name: ToDecimal
+  href: api/SeztionParser.SectionDataConversion.ToDecimal.html
+  commentId: Overload:SeztionParser.SectionDataConversion.ToDecimal
+  fullName: SeztionParser.SectionDataConversion.ToDecimal
+  nameWithType: SectionDataConversion.ToDecimal
+- uid: SeztionParser.SectionDataConversion.ToDouble(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: ToDouble(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SectionDataConversion.ToDouble.html#SeztionParser_SectionDataConversion_ToDouble_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SectionDataConversion.ToDouble(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SectionDataConversion.ToDouble(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SectionDataConversion.ToDouble(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SectionDataConversion.ToDouble*
+  name: ToDouble
+  href: api/SeztionParser.SectionDataConversion.ToDouble.html
+  commentId: Overload:SeztionParser.SectionDataConversion.ToDouble
+  fullName: SeztionParser.SectionDataConversion.ToDouble
+  nameWithType: SectionDataConversion.ToDouble
+- uid: SeztionParser.SectionDataConversion.ToFloat(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: ToFloat(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SectionDataConversion.ToFloat.html#SeztionParser_SectionDataConversion_ToFloat_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SectionDataConversion.ToFloat(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SectionDataConversion.ToFloat(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SectionDataConversion.ToFloat(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SectionDataConversion.ToFloat*
+  name: ToFloat
+  href: api/SeztionParser.SectionDataConversion.ToFloat.html
+  commentId: Overload:SeztionParser.SectionDataConversion.ToFloat
+  fullName: SeztionParser.SectionDataConversion.ToFloat
+  nameWithType: SectionDataConversion.ToFloat
+- uid: SeztionParser.SectionDataConversion.ToInt(SeztionParser.ISectionsData,System.String)
+  name: ToInt(ISectionsData, String)
+  href: api/SeztionParser.SectionDataConversion.ToInt.html#SeztionParser_SectionDataConversion_ToInt_SeztionParser_ISectionsData_System_String_
+  commentId: M:SeztionParser.SectionDataConversion.ToInt(SeztionParser.ISectionsData,System.String)
+  fullName: SeztionParser.SectionDataConversion.ToInt(SeztionParser.ISectionsData, System.String)
+  nameWithType: SectionDataConversion.ToInt(ISectionsData, String)
+- uid: SeztionParser.SectionDataConversion.ToInt*
+  name: ToInt
+  href: api/SeztionParser.SectionDataConversion.ToInt.html
+  commentId: Overload:SeztionParser.SectionDataConversion.ToInt
+  fullName: SeztionParser.SectionDataConversion.ToInt
+  nameWithType: SectionDataConversion.ToInt
+- uid: SeztionParser.SectionDataConversion.ToLong(SeztionParser.ISectionsData,System.String)
+  name: ToLong(ISectionsData, String)
+  href: api/SeztionParser.SectionDataConversion.ToLong.html#SeztionParser_SectionDataConversion_ToLong_SeztionParser_ISectionsData_System_String_
+  commentId: M:SeztionParser.SectionDataConversion.ToLong(SeztionParser.ISectionsData,System.String)
+  fullName: SeztionParser.SectionDataConversion.ToLong(SeztionParser.ISectionsData, System.String)
+  nameWithType: SectionDataConversion.ToLong(ISectionsData, String)
+- uid: SeztionParser.SectionDataConversion.ToLong*
+  name: ToLong
+  href: api/SeztionParser.SectionDataConversion.ToLong.html
+  commentId: Overload:SeztionParser.SectionDataConversion.ToLong
+  fullName: SeztionParser.SectionDataConversion.ToLong
+  nameWithType: SectionDataConversion.ToLong
+- uid: SeztionParser.SectionModel
   name: SectionModel
-  href: api/SeztionParser.Models.SectionModel.html
-  commentId: T:SeztionParser.Models.SectionModel
-  fullName: SeztionParser.Models.SectionModel
+  href: api/SeztionParser.SectionModel.html
+  commentId: T:SeztionParser.SectionModel
+  fullName: SeztionParser.SectionModel
   nameWithType: SectionModel
-- uid: SeztionParser.Models.SectionModel.#ctor(System.String,SeztionParser.Interfaces.ISectionData)
+- uid: SeztionParser.SectionModel.#ctor(System.String,SeztionParser.ISectionData)
   name: SectionModel(String, ISectionData)
-  href: api/SeztionParser.Models.SectionModel.-ctor.html#SeztionParser_Models_SectionModel__ctor_System_String_SeztionParser_Interfaces_ISectionData_
-  commentId: M:SeztionParser.Models.SectionModel.#ctor(System.String,SeztionParser.Interfaces.ISectionData)
-  fullName: SeztionParser.Models.SectionModel.SectionModel(System.String, SeztionParser.Interfaces.ISectionData)
+  href: api/SeztionParser.SectionModel.-ctor.html#SeztionParser_SectionModel__ctor_System_String_SeztionParser_ISectionData_
+  commentId: M:SeztionParser.SectionModel.#ctor(System.String,SeztionParser.ISectionData)
+  fullName: SeztionParser.SectionModel.SectionModel(System.String, SeztionParser.ISectionData)
   nameWithType: SectionModel.SectionModel(String, ISectionData)
-- uid: SeztionParser.Models.SectionModel.#ctor*
+- uid: SeztionParser.SectionModel.#ctor*
   name: SectionModel
-  href: api/SeztionParser.Models.SectionModel.-ctor.html
-  commentId: Overload:SeztionParser.Models.SectionModel.#ctor
-  fullName: SeztionParser.Models.SectionModel.SectionModel
+  href: api/SeztionParser.SectionModel.-ctor.html
+  commentId: Overload:SeztionParser.SectionModel.#ctor
+  fullName: SeztionParser.SectionModel.SectionModel
   nameWithType: SectionModel.SectionModel
-- uid: SeztionParser.Models.SectionModel.Data
+- uid: SeztionParser.SectionModel.Data
   name: Data
-  href: api/SeztionParser.Models.SectionModel.Data.html#SeztionParser_Models_SectionModel_Data
-  commentId: P:SeztionParser.Models.SectionModel.Data
-  fullName: SeztionParser.Models.SectionModel.Data
+  href: api/SeztionParser.SectionModel.Data.html#SeztionParser_SectionModel_Data
+  commentId: P:SeztionParser.SectionModel.Data
+  fullName: SeztionParser.SectionModel.Data
   nameWithType: SectionModel.Data
-- uid: SeztionParser.Models.SectionModel.Data*
+- uid: SeztionParser.SectionModel.Data*
   name: Data
-  href: api/SeztionParser.Models.SectionModel.Data.html
-  commentId: Overload:SeztionParser.Models.SectionModel.Data
-  fullName: SeztionParser.Models.SectionModel.Data
+  href: api/SeztionParser.SectionModel.Data.html
+  commentId: Overload:SeztionParser.SectionModel.Data
+  fullName: SeztionParser.SectionModel.Data
   nameWithType: SectionModel.Data
-- uid: SeztionParser.Models.SectionModel.Deconstruct(System.String@,SeztionParser.Interfaces.ISectionData@)
+- uid: SeztionParser.SectionModel.Deconstruct(System.String@,SeztionParser.ISectionData@)
   name: Deconstruct(out String, out ISectionData)
-  href: api/SeztionParser.Models.SectionModel.Deconstruct.html#SeztionParser_Models_SectionModel_Deconstruct_System_String__SeztionParser_Interfaces_ISectionData__
-  commentId: M:SeztionParser.Models.SectionModel.Deconstruct(System.String@,SeztionParser.Interfaces.ISectionData@)
+  href: api/SeztionParser.SectionModel.Deconstruct.html#SeztionParser_SectionModel_Deconstruct_System_String__SeztionParser_ISectionData__
+  commentId: M:SeztionParser.SectionModel.Deconstruct(System.String@,SeztionParser.ISectionData@)
   name.vb: Deconstruct(ByRef String, ByRef ISectionData)
-  fullName: SeztionParser.Models.SectionModel.Deconstruct(out System.String, out SeztionParser.Interfaces.ISectionData)
-  fullName.vb: SeztionParser.Models.SectionModel.Deconstruct(ByRef System.String, ByRef SeztionParser.Interfaces.ISectionData)
+  fullName: SeztionParser.SectionModel.Deconstruct(out System.String, out SeztionParser.ISectionData)
+  fullName.vb: SeztionParser.SectionModel.Deconstruct(ByRef System.String, ByRef SeztionParser.ISectionData)
   nameWithType: SectionModel.Deconstruct(out String, out ISectionData)
   nameWithType.vb: SectionModel.Deconstruct(ByRef String, ByRef ISectionData)
-- uid: SeztionParser.Models.SectionModel.Deconstruct*
+- uid: SeztionParser.SectionModel.Deconstruct*
   name: Deconstruct
-  href: api/SeztionParser.Models.SectionModel.Deconstruct.html
-  commentId: Overload:SeztionParser.Models.SectionModel.Deconstruct
-  fullName: SeztionParser.Models.SectionModel.Deconstruct
+  href: api/SeztionParser.SectionModel.Deconstruct.html
+  commentId: Overload:SeztionParser.SectionModel.Deconstruct
+  fullName: SeztionParser.SectionModel.Deconstruct
   nameWithType: SectionModel.Deconstruct
-- uid: SeztionParser.Models.SectionModel.Name
+- uid: SeztionParser.SectionModel.Name
   name: Name
-  href: api/SeztionParser.Models.SectionModel.Name.html#SeztionParser_Models_SectionModel_Name
-  commentId: P:SeztionParser.Models.SectionModel.Name
-  fullName: SeztionParser.Models.SectionModel.Name
+  href: api/SeztionParser.SectionModel.Name.html#SeztionParser_SectionModel_Name
+  commentId: P:SeztionParser.SectionModel.Name
+  fullName: SeztionParser.SectionModel.Name
   nameWithType: SectionModel.Name
-- uid: SeztionParser.Models.SectionModel.Name*
+- uid: SeztionParser.SectionModel.Name*
   name: Name
-  href: api/SeztionParser.Models.SectionModel.Name.html
-  commentId: Overload:SeztionParser.Models.SectionModel.Name
-  fullName: SeztionParser.Models.SectionModel.Name
+  href: api/SeztionParser.SectionModel.Name.html
+  commentId: Overload:SeztionParser.SectionModel.Name
+  fullName: SeztionParser.SectionModel.Name
   nameWithType: SectionModel.Name
-- uid: SeztionParser.Models.SectionModel.ToString
+- uid: SeztionParser.SectionModel.ToString
   name: ToString()
-  href: api/SeztionParser.Models.SectionModel.ToString.html#SeztionParser_Models_SectionModel_ToString
-  commentId: M:SeztionParser.Models.SectionModel.ToString
-  fullName: SeztionParser.Models.SectionModel.ToString()
+  href: api/SeztionParser.SectionModel.ToString.html#SeztionParser_SectionModel_ToString
+  commentId: M:SeztionParser.SectionModel.ToString
+  fullName: SeztionParser.SectionModel.ToString()
   nameWithType: SectionModel.ToString()
-- uid: SeztionParser.Models.SectionModel.ToString*
+- uid: SeztionParser.SectionModel.ToString*
   name: ToString
-  href: api/SeztionParser.Models.SectionModel.ToString.html
-  commentId: Overload:SeztionParser.Models.SectionModel.ToString
-  fullName: SeztionParser.Models.SectionModel.ToString
+  href: api/SeztionParser.SectionModel.ToString.html
+  commentId: Overload:SeztionParser.SectionModel.ToString
+  fullName: SeztionParser.SectionModel.ToString
   nameWithType: SectionModel.ToString
-- uid: SeztionParser.Providers
-  name: SeztionParser.Providers
-  href: api/SeztionParser.Providers.html
-  commentId: N:SeztionParser.Providers
-  fullName: SeztionParser.Providers
-  nameWithType: SeztionParser.Providers
-- uid: SeztionParser.Providers.SectionsParser
+- uid: SeztionParser.SectionNotFoundException
+  name: SectionNotFoundException
+  href: api/SeztionParser.SectionNotFoundException.html
+  commentId: T:SeztionParser.SectionNotFoundException
+  fullName: SeztionParser.SectionNotFoundException
+  nameWithType: SectionNotFoundException
+- uid: SeztionParser.SectionNotFoundException.#ctor
+  name: SectionNotFoundException()
+  href: api/SeztionParser.SectionNotFoundException.-ctor.html#SeztionParser_SectionNotFoundException__ctor
+  commentId: M:SeztionParser.SectionNotFoundException.#ctor
+  fullName: SeztionParser.SectionNotFoundException.SectionNotFoundException()
+  nameWithType: SectionNotFoundException.SectionNotFoundException()
+- uid: SeztionParser.SectionNotFoundException.#ctor(System.String)
+  name: SectionNotFoundException(String)
+  href: api/SeztionParser.SectionNotFoundException.-ctor.html#SeztionParser_SectionNotFoundException__ctor_System_String_
+  commentId: M:SeztionParser.SectionNotFoundException.#ctor(System.String)
+  fullName: SeztionParser.SectionNotFoundException.SectionNotFoundException(System.String)
+  nameWithType: SectionNotFoundException.SectionNotFoundException(String)
+- uid: SeztionParser.SectionNotFoundException.#ctor(System.String,System.String)
+  name: SectionNotFoundException(String, String)
+  href: api/SeztionParser.SectionNotFoundException.-ctor.html#SeztionParser_SectionNotFoundException__ctor_System_String_System_String_
+  commentId: M:SeztionParser.SectionNotFoundException.#ctor(System.String,System.String)
+  fullName: SeztionParser.SectionNotFoundException.SectionNotFoundException(System.String, System.String)
+  nameWithType: SectionNotFoundException.SectionNotFoundException(String, String)
+- uid: SeztionParser.SectionNotFoundException.#ctor*
+  name: SectionNotFoundException
+  href: api/SeztionParser.SectionNotFoundException.-ctor.html
+  commentId: Overload:SeztionParser.SectionNotFoundException.#ctor
+  fullName: SeztionParser.SectionNotFoundException.SectionNotFoundException
+  nameWithType: SectionNotFoundException.SectionNotFoundException
+- uid: SeztionParser.SectionsFile
+  name: SectionsFile
+  href: api/SeztionParser.SectionsFile.html
+  commentId: T:SeztionParser.SectionsFile
+  fullName: SeztionParser.SectionsFile
+  nameWithType: SectionsFile
+- uid: SeztionParser.SectionsFile.Load(System.String)
+  name: Load(String)
+  href: api/SeztionParser.SectionsFile.Load.html#SeztionParser_SectionsFile_Load_System_String_
+  commentId: M:SeztionParser.SectionsFile.Load(System.String)
+  fullName: SeztionParser.SectionsFile.Load(System.String)
+  nameWithType: SectionsFile.Load(String)
+- uid: SeztionParser.SectionsFile.Load(System.String,System.Text.Encoding)
+  name: Load(String, Encoding)
+  href: api/SeztionParser.SectionsFile.Load.html#SeztionParser_SectionsFile_Load_System_String_System_Text_Encoding_
+  commentId: M:SeztionParser.SectionsFile.Load(System.String,System.Text.Encoding)
+  fullName: SeztionParser.SectionsFile.Load(System.String, System.Text.Encoding)
+  nameWithType: SectionsFile.Load(String, Encoding)
+- uid: SeztionParser.SectionsFile.Load*
+  name: Load
+  href: api/SeztionParser.SectionsFile.Load.html
+  commentId: Overload:SeztionParser.SectionsFile.Load
+  fullName: SeztionParser.SectionsFile.Load
+  nameWithType: SectionsFile.Load
+- uid: SeztionParser.SectionsParser
   name: SectionsParser
-  href: api/SeztionParser.Providers.SectionsParser.html
-  commentId: T:SeztionParser.Providers.SectionsParser
-  fullName: SeztionParser.Providers.SectionsParser
+  href: api/SeztionParser.SectionsParser.html
+  commentId: T:SeztionParser.SectionsParser
+  fullName: SeztionParser.SectionsParser
   nameWithType: SectionsParser
-- uid: SeztionParser.Providers.SectionsParser.ExtractSection(System.String)
-  name: ExtractSection(String)
-  href: api/SeztionParser.Providers.SectionsParser.ExtractSection.html#SeztionParser_Providers_SectionsParser_ExtractSection_System_String_
-  commentId: M:SeztionParser.Providers.SectionsParser.ExtractSection(System.String)
-  fullName: SeztionParser.Providers.SectionsParser.ExtractSection(System.String)
-  nameWithType: SectionsParser.ExtractSection(String)
-- uid: SeztionParser.Providers.SectionsParser.ExtractSection*
-  name: ExtractSection
-  href: api/SeztionParser.Providers.SectionsParser.ExtractSection.html
-  commentId: Overload:SeztionParser.Providers.SectionsParser.ExtractSection
-  fullName: SeztionParser.Providers.SectionsParser.ExtractSection
-  nameWithType: SectionsParser.ExtractSection
-- uid: SeztionParser.Providers.SectionsParser.IsComment(System.String)
-  name: IsComment(String)
-  href: api/SeztionParser.Providers.SectionsParser.IsComment.html#SeztionParser_Providers_SectionsParser_IsComment_System_String_
-  commentId: M:SeztionParser.Providers.SectionsParser.IsComment(System.String)
-  fullName: SeztionParser.Providers.SectionsParser.IsComment(System.String)
-  nameWithType: SectionsParser.IsComment(String)
-- uid: SeztionParser.Providers.SectionsParser.IsComment*
-  name: IsComment
-  href: api/SeztionParser.Providers.SectionsParser.IsComment.html
-  commentId: Overload:SeztionParser.Providers.SectionsParser.IsComment
-  fullName: SeztionParser.Providers.SectionsParser.IsComment
-  nameWithType: SectionsParser.IsComment
-- uid: SeztionParser.Providers.SectionsParser.IsSection(System.String@)
-  name: IsSection(ref String)
-  href: api/SeztionParser.Providers.SectionsParser.IsSection.html#SeztionParser_Providers_SectionsParser_IsSection_System_String__
-  commentId: M:SeztionParser.Providers.SectionsParser.IsSection(System.String@)
-  name.vb: IsSection(ByRef String)
-  fullName: SeztionParser.Providers.SectionsParser.IsSection(ref System.String)
-  fullName.vb: SeztionParser.Providers.SectionsParser.IsSection(ByRef System.String)
-  nameWithType: SectionsParser.IsSection(ref String)
-  nameWithType.vb: SectionsParser.IsSection(ByRef String)
-- uid: SeztionParser.Providers.SectionsParser.IsSection*
-  name: IsSection
-  href: api/SeztionParser.Providers.SectionsParser.IsSection.html
-  commentId: Overload:SeztionParser.Providers.SectionsParser.IsSection
-  fullName: SeztionParser.Providers.SectionsParser.IsSection
-  nameWithType: SectionsParser.IsSection
-- uid: SeztionParser.Providers.SectionsParser.Parse(System.String)
+- uid: SeztionParser.SectionsParser.Parse(System.String)
   name: Parse(String)
-  href: api/SeztionParser.Providers.SectionsParser.Parse.html#SeztionParser_Providers_SectionsParser_Parse_System_String_
-  commentId: M:SeztionParser.Providers.SectionsParser.Parse(System.String)
-  fullName: SeztionParser.Providers.SectionsParser.Parse(System.String)
+  href: api/SeztionParser.SectionsParser.Parse.html#SeztionParser_SectionsParser_Parse_System_String_
+  commentId: M:SeztionParser.SectionsParser.Parse(System.String)
+  fullName: SeztionParser.SectionsParser.Parse(System.String)
   nameWithType: SectionsParser.Parse(String)
-- uid: SeztionParser.Providers.SectionsParser.Parse*
+- uid: SeztionParser.SectionsParser.Parse*
   name: Parse
-  href: api/SeztionParser.Providers.SectionsParser.Parse.html
-  commentId: Overload:SeztionParser.Providers.SectionsParser.Parse
-  fullName: SeztionParser.Providers.SectionsParser.Parse
+  href: api/SeztionParser.SectionsParser.Parse.html
+  commentId: Overload:SeztionParser.SectionsParser.Parse
+  fullName: SeztionParser.SectionsParser.Parse
   nameWithType: SectionsParser.Parse
+- uid: SeztionParser.SingleLineSection
+  name: SingleLineSection
+  href: api/SeztionParser.SingleLineSection.html
+  commentId: T:SeztionParser.SingleLineSection
+  fullName: SeztionParser.SingleLineSection
+  nameWithType: SingleLineSection
+- uid: SeztionParser.SingleLineSection.GetFirstLineDecimal(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: GetFirstLineDecimal(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html#SeztionParser_SingleLineSection_GetFirstLineDecimal_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineDecimal(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineDecimal(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SingleLineSection.GetFirstLineDecimal(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SingleLineSection.GetFirstLineDecimal*
+  name: GetFirstLineDecimal
+  href: api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineDecimal
+  fullName: SeztionParser.SingleLineSection.GetFirstLineDecimal
+  nameWithType: SingleLineSection.GetFirstLineDecimal
+- uid: SeztionParser.SingleLineSection.GetFirstLineDouble(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: GetFirstLineDouble(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineDouble.html#SeztionParser_SingleLineSection_GetFirstLineDouble_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineDouble(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineDouble(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SingleLineSection.GetFirstLineDouble(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SingleLineSection.GetFirstLineDouble*
+  name: GetFirstLineDouble
+  href: api/SeztionParser.SingleLineSection.GetFirstLineDouble.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineDouble
+  fullName: SeztionParser.SingleLineSection.GetFirstLineDouble
+  nameWithType: SingleLineSection.GetFirstLineDouble
+- uid: SeztionParser.SingleLineSection.GetFirstLineFloat(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  name: GetFirstLineFloat(ISectionsData, String, IFormatProvider)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineFloat.html#SeztionParser_SingleLineSection_GetFirstLineFloat_SeztionParser_ISectionsData_System_String_System_IFormatProvider_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineFloat(SeztionParser.ISectionsData,System.String,System.IFormatProvider)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineFloat(SeztionParser.ISectionsData, System.String, System.IFormatProvider)
+  nameWithType: SingleLineSection.GetFirstLineFloat(ISectionsData, String, IFormatProvider)
+- uid: SeztionParser.SingleLineSection.GetFirstLineFloat*
+  name: GetFirstLineFloat
+  href: api/SeztionParser.SingleLineSection.GetFirstLineFloat.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineFloat
+  fullName: SeztionParser.SingleLineSection.GetFirstLineFloat
+  nameWithType: SingleLineSection.GetFirstLineFloat
+- uid: SeztionParser.SingleLineSection.GetFirstLineInt(SeztionParser.ISectionsData,System.String)
+  name: GetFirstLineInt(ISectionsData, String)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineInt.html#SeztionParser_SingleLineSection_GetFirstLineInt_SeztionParser_ISectionsData_System_String_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineInt(SeztionParser.ISectionsData,System.String)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineInt(SeztionParser.ISectionsData, System.String)
+  nameWithType: SingleLineSection.GetFirstLineInt(ISectionsData, String)
+- uid: SeztionParser.SingleLineSection.GetFirstLineInt*
+  name: GetFirstLineInt
+  href: api/SeztionParser.SingleLineSection.GetFirstLineInt.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineInt
+  fullName: SeztionParser.SingleLineSection.GetFirstLineInt
+  nameWithType: SingleLineSection.GetFirstLineInt
+- uid: SeztionParser.SingleLineSection.GetFirstLineLong(SeztionParser.ISectionsData,System.String)
+  name: GetFirstLineLong(ISectionsData, String)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineLong.html#SeztionParser_SingleLineSection_GetFirstLineLong_SeztionParser_ISectionsData_System_String_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineLong(SeztionParser.ISectionsData,System.String)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineLong(SeztionParser.ISectionsData, System.String)
+  nameWithType: SingleLineSection.GetFirstLineLong(ISectionsData, String)
+- uid: SeztionParser.SingleLineSection.GetFirstLineLong*
+  name: GetFirstLineLong
+  href: api/SeztionParser.SingleLineSection.GetFirstLineLong.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineLong
+  fullName: SeztionParser.SingleLineSection.GetFirstLineLong
+  nameWithType: SingleLineSection.GetFirstLineLong
+- uid: SeztionParser.SingleLineSection.GetFirstLineString(SeztionParser.ISectionsData,System.String)
+  name: GetFirstLineString(ISectionsData, String)
+  href: api/SeztionParser.SingleLineSection.GetFirstLineString.html#SeztionParser_SingleLineSection_GetFirstLineString_SeztionParser_ISectionsData_System_String_
+  commentId: M:SeztionParser.SingleLineSection.GetFirstLineString(SeztionParser.ISectionsData,System.String)
+  fullName: SeztionParser.SingleLineSection.GetFirstLineString(SeztionParser.ISectionsData, System.String)
+  nameWithType: SingleLineSection.GetFirstLineString(ISectionsData, String)
+- uid: SeztionParser.SingleLineSection.GetFirstLineString*
+  name: GetFirstLineString
+  href: api/SeztionParser.SingleLineSection.GetFirstLineString.html
+  commentId: Overload:SeztionParser.SingleLineSection.GetFirstLineString
+  fullName: SeztionParser.SingleLineSection.GetFirstLineString
+  nameWithType: SingleLineSection.GetFirstLineString

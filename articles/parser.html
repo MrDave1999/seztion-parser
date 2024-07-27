@@ -81,21 +81,12 @@
 
 <p>You can also gets the section data using the parser.</p>
 <p>You must import all namespace types:</p>
-<pre><code class="lang-cs">using SeztionParser.Providers;
+<pre><code class="lang-cs">using SeztionParser;
 </code></pre>
 <p>You must use the <code>Parse</code> method of the <code>SectionsParser</code> class to return an instance of type <code>ISectionsData</code>:</p>
 <pre><code class="lang-cs">var parser = new SectionsParser();
-var sections = parser.Parse(File.ReadAllText(&quot;test.ini&quot;));
-</code></pre>
-<p>You can also customize the parser by inheriting from <code>SectionsParser</code> and override methods such as: <code>IsComment</code>, <code>IsSection</code> and <code>ExtractSection</code>.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="lang-cs">class CustomParser : SectionsParser
-{
-    public override string ExtractSection(string text)
-    {
-        // You can propose your own implementation.
-    }
-}
+string data = File.ReadAllText(&quot;test.ini&quot;);
+ISectionsData sections = parser.Parse(data);
 </code></pre>
 <h2 id="parser-rules">Parser rules</h2>
 <p><strong>1.</strong> If the line begins with the <code>#</code> character, it is considered a <strong>comment</strong>. The line may have spaces at the starts, the parser will ignore it.</p>

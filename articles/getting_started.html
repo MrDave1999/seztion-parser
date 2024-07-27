@@ -81,7 +81,7 @@
 
 <h2 id="installation">Installation</h2>
 <p>If you're an hardcore and want to do it manually, you must add the following to the <code>csproj</code> file:</p>
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;seztion-parser&quot; Version=&quot;1.0.2&quot; /&gt;
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;seztion-parser&quot; Version=&quot;3.0.0&quot; /&gt;
 </code></pre>
 <p>If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the <strong>Tools</strong> &gt; <strong>NuGet Package Manager</strong> &gt; <strong>Package Manager Console</strong> command and run the install command:</p>
 <pre><code>Install-Package seztion-parser
@@ -112,11 +112,11 @@
 <p>This file has comments and sections. <code>Positions1</code> and <code>Positions2</code> are sections and each has a <strong>data set</strong>.</p>
 <h3 id="load">Load</h3>
 <p>You must import all namespace types:</p>
-<pre><code class="lang-cs">using SeztionParser.Facades;
+<pre><code class="lang-cs">using SeztionParser;
 </code></pre>
 <p>You can then use the <code>Load</code> method of the <code>SectionsFile</code> class to load the <strong>sections file</strong> and it will return an instance of type <code>ISectionsData</code> that will allow you to access the <strong>sections data</strong>.</p>
 <pre><code class="lang-cs">// Load the sections file.
-var sections = SectionsFile.Load(&quot;Aim_Headshot.ini&quot;);
+ISectionsData sections = SectionsFile.Load(&quot;Aim_Headshot.ini&quot;);
 </code></pre>
 <p>You can then gets the data for a specific section:</p>
 <pre><code class="lang-cs">ISectionData positions1 = sections[&quot;Positions1&quot;];
@@ -124,15 +124,17 @@ ISectionData positions2 = sections[&quot;Positions2&quot;];
 </code></pre>
 <p>You can then iterate over the data in a specified section:</p>
 <pre><code class="lang-cs">Console.WriteLine(&quot;[Positions1]&quot;);
+ISectionData positions1 = sections[&quot;Positions1&quot;];
 // This prints the data of the 'Positions1' section.
-foreach (string data in sections[&quot;Positions1&quot;])
+foreach (string data in positions1)
     Console.WriteLine(data);
 
 Console.WriteLine();
 
 Console.WriteLine(&quot;[Positions2]&quot;);
+ISectionData positions2 = sections[&quot;Positions2&quot;];
 // This prints the data of the 'Positions2' section.
-foreach (string data in sections[&quot;Positions2&quot;])
+foreach (string data in positions2)
     Console.WriteLine(data);
 
 /*
@@ -154,7 +156,8 @@ foreach (string data in sections[&quot;Positions2&quot;])
 </code></pre>
 <h3 id="getnames">GetNames</h3>
 <p>If you want to gets the names of all the sections, use the <code>GetNames</code> method of the <code>ISectionsData</code> interface:</p>
-<pre><code class="lang-cs">foreach (string sectionName in sections.GetNames())
+<pre><code class="lang-cs">ICollection&lt;string&gt; names = sections.GetNames();
+foreach (string sectionName in names)
     Console.WriteLine($&quot;Section: {sectionName}&quot;);
 /*
     The example displays the following output:
@@ -164,7 +167,8 @@ foreach (string data in sections[&quot;Positions2&quot;])
 </code></pre>
 <h3 id="getall">GetAll</h3>
 <p>If you want to gets the data of all sections, use the <code>GetAll</code> method of the <code>ISectionsData</code> interface:</p>
-<pre><code class="lang-cs">foreach (ISectionData data in sections.GetAll())
+<pre><code class="lang-cs">ICollection&lt;ISectionData&gt; dataSet = sections.GetAll();
+foreach (ISectionData data in dataSet)
     Console.Write(data.ToString());
 /*
     The example displays the following output:
@@ -208,9 +212,6 @@ foreach (string data in sections[&quot;Positions2&quot;])
     ]
 */
 </code></pre>
-<p><strong>Note:</strong> Do not forget to import all namespace types:</p>
-<pre><code class="lang-cs">using SeztionParser.Models;
-</code></pre>
 <h3 id="sectionsdata-to-string">SectionsData To String</h3>
 <p>You can also convert the instance of type <code>ISectionsData</code> into an object of type <code>String</code>:</p>
 <pre><code class="lang-cs">Console.WriteLine(sections.ToString());
@@ -236,10 +237,7 @@ foreach (string data in sections[&quot;Positions2&quot;])
 </code></pre>
 <h3 id="properties-sectionmodel-class">Properties SectionModel class</h3>
 <p>You can also gets the <strong>amount of data</strong> and <strong>name</strong> for each section:</p>
-<pre><code class="lang-cs">// You must import all the types.
-using SeztionParser.Models;
-
-foreach (SectionModel section in sections)
+<pre><code class="lang-cs">foreach (SectionModel section in sections)
     Console.WriteLine($&quot;{section.Name}, {section.Data.Count}&quot;);
 /*
     The example displays the following output:
@@ -248,7 +246,7 @@ foreach (SectionModel section in sections)
 */
 </code></pre>
 <p>Or you can also <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/deconstruct">deconstruct</a> the object:</p>
-<pre><code class="lang-cs">foreach (var(name, data) in sections)
+<pre><code class="lang-cs">foreach ((string name, ISectionData data) in sections)
     Console.WriteLine($&quot;{name}, {data.Count}&quot;);
 /*
     The example displays the following output:
@@ -256,7 +254,7 @@ foreach (SectionModel section in sections)
     Positions2, 5
 */
 </code></pre>
-<p><strong>Note:</strong> If you don't know what each class does, don't forget to check the <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.Exceptions.html">API documentation</a>.</p>
+<p><strong>Note:</strong> If you don't know what each class does, don't forget to check the <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.html">API documentation</a>.</p>
 </article>
           </div>
           

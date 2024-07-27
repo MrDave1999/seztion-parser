@@ -101,7 +101,7 @@ Console.WriteLine(int.Parse(sections[&quot;Weather&quot;][0]));
 </code></pre>
 <p>Or we can also do it this way:</p>
 <pre><code class="lang-cs">// Import all types to use the extension methods.
-using SeztionParser.Helpers;
+using SeztionParser;
 
 Console.WriteLine(sections.GetFirstLineInt(&quot;WorldTime&quot;));
 Console.WriteLine(sections.GetFirstLineInt(&quot;Weather&quot;));
@@ -112,7 +112,7 @@ Console.WriteLine(sections.GetFirstLineInt(&quot;Weather&quot;));
 */
 </code></pre>
 <p>If the <code>Weather</code> section has more than one piece of data, the <code>GetFirstLineInt</code> method will always return the data from the first line of <code>Weather</code>.</p>
-<p>You can review all extension methods at this <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.Helpers.SingleLineSection.html">link</a>.</p>
+<p>You can review all extension methods at this <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.SingleLineSection.html">link</a>.</p>
 </article>
           </div>
           

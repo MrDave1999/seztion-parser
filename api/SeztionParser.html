@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Section data conversion | seztion-parser </title>
+    <title>Namespace SeztionParser
+   | seztion-parser </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Section data conversion | seztion-parser ">
+    <meta name="title" content="Namespace SeztionParser
+   | seztion-parser ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/seztionparser-icon.ico">
@@ -76,46 +78,49 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="section-data-conversion">Section data conversion</h1>
-
-<p>Given the following file:</p>
-<pre><code class="lang-ini"># Section(1).
-[Prices1]
-12.4
-45.2
-5676.313
-56.2
-
-
-# Section(2).
-[Prices2]
-23.423
-53.13
-67.78
-</code></pre>
-<p>The data for each section can be gets in this way:</p>
-<pre><code class="lang-cs">ISectionsData sections = SectionsFile.Load(&quot;prices.ini&quot;);
-</code></pre>
-<p>But the data in each section are by default of type <code>string</code>:</p>
-<pre><code class="lang-cs">Console.WriteLine(sections[&quot;Prices1&quot;][0]);
-Console.WriteLine(sections[&quot;Prices2&quot;][0]);
-/*
-    The example displays the following output:
-    12.4
-    23.423
-*/
-</code></pre>
-<p>To convert all the data in a section to a particular type (such as <code>int</code>, <code>double</code> or <code>float</code>), you must write the following:</p>
-<pre><code class="lang-cs">// Import all types to use the extension methods.
-using SeztionParser;
-
-IEnumerable&lt;double&gt; prices = sections.ToDouble(&quot;Prices1&quot;);
-foreach (double data in prices)
-    Console.WriteLine(data);
-</code></pre>
-<p>The methods <code>ToDouble</code>, <code>ToInt</code>, etc. do not return all the data in a collection and this is to avoid memory consumption, so it returns an instance that implements the <code>IEnumerable</code> interface and this way, you can retrieve a data every time you need it.</p>
-<p>You can review all extension methods at this <a href="https://mrdave1999.github.io/seztion-parser/api/SeztionParser.SectionDataConversion.html">link</a>.</p>
+            <article class="content wrap" id="_content" data-uid="SeztionParser">
+  
+  <h1 id="SeztionParser" data-uid="SeztionParser" class="text-break">Namespace SeztionParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="SeztionParser.ParserException.html">ParserException</a></h4>
+      <section><p>The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.SectionDataConversion.html">SectionDataConversion</a></h4>
+      <section><p>Defines operations that serve to convert a section data to another data type.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.SectionNotFoundException.html">SectionNotFoundException</a></h4>
+      <section><p>The exception that is thrown when the specified section does not exist in the collection.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.SectionsFile.html">SectionsFile</a></h4>
+      <section><p>Represents the loader for the reading of files with sections.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.SectionsParser.html">SectionsParser</a></h4>
+      <section><p>Represents the sections parser.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.SingleLineSection.html">SingleLineSection</a></h4>
+      <section><p>Defines operations used to gets the first line of a section in a specific format.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="SeztionParser.SectionModel.html">SectionModel</a></h4>
+      <section><p>Represents a section.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="SeztionParser.ISectionData.html">ISectionData</a></h4>
+      <section><p>Represents a collection of data from a specific section.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.ISectionsData.html">ISectionsData</a></h4>
+      <section><p>Represents a collection of sections.</p>
+</section>
+      <h4><a class="xref" href="SeztionParser.ISectionsParser.html">ISectionsParser</a></h4>
+      <section><p>Represents the sections parser.</p>
+</section>
 </article>
           </div>
           
@@ -123,9 +128,6 @@ foreach (double data in prices)
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/MrDave1999/seztion-parser/blob/main/docs/articles/section_data_conversion.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

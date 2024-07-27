@@ -1,283 +1,228 @@
 {
-  "api/SeztionParser.Exceptions.html": {
-    "href": "api/SeztionParser.Exceptions.html",
-    "title": "Namespace SeztionParser.Exceptions | seztion-parser",
-    "keywords": "Namespace SeztionParser.Exceptions Classes ParserException The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section. SectionNotFoundException The exception that is thrown when the specified section does not exist in the collection."
+  "api/SeztionParser.html": {
+    "href": "api/SeztionParser.html",
+    "title": "Namespace SeztionParser | seztion-parser",
+    "keywords": "Namespace SeztionParser Classes ParserException The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section. SectionDataConversion Defines operations that serve to convert a section data to another data type. SectionNotFoundException The exception that is thrown when the specified section does not exist in the collection. SectionsFile Represents the loader for the reading of files with sections. SectionsParser Represents the sections parser. SingleLineSection Defines operations used to gets the first line of a section in a specific format. Structs SectionModel Represents a section. Interfaces ISectionData Represents a collection of data from a specific section. ISectionsData Represents a collection of sections. ISectionsParser Represents the sections parser."
   },
-  "api/SeztionParser.Exceptions.ParserException.ActualValue.html": {
-    "href": "api/SeztionParser.Exceptions.ParserException.ActualValue.html",
-    "title": "Property ActualValue | seztion-parser",
-    "keywords": "Property ActualValue | Improve this Doc View Source ActualValue Allows access to the actual value causing the exception. Declaration public object ActualValue { get; } Property Value Type Description Object"
-  },
-  "api/SeztionParser.Exceptions.ParserException.-ctor.html": {
-    "href": "api/SeztionParser.Exceptions.ParserException.-ctor.html",
-    "title": "Constructor ParserException | seztion-parser",
-    "keywords": "Constructor ParserException | Improve this Doc View Source ParserException(String) Initializes a new instance of the ParserException class with a specified error message. Declaration public ParserException(string message) Parameters Type Name Description String message The message that describes the error. | Improve this Doc View Source ParserException(String, Object) Initializes a new instance of the ParserException class with a specified error message and the actual value that caused the exception. Declaration public ParserException(string message, object actualValue) Parameters Type Name Description String message The message that describes the error. Object actualValue The actual value that caused the exception."
-  },
-  "api/SeztionParser.Exceptions.ParserException.html": {
-    "href": "api/SeztionParser.Exceptions.ParserException.html",
-    "title": "Class ParserException | seztion-parser",
-    "keywords": "Class ParserException The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section. Inheritance Object Exception ParserException Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetObjectData(SerializationInfo, StreamingContext) Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser.Exceptions Assembly : SeztionParser.dll Syntax public class ParserException : Exception, ISerializable Constructors Name Description ParserException(String) Initializes a new instance of the ParserException class with a specified error message. ParserException(String, Object) Initializes a new instance of the ParserException class with a specified error message and the actual value that caused the exception. Properties Name Description ActualValue Allows access to the actual value causing the exception. Message Gets a message that describes the current exception."
-  },
-  "api/SeztionParser.Exceptions.ParserException.Message.html": {
-    "href": "api/SeztionParser.Exceptions.ParserException.Message.html",
-    "title": "Property Message | seztion-parser",
-    "keywords": "Property Message | Improve this Doc View Source Message Gets a message that describes the current exception. Declaration public override string Message { get; } Property Value Type Description String Overrides Exception.Message"
-  },
-  "api/SeztionParser.Exceptions.SectionNotFoundException.-ctor.html": {
-    "href": "api/SeztionParser.Exceptions.SectionNotFoundException.-ctor.html",
-    "title": "Constructor SectionNotFoundException | seztion-parser",
-    "keywords": "Constructor SectionNotFoundException | Improve this Doc View Source SectionNotFoundException(String, String) Initializes a new instance of the SectionNotFoundException class with a specified error message and the name of the parameter that causes this exception. Declaration public SectionNotFoundException(string message, string paramName) Parameters Type Name Description String message The message that describes the error. String paramName The name of the parameter that caused the exception."
-  },
-  "api/SeztionParser.Exceptions.SectionNotFoundException.html": {
-    "href": "api/SeztionParser.Exceptions.SectionNotFoundException.html",
-    "title": "Class SectionNotFoundException | seztion-parser",
-    "keywords": "Class SectionNotFoundException The exception that is thrown when the specified section does not exist in the collection. Inheritance Object Exception SystemException ArgumentException SectionNotFoundException Implements ISerializable Inherited Members ArgumentException.GetObjectData(SerializationInfo, StreamingContext) ArgumentException.Message ArgumentException.ParamName Exception.GetBaseException() Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser.Exceptions Assembly : SeztionParser.dll Syntax public class SectionNotFoundException : ArgumentException, ISerializable Constructors Name Description SectionNotFoundException(String, String) Initializes a new instance of the SectionNotFoundException class with a specified error message and the name of the parameter that causes this exception."
-  },
-  "api/SeztionParser.Facades.html": {
-    "href": "api/SeztionParser.Facades.html",
-    "title": "Namespace SeztionParser.Facades | seztion-parser",
-    "keywords": "Namespace SeztionParser.Facades Classes SectionsFile Defines the operations that can be applied to a sections file."
-  },
-  "api/SeztionParser.Facades.SectionsFile.html": {
-    "href": "api/SeztionParser.Facades.SectionsFile.html",
-    "title": "Class SectionsFile | seztion-parser",
-    "keywords": "Class SectionsFile Defines the operations that can be applied to a sections file. Inheritance Object SectionsFile Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser.Facades Assembly : SeztionParser.dll Syntax public static class SectionsFile Methods Name Description Load(String) Load the sections file."
-  },
-  "api/SeztionParser.Facades.SectionsFile.Load.html": {
-    "href": "api/SeztionParser.Facades.SectionsFile.Load.html",
-    "title": "Method Load | seztion-parser",
-    "keywords": "Method Load | Improve this Doc View Source Load(String) Load the sections file. Declaration public static ISectionsData Load(string path) Parameters Type Name Description String path The path of the file to load. Returns Type Description ISectionsData An instance with the data of each section."
-  },
-  "api/SeztionParser.Helpers.html": {
-    "href": "api/SeztionParser.Helpers.html",
-    "title": "Namespace SeztionParser.Helpers | seztion-parser",
-    "keywords": "Namespace SeztionParser.Helpers Classes SectionDataConversion Defines operations that serve to convert a section data to another data type. SingleLineSection Defines operations used to gets the first line of a section in a specific format."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.html",
-    "title": "Class SectionDataConversion | seztion-parser",
-    "keywords": "Class SectionDataConversion Defines operations that serve to convert a section data to another data type. Inheritance Object SectionDataConversion Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser.Helpers Assembly : SeztionParser.dll Syntax public static class SectionDataConversion Methods Name Description ToDecimal(ISectionsData, String, IFormatProvider) Convert section data to decimal . ToDouble(ISectionsData, String, IFormatProvider) Convert section data to doubles . ToFloat(ISectionsData, String, IFormatProvider) Convert section data to floats . ToInt(ISectionsData, String) Convert section data to integers . ToLong(ISectionsData, String) Convert section data to longs ."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.ToDecimal.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.ToDecimal.html",
-    "title": "Method ToDecimal | seztion-parser",
-    "keywords": "Method ToDecimal | Improve this Doc View Source ToDecimal(ISectionsData, String, IFormatProvider) Convert section data to decimal . Declaration public static IEnumerable<decimal> ToDecimal(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Decimal > The section data in decimal format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not decimals . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.ToDouble.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.ToDouble.html",
-    "title": "Method ToDouble | seztion-parser",
-    "keywords": "Method ToDouble | Improve this Doc View Source ToDouble(ISectionsData, String, IFormatProvider) Convert section data to doubles . Declaration public static IEnumerable<double> ToDouble(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Double > The section data in double format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not doubles . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.ToFloat.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.ToFloat.html",
-    "title": "Method ToFloat | seztion-parser",
-    "keywords": "Method ToFloat | Improve this Doc View Source ToFloat(ISectionsData, String, IFormatProvider) Convert section data to floats . Declaration public static IEnumerable<float> ToFloat(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Single > The section data in float format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not floats . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.ToInt.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.ToInt.html",
-    "title": "Method ToInt | seztion-parser",
-    "keywords": "Method ToInt | Improve this Doc View Source ToInt(ISectionsData, String) Convert section data to integers . Declaration public static IEnumerable<int> ToInt(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. Returns Type Description IEnumerable < Int32 > The section data in integer format. Exceptions Type Condition FormatException If the data in the section are not integers . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SectionDataConversion.ToLong.html": {
-    "href": "api/SeztionParser.Helpers.SectionDataConversion.ToLong.html",
-    "title": "Method ToLong | seztion-parser",
-    "keywords": "Method ToLong | Improve this Doc View Source ToLong(ISectionsData, String) Convert section data to longs . Declaration public static IEnumerable<long> ToLong(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. Returns Type Description IEnumerable < Int64 > The section data in long format. Exceptions Type Condition FormatException If the data in the section are not longs . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDecimal.html",
-    "title": "Method GetFirstLineDecimal | seztion-parser",
-    "keywords": "Method GetFirstLineDecimal | Improve this Doc View Source GetFirstLineDecimal(ISectionsData, String, IFormatProvider) Gets the first line of the section in decimal format. Declaration public static decimal GetFirstLineDecimal(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Decimal The first line in decimal format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an decimal . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineDouble.html",
-    "title": "Method GetFirstLineDouble | seztion-parser",
-    "keywords": "Method GetFirstLineDouble | Improve this Doc View Source GetFirstLineDouble(ISectionsData, String, IFormatProvider) Gets the first line of the section in double format. Declaration public static double GetFirstLineDouble(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Double The first line in double format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an double . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineFloat.html",
-    "title": "Method GetFirstLineFloat | seztion-parser",
-    "keywords": "Method GetFirstLineFloat | Improve this Doc View Source GetFirstLineFloat(ISectionsData, String, IFormatProvider) Gets the first line of the section in float format. Declaration public static float GetFirstLineFloat(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Single The first line in float format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an float . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineInt.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineInt.html",
-    "title": "Method GetFirstLineInt | seztion-parser",
-    "keywords": "Method GetFirstLineInt | Improve this Doc View Source GetFirstLineInt(ISectionsData, String) Gets the first line of the section in integer format. Declaration public static int GetFirstLineInt(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description Int32 The first line in integer format. Exceptions Type Condition FormatException If the first line is not an integer . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineLong.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineLong.html",
-    "title": "Method GetFirstLineLong | seztion-parser",
-    "keywords": "Method GetFirstLineLong | Improve this Doc View Source GetFirstLineLong(ISectionsData, String) Gets the first line of the section in long format. Declaration public static long GetFirstLineLong(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description Int64 The first line in long format. Exceptions Type Condition FormatException If the first line is not an long . SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineString.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.GetFirstLineString.html",
-    "title": "Method GetFirstLineString | seztion-parser",
-    "keywords": "Method GetFirstLineString | Improve this Doc View Source GetFirstLineString(ISectionsData, String) Gets the first line of the section in string format. Declaration public static string GetFirstLineString(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description String The first line in string format. Exceptions Type Condition SectionNotFoundException If the section does not exist."
-  },
-  "api/SeztionParser.Helpers.SingleLineSection.html": {
-    "href": "api/SeztionParser.Helpers.SingleLineSection.html",
-    "title": "Class SingleLineSection | seztion-parser",
-    "keywords": "Class SingleLineSection Defines operations used to gets the first line of a section in a specific format. Inheritance Object SingleLineSection Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser.Helpers Assembly : SeztionParser.dll Syntax public static class SingleLineSection Methods Name Description GetFirstLineDecimal(ISectionsData, String, IFormatProvider) Gets the first line of the section in decimal format. GetFirstLineDouble(ISectionsData, String, IFormatProvider) Gets the first line of the section in double format. GetFirstLineFloat(ISectionsData, String, IFormatProvider) Gets the first line of the section in float format. GetFirstLineInt(ISectionsData, String) Gets the first line of the section in integer format. GetFirstLineLong(ISectionsData, String) Gets the first line of the section in long format. GetFirstLineString(ISectionsData, String) Gets the first line of the section in string format."
-  },
-  "api/SeztionParser.Interfaces.html": {
-    "href": "api/SeztionParser.Interfaces.html",
-    "title": "Namespace SeztionParser.Interfaces | seztion-parser",
-    "keywords": "Namespace SeztionParser.Interfaces Interfaces ISectionData Represents a collection of data from a specific section. ISectionsData Represents a collection of sections. ISectionsParser Represents the sections parser."
-  },
-  "api/SeztionParser.Interfaces.ISectionData.Contains.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionData.Contains.html",
+  "api/SeztionParser.ISectionData.Contains.html": {
+    "href": "api/SeztionParser.ISectionData.Contains.html",
     "title": "Method Contains | seztion-parser",
-    "keywords": "Method Contains | Improve this Doc View Source Contains(String) Determine if the item is in the section. Declaration bool Contains(string item) Parameters Type Name Description String item The item to locate in the section. Returns Type Description Boolean true if item is found in the section; otherwise, false ."
+    "keywords": "Method Contains | Improve this Doc View Source Contains(String) Determine if the item is in the section. Declaration bool Contains(string item) Parameters Type Name Description String item The item to locate in the section. Returns Type Description Boolean true if item is found in the section; otherwise, false . Exceptions Type Condition ArgumentNullException item is null ."
   },
-  "api/SeztionParser.Interfaces.ISectionData.Count.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionData.Count.html",
+  "api/SeztionParser.ISectionData.Count.html": {
+    "href": "api/SeztionParser.ISectionData.Count.html",
     "title": "Property Count | seztion-parser",
     "keywords": "Property Count | Improve this Doc View Source Count Gets the number of elements in a section. Declaration int Count { get; } Property Value Type Description Int32 The number of elements contained in the section."
   },
-  "api/SeztionParser.Interfaces.ISectionData.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionData.html",
+  "api/SeztionParser.ISectionData.html": {
+    "href": "api/SeztionParser.ISectionData.html",
     "title": "Interface ISectionData | seztion-parser",
-    "keywords": "Interface ISectionData Represents a collection of data from a specific section. Inherited Members IEnumerable<String>.GetEnumerator() Namespace : SeztionParser.Interfaces Assembly : SeztionParser.dll Syntax public interface ISectionData : IEnumerable<string>, IEnumerable Properties Name Description Count Gets the number of elements in a section. Item[Int32] Gets an element of a section at the specified index. Methods Name Description Contains(String) Determine if the item is in the section."
+    "keywords": "Interface ISectionData Represents a collection of data from a specific section. Inherited Members IEnumerable<String>.GetEnumerator() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public interface ISectionData : IEnumerable<string>, IEnumerable Properties Name Description Count Gets the number of elements in a section. Item[Int32] Gets an element of a section at the specified index. Methods Name Description Contains(String) Determine if the item is in the section."
   },
-  "api/SeztionParser.Interfaces.ISectionData.Item.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionData.Item.html",
+  "api/SeztionParser.ISectionData.Item.html": {
+    "href": "api/SeztionParser.ISectionData.Item.html",
     "title": "Property Item | seztion-parser",
     "keywords": "Property Item | Improve this Doc View Source Item[Int32] Gets an element of a section at the specified index. Declaration string this[int index] { get; } Parameters Type Name Description Int32 index The zero-based index of the element to get from a section. Property Value Type Description String The element of a section at the specified index."
   },
-  "api/SeztionParser.Interfaces.ISectionsData.GetAll.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsData.GetAll.html",
+  "api/SeztionParser.ISectionsData.GetAll.html": {
+    "href": "api/SeztionParser.ISectionsData.GetAll.html",
     "title": "Method GetAll | seztion-parser",
     "keywords": "Method GetAll | Improve this Doc View Source GetAll() Gets the data from all sections. Declaration ICollection<ISectionData> GetAll() Returns Type Description ICollection < ISectionData > The data from all sections."
   },
-  "api/SeztionParser.Interfaces.ISectionsData.GetNames.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsData.GetNames.html",
+  "api/SeztionParser.ISectionsData.GetNames.html": {
+    "href": "api/SeztionParser.ISectionsData.GetNames.html",
     "title": "Method GetNames | seztion-parser",
     "keywords": "Method GetNames | Improve this Doc View Source GetNames() Gets the names of all sections. Declaration ICollection<string> GetNames() Returns Type Description ICollection < String > The names of all sections."
   },
-  "api/SeztionParser.Interfaces.ISectionsData.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsData.html",
+  "api/SeztionParser.ISectionsData.html": {
+    "href": "api/SeztionParser.ISectionsData.html",
     "title": "Interface ISectionsData | seztion-parser",
-    "keywords": "Interface ISectionsData Represents a collection of sections. Inherited Members IEnumerable<SectionModel>.GetEnumerator() Namespace : SeztionParser.Interfaces Assembly : SeztionParser.dll Syntax public interface ISectionsData : IEnumerable<SectionModel>, IEnumerable Properties Name Description Item[String] Gets the data of a section with the specified section. Methods Name Description GetAll() Gets the data from all sections. GetNames() Gets the names of all sections. TryGetData(String, out ISectionData) Gets the data of a section. Extension Methods SectionDataConversion.ToDecimal(ISectionsData, String, IFormatProvider) SectionDataConversion.ToDouble(ISectionsData, String, IFormatProvider) SectionDataConversion.ToFloat(ISectionsData, String, IFormatProvider) SectionDataConversion.ToInt(ISectionsData, String) SectionDataConversion.ToLong(ISectionsData, String) SingleLineSection.GetFirstLineDecimal(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineDouble(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineFloat(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineInt(ISectionsData, String) SingleLineSection.GetFirstLineLong(ISectionsData, String) SingleLineSection.GetFirstLineString(ISectionsData, String)"
+    "keywords": "Interface ISectionsData Represents a collection of sections. Inherited Members IEnumerable<SectionModel>.GetEnumerator() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public interface ISectionsData : IEnumerable<SectionModel>, IEnumerable Properties Name Description Item[String] Gets the data of a section with the specified section. Methods Name Description GetAll() Gets the data from all sections. GetNames() Gets the names of all sections. TryGetData(String, out ISectionData) Gets the data of a section. Extension Methods SectionDataConversion.ToDecimal(ISectionsData, String, IFormatProvider) SectionDataConversion.ToDouble(ISectionsData, String, IFormatProvider) SectionDataConversion.ToFloat(ISectionsData, String, IFormatProvider) SectionDataConversion.ToInt(ISectionsData, String) SectionDataConversion.ToLong(ISectionsData, String) SingleLineSection.GetFirstLineDecimal(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineDouble(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineFloat(ISectionsData, String, IFormatProvider) SingleLineSection.GetFirstLineInt(ISectionsData, String) SingleLineSection.GetFirstLineLong(ISectionsData, String) SingleLineSection.GetFirstLineString(ISectionsData, String)"
   },
-  "api/SeztionParser.Interfaces.ISectionsData.Item.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsData.Item.html",
+  "api/SeztionParser.ISectionsData.Item.html": {
+    "href": "api/SeztionParser.ISectionsData.Item.html",
     "title": "Property Item | seztion-parser",
     "keywords": "Property Item | Improve this Doc View Source Item[String] Gets the data of a section with the specified section. Declaration ISectionData this[string section] { get; } Parameters Type Name Description String section The name of the section to get. Property Value Type Description ISectionData The collection with the specified section. Exceptions Type Condition ArgumentNullException section is null . SectionNotFoundException If the section does not exist."
   },
-  "api/SeztionParser.Interfaces.ISectionsData.TryGetData.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsData.TryGetData.html",
+  "api/SeztionParser.ISectionsData.TryGetData.html": {
+    "href": "api/SeztionParser.ISectionsData.TryGetData.html",
     "title": "Method TryGetData | seztion-parser",
     "keywords": "Method TryGetData | Improve this Doc View Source TryGetData(String, out ISectionData) Gets the data of a section. Declaration bool TryGetData(string section, out ISectionData data) Parameters Type Name Description String section The name of the section to get. ISectionData data When this method returns, the data associated with the specified section, if the section is found; otherwise, the default value is null . This parameter is passed uninitialized. Returns Type Description Boolean true if the section exists, otherwise, returns false . Exceptions Type Condition ArgumentNullException section is null ."
   },
-  "api/SeztionParser.Interfaces.ISectionsParser.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsParser.html",
+  "api/SeztionParser.ISectionsParser.html": {
+    "href": "api/SeztionParser.ISectionsParser.html",
     "title": "Interface ISectionsParser | seztion-parser",
-    "keywords": "Interface ISectionsParser Represents the sections parser. Namespace : SeztionParser.Interfaces Assembly : SeztionParser.dll Syntax public interface ISectionsParser Methods Name Description Parse(String) Starts the parsing to extract the data of each section."
+    "keywords": "Interface ISectionsParser Represents the sections parser. Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public interface ISectionsParser Methods Name Description Parse(String) Starts the parsing to extract the data of each section."
   },
-  "api/SeztionParser.Interfaces.ISectionsParser.Parse.html": {
-    "href": "api/SeztionParser.Interfaces.ISectionsParser.Parse.html",
+  "api/SeztionParser.ISectionsParser.Parse.html": {
+    "href": "api/SeztionParser.ISectionsParser.Parse.html",
     "title": "Method Parse | seztion-parser",
-    "keywords": "Method Parse | Improve this Doc View Source Parse(String) Starts the parsing to extract the data of each section. Declaration ISectionsData Parse(string data) Parameters Type Name Description String data Data to parsing. Returns Type Description ISectionsData An instance with the parsed data. Exceptions Type Condition ParserException If the parser find an error during the parsing."
+    "keywords": "Method Parse | Improve this Doc View Source Parse(String) Starts the parsing to extract the data of each section. Declaration ISectionsData Parse(string data) Parameters Type Name Description String data Data to parsing. Returns Type Description ISectionsData An instance with the parsed data. Exceptions Type Condition ArgumentNullException data is null . ParserException If the parser find an error during the parsing."
   },
-  "api/SeztionParser.Models.html": {
-    "href": "api/SeztionParser.Models.html",
-    "title": "Namespace SeztionParser.Models | seztion-parser",
-    "keywords": "Namespace SeztionParser.Models Structs SectionModel Represents a section."
+  "api/SeztionParser.ParserException.ActualValue.html": {
+    "href": "api/SeztionParser.ParserException.ActualValue.html",
+    "title": "Property ActualValue | seztion-parser",
+    "keywords": "Property ActualValue | Improve this Doc View Source ActualValue Allows access to the actual value causing the exception. Declaration public object ActualValue { get; } Property Value Type Description Object"
   },
-  "api/SeztionParser.Models.SectionModel.-ctor.html": {
-    "href": "api/SeztionParser.Models.SectionModel.-ctor.html",
+  "api/SeztionParser.ParserException.-ctor.html": {
+    "href": "api/SeztionParser.ParserException.-ctor.html",
+    "title": "Constructor ParserException | seztion-parser",
+    "keywords": "Constructor ParserException | Improve this Doc View Source ParserException() Initializes a new instance of the ParserException class with a default message. Declaration public ParserException() | Improve this Doc View Source ParserException(String) Initializes a new instance of the ParserException class with a specified error message. Declaration public ParserException(string message) Parameters Type Name Description String message The message that describes the error. | Improve this Doc View Source ParserException(String, Object) Initializes a new instance of the ParserException class with a specified error message and the actual value that caused the exception. Declaration public ParserException(string message, object actualValue) Parameters Type Name Description String message The message that describes the error. Object actualValue The actual value that caused the exception."
+  },
+  "api/SeztionParser.ParserException.html": {
+    "href": "api/SeztionParser.ParserException.html",
+    "title": "Class ParserException | seztion-parser",
+    "keywords": "Class ParserException The exception that is thrown when the parser finds an error during the parsing, such as a duplicate section. Inheritance Object Exception ParserException Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetObjectData(SerializationInfo, StreamingContext) Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public class ParserException : Exception, ISerializable Constructors Name Description ParserException() Initializes a new instance of the ParserException class with a default message. ParserException(String) Initializes a new instance of the ParserException class with a specified error message. ParserException(String, Object) Initializes a new instance of the ParserException class with a specified error message and the actual value that caused the exception. Properties Name Description ActualValue Allows access to the actual value causing the exception. Message Gets a message that describes the current exception."
+  },
+  "api/SeztionParser.ParserException.Message.html": {
+    "href": "api/SeztionParser.ParserException.Message.html",
+    "title": "Property Message | seztion-parser",
+    "keywords": "Property Message | Improve this Doc View Source Message Gets a message that describes the current exception. Declaration public override string Message { get; } Property Value Type Description String Overrides Exception.Message"
+  },
+  "api/SeztionParser.SectionDataConversion.html": {
+    "href": "api/SeztionParser.SectionDataConversion.html",
+    "title": "Class SectionDataConversion | seztion-parser",
+    "keywords": "Class SectionDataConversion Defines operations that serve to convert a section data to another data type. Inheritance Object SectionDataConversion Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public static class SectionDataConversion Methods Name Description ToDecimal(ISectionsData, String, IFormatProvider) Convert section data to decimal . ToDouble(ISectionsData, String, IFormatProvider) Convert section data to doubles . ToFloat(ISectionsData, String, IFormatProvider) Convert section data to floats . ToInt(ISectionsData, String) Convert section data to integers . ToLong(ISectionsData, String) Convert section data to longs ."
+  },
+  "api/SeztionParser.SectionDataConversion.ToDecimal.html": {
+    "href": "api/SeztionParser.SectionDataConversion.ToDecimal.html",
+    "title": "Method ToDecimal | seztion-parser",
+    "keywords": "Method ToDecimal | Improve this Doc View Source ToDecimal(ISectionsData, String, IFormatProvider) Convert section data to decimal . Declaration public static IEnumerable<decimal> ToDecimal(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Decimal > The section data in decimal format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not decimals . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SectionDataConversion.ToDouble.html": {
+    "href": "api/SeztionParser.SectionDataConversion.ToDouble.html",
+    "title": "Method ToDouble | seztion-parser",
+    "keywords": "Method ToDouble | Improve this Doc View Source ToDouble(ISectionsData, String, IFormatProvider) Convert section data to doubles . Declaration public static IEnumerable<double> ToDouble(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Double > The section data in double format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not doubles . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SectionDataConversion.ToFloat.html": {
+    "href": "api/SeztionParser.SectionDataConversion.ToFloat.html",
+    "title": "Method ToFloat | seztion-parser",
+    "keywords": "Method ToFloat | Improve this Doc View Source ToFloat(ISectionsData, String, IFormatProvider) Convert section data to floats . Declaration public static IEnumerable<float> ToFloat(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description IEnumerable < Single > The section data in float format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the data in the section are not floats . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SectionDataConversion.ToInt.html": {
+    "href": "api/SeztionParser.SectionDataConversion.ToInt.html",
+    "title": "Method ToInt | seztion-parser",
+    "keywords": "Method ToInt | Improve this Doc View Source ToInt(ISectionsData, String) Convert section data to integers . Declaration public static IEnumerable<int> ToInt(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. Returns Type Description IEnumerable < Int32 > The section data in integer format. Exceptions Type Condition FormatException If the data in the section are not integers . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SectionDataConversion.ToLong.html": {
+    "href": "api/SeztionParser.SectionDataConversion.ToLong.html",
+    "title": "Method ToLong | seztion-parser",
+    "keywords": "Method ToLong | Improve this Doc View Source ToLong(ISectionsData, String) Convert section data to longs . Declaration public static IEnumerable<long> ToLong(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to convert. Returns Type Description IEnumerable < Int64 > The section data in long format. Exceptions Type Condition FormatException If the data in the section are not longs . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SectionModel.-ctor.html": {
+    "href": "api/SeztionParser.SectionModel.-ctor.html",
     "title": "Constructor SectionModel | seztion-parser",
-    "keywords": "Constructor SectionModel | Improve this Doc View Source SectionModel(String, ISectionData) Initializes a new instance of the SectionModel structure with the specified name and data. Declaration public SectionModel(string name, ISectionData data) Parameters Type Name Description String name The name of the section. ISectionData data The section data."
+    "keywords": "Constructor SectionModel | Improve this Doc View Source SectionModel(String, ISectionData) Initializes a new instance of the SectionModel structure with the specified name and data. Declaration public SectionModel(string name, ISectionData data) Parameters Type Name Description String name The name of the section. ISectionData data The section data. Exceptions Type Condition ArgumentNullException name or data is null ."
   },
-  "api/SeztionParser.Models.SectionModel.Data.html": {
-    "href": "api/SeztionParser.Models.SectionModel.Data.html",
+  "api/SeztionParser.SectionModel.Data.html": {
+    "href": "api/SeztionParser.SectionModel.Data.html",
     "title": "Property Data | seztion-parser",
     "keywords": "Property Data | Improve this Doc View Source Data Allows access to the section data. Declaration public readonly ISectionData Data { get; } Property Value Type Description ISectionData An collection of section data."
   },
-  "api/SeztionParser.Models.SectionModel.Deconstruct.html": {
-    "href": "api/SeztionParser.Models.SectionModel.Deconstruct.html",
+  "api/SeztionParser.SectionModel.Deconstruct.html": {
+    "href": "api/SeztionParser.SectionModel.Deconstruct.html",
     "title": "Method Deconstruct | seztion-parser",
-    "keywords": "Method Deconstruct | Improve this Doc View Source Deconstruct(out String, out ISectionData) Deconstructs the current SectionModel . Declaration public void Deconstruct(out string name, out ISectionData data) Parameters Type Name Description String name The section name of the current SectionModel . ISectionData data The sections data of the current SectionModel ."
+    "keywords": "Method Deconstruct | Improve this Doc View Source Deconstruct(out String, out ISectionData) Deconstructs the current SectionModel . Declaration public readonly void Deconstruct(out string name, out ISectionData data) Parameters Type Name Description String name The section name of the current SectionModel . ISectionData data The sections data of the current SectionModel ."
   },
-  "api/SeztionParser.Models.SectionModel.html": {
-    "href": "api/SeztionParser.Models.SectionModel.html",
+  "api/SeztionParser.SectionModel.html": {
+    "href": "api/SeztionParser.SectionModel.html",
     "title": "Struct SectionModel | seztion-parser",
-    "keywords": "Struct SectionModel Represents a section. Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() Object.Equals(Object, Object) Object.GetType() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser.Models Assembly : SeztionParser.dll Syntax public struct SectionModel Constructors Name Description SectionModel(String, ISectionData) Initializes a new instance of the SectionModel structure with the specified name and data. Properties Name Description Data Allows access to the section data. Name Allows access to the section name. Methods Name Description Deconstruct(out String, out ISectionData) Deconstructs the current SectionModel . ToString() Converts the SectionModel instance to a String object."
+    "keywords": "Struct SectionModel Represents a section. Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() Object.Equals(Object, Object) Object.GetType() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public readonly struct SectionModel Constructors Name Description SectionModel(String, ISectionData) Initializes a new instance of the SectionModel structure with the specified name and data. Properties Name Description Data Allows access to the section data. Name Allows access to the section name. Methods Name Description Deconstruct(out String, out ISectionData) Deconstructs the current SectionModel . ToString() Converts the SectionModel instance to a String object."
   },
-  "api/SeztionParser.Models.SectionModel.Name.html": {
-    "href": "api/SeztionParser.Models.SectionModel.Name.html",
+  "api/SeztionParser.SectionModel.Name.html": {
+    "href": "api/SeztionParser.SectionModel.Name.html",
     "title": "Property Name | seztion-parser",
     "keywords": "Property Name | Improve this Doc View Source Name Allows access to the section name. Declaration public readonly string Name { get; } Property Value Type Description String The name of the section."
   },
-  "api/SeztionParser.Models.SectionModel.ToString.html": {
-    "href": "api/SeztionParser.Models.SectionModel.ToString.html",
+  "api/SeztionParser.SectionModel.ToString.html": {
+    "href": "api/SeztionParser.SectionModel.ToString.html",
     "title": "Method ToString | seztion-parser",
-    "keywords": "Method ToString | Improve this Doc View Source ToString() Converts the SectionModel instance to a String object. Declaration public override string ToString() Returns Type Description String A string that represents the current object. Overrides ValueType.ToString()"
+    "keywords": "Method ToString | Improve this Doc View Source ToString() Converts the SectionModel instance to a String object. Declaration public override readonly string ToString() Returns Type Description String A string that represents the current object. Overrides ValueType.ToString()"
   },
-  "api/SeztionParser.Providers.html": {
-    "href": "api/SeztionParser.Providers.html",
-    "title": "Namespace SeztionParser.Providers | seztion-parser",
-    "keywords": "Namespace SeztionParser.Providers Classes SectionsParser Defines the operations that control the parser behavior."
+  "api/SeztionParser.SectionNotFoundException.-ctor.html": {
+    "href": "api/SeztionParser.SectionNotFoundException.-ctor.html",
+    "title": "Constructor SectionNotFoundException | seztion-parser",
+    "keywords": "Constructor SectionNotFoundException | Improve this Doc View Source SectionNotFoundException() Initializes a new instance of the SectionNotFoundException class with a default message. Declaration public SectionNotFoundException() | Improve this Doc View Source SectionNotFoundException(String) Initializes a new instance of the SectionNotFoundException class with a specified error message. Declaration public SectionNotFoundException(string message) Parameters Type Name Description String message The message that describes the error. | Improve this Doc View Source SectionNotFoundException(String, String) Initializes a new instance of the SectionNotFoundException class with a specified error message and the name of the parameter that causes this exception. Declaration public SectionNotFoundException(string message, string paramName) Parameters Type Name Description String message The message that describes the error. String paramName The name of the parameter that caused the exception."
   },
-  "api/SeztionParser.Providers.SectionsParser.ExtractSection.html": {
-    "href": "api/SeztionParser.Providers.SectionsParser.ExtractSection.html",
-    "title": "Method ExtractSection | seztion-parser",
-    "keywords": "Method ExtractSection | Improve this Doc View Source ExtractSection(String) Extracts the name of the section. Declaration protected virtual string ExtractSection(string text) Parameters Type Name Description String text The section to extract. Returns Type Description String The name of the extracted section."
+  "api/SeztionParser.SectionNotFoundException.html": {
+    "href": "api/SeztionParser.SectionNotFoundException.html",
+    "title": "Class SectionNotFoundException | seztion-parser",
+    "keywords": "Class SectionNotFoundException The exception that is thrown when the specified section does not exist in the collection. Inheritance Object Exception SystemException ArgumentException SectionNotFoundException Implements ISerializable Inherited Members ArgumentException.GetObjectData(SerializationInfo, StreamingContext) ArgumentException.Message ArgumentException.ParamName Exception.GetBaseException() Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public class SectionNotFoundException : ArgumentException, ISerializable Constructors Name Description SectionNotFoundException() Initializes a new instance of the SectionNotFoundException class with a default message. SectionNotFoundException(String) Initializes a new instance of the SectionNotFoundException class with a specified error message. SectionNotFoundException(String, String) Initializes a new instance of the SectionNotFoundException class with a specified error message and the name of the parameter that causes this exception."
   },
-  "api/SeztionParser.Providers.SectionsParser.html": {
-    "href": "api/SeztionParser.Providers.SectionsParser.html",
+  "api/SeztionParser.SectionsFile.html": {
+    "href": "api/SeztionParser.SectionsFile.html",
+    "title": "Class SectionsFile | seztion-parser",
+    "keywords": "Class SectionsFile Represents the loader for the reading of files with sections. Inheritance Object SectionsFile Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public static class SectionsFile Methods Name Description Load(String) Loads the sections file. Load(String, Encoding) Loads the sections file with the specified encoding."
+  },
+  "api/SeztionParser.SectionsFile.Load.html": {
+    "href": "api/SeztionParser.SectionsFile.Load.html",
+    "title": "Method Load | seztion-parser",
+    "keywords": "Method Load | Improve this Doc View Source Load(String) Loads the sections file. Declaration public static ISectionsData Load(string path) Parameters Type Name Description String path The path of the file to load. Returns Type Description ISectionsData An instance with the data of each section. Exceptions Type Condition ArgumentNullException path is null . ParserException If the parser find an error during the parsing. | Improve this Doc View Source Load(String, Encoding) Loads the sections file with the specified encoding. Declaration public static ISectionsData Load(string path, Encoding encoding) Parameters Type Name Description String path The path of the file to load. Encoding encoding The encoding applied to the contents of the file. Returns Type Description ISectionsData An instance with the data of each section. Exceptions Type Condition ArgumentNullException path or encoding is null . ParserException If the parser find an error during the parsing."
+  },
+  "api/SeztionParser.SectionsParser.html": {
+    "href": "api/SeztionParser.SectionsParser.html",
     "title": "Class SectionsParser | seztion-parser",
-    "keywords": "Class SectionsParser Defines the operations that control the parser behavior. Inheritance Object SectionsParser Implements ISectionsParser Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser.Providers Assembly : SeztionParser.dll Syntax public class SectionsParser : ISectionsParser Methods Name Description ExtractSection(String) Extracts the name of the section. IsComment(String) Check if the text is a comment. IsSection(ref String) Check if the section has the correct format. Parse(String) Starts the parsing to extract the data of each section."
+    "keywords": "Class SectionsParser Represents the sections parser. Inheritance Object SectionsParser Implements ISectionsParser Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public class SectionsParser : ISectionsParser Methods Name Description Parse(String) Starts the parsing to extract the data of each section."
   },
-  "api/SeztionParser.Providers.SectionsParser.IsComment.html": {
-    "href": "api/SeztionParser.Providers.SectionsParser.IsComment.html",
-    "title": "Method IsComment | seztion-parser",
-    "keywords": "Method IsComment | Improve this Doc View Source IsComment(String) Check if the text is a comment. Declaration protected virtual bool IsComment(string text) Parameters Type Name Description String text The text to validate. Returns Type Description Boolean true if is comment, otherwise false ."
-  },
-  "api/SeztionParser.Providers.SectionsParser.IsSection.html": {
-    "href": "api/SeztionParser.Providers.SectionsParser.IsSection.html",
-    "title": "Method IsSection | seztion-parser",
-    "keywords": "Method IsSection | Improve this Doc View Source IsSection(ref String) Check if the section has the correct format. Declaration protected virtual bool IsSection(ref string text) Parameters Type Name Description String text The text to validate. Returns Type Description Boolean true if the section is correctly format, otherwise false ."
-  },
-  "api/SeztionParser.Providers.SectionsParser.Parse.html": {
-    "href": "api/SeztionParser.Providers.SectionsParser.Parse.html",
+  "api/SeztionParser.SectionsParser.Parse.html": {
+    "href": "api/SeztionParser.SectionsParser.Parse.html",
     "title": "Method Parse | seztion-parser",
-    "keywords": "Method Parse | Improve this Doc View Source Parse(String) Starts the parsing to extract the data of each section. Declaration public ISectionsData Parse(string data) Parameters Type Name Description String data Data to parsing. Returns Type Description ISectionsData An instance with the parsed data. Implements ISectionsParser.Parse(String) Exceptions Type Condition ParserException If the parser find an error during the parsing."
+    "keywords": "Method Parse | Improve this Doc View Source Parse(String) Starts the parsing to extract the data of each section. Declaration public ISectionsData Parse(string data) Parameters Type Name Description String data Data to parsing. Returns Type Description ISectionsData An instance with the parsed data. Implements ISectionsParser.Parse(String) Exceptions Type Condition ArgumentNullException data is null . ParserException If the parser find an error during the parsing."
   },
-  "articles/dependency_injection.html": {
-    "href": "articles/dependency_injection.html",
-    "title": "Dependency Injection | seztion-parser",
-    "keywords": "Dependency Injection In some cases, classes should not directly create an instance of the SectionsParser class, because if you change the implementation, you will have to make changes in the classes that depend on SectionsParser . Example: class Foo { private SectionsParser parser; public Foo() { parser = new SectionsParser(); } } class Bar { private SectionsParser parser; public Bar() { parser = new SectionsParser(); } } The classes Foo and Bar create the instance in the constructor, this makes it difficult to reverse the dependency. In the future you could create a new class that inherits from SectionsParser (if you read the previous article, you will understand what I mean) and this would cause changes in two classes: Foo and Bar : class Foo { private SectionsParser parser; public Foo() { // Change #1. parser = new CustomParser(); } } class Bar { private SectionsParser parser; public Bar() { // Change #2. parser = new CustomParser(); } } So to avoid those changes in the future, you can make use of Dependency Injection: class Foo { private SectionsParser parser; public Foo(SectionsParser parser) { this.parser = parser; } } class Bar { private SectionsParser parser; public Bar(SectionsParser parser) { this.parser = parser; } } You can also make use of the ISectionsParser interface instead of the base SectionsParser class: // To import the interface. using SeztionParser.Interfaces; class Foo { private ISectionsParser parser; public Foo(ISectionsParser parser) { this.parser = parser; } } class Bar { private ISectionsParser parser; public Bar(ISectionsParser parser) { this.parser = parser; } } You probably don't want to inject the dependency manually, as in this example: class Program { static void Main(string[] args) { var foo = new Foo(new SectionsParser()); var bar = new Bar(new CustomParser()); } } So in the end we would consider using a service container to handle dependency injection. Microsoft has created a package in NuGet specifically for this. The above example could be done in this way using the container DI: // Import all types. using Microsoft.Extensions.DependencyInjection; using SeztionParser.Interfaces; using SeztionParser.Providers; class Program { static void Main(string[] args) { IServiceCollection services = new ServiceCollection(); // Register services. services.AddTransient<ISectionsParser, SectionsParser>() .AddTransient<Foo>() .AddTransient<Bar>(); // Creates the service container. ServiceProvider serviceProvider = services.BuildServiceProvider(); // Retrieves an instance of the service and the container resolves the dependencies. var foo = serviceProvider.GetRequiredService<Foo>(); var bar = serviceProvider.GetRequiredService<Bar>(); serviceProvider.Dispose(); } } Note: You can read more about it at this link ."
+  "api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html",
+    "title": "Method GetFirstLineDecimal | seztion-parser",
+    "keywords": "Method GetFirstLineDecimal | Improve this Doc View Source GetFirstLineDecimal(ISectionsData, String, IFormatProvider) Gets the first line of the section in decimal format. Declaration public static decimal GetFirstLineDecimal(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Decimal The first line in decimal format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an decimal . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.GetFirstLineDouble.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineDouble.html",
+    "title": "Method GetFirstLineDouble | seztion-parser",
+    "keywords": "Method GetFirstLineDouble | Improve this Doc View Source GetFirstLineDouble(ISectionsData, String, IFormatProvider) Gets the first line of the section in double format. Declaration public static double GetFirstLineDouble(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Double The first line in double format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an double . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.GetFirstLineFloat.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineFloat.html",
+    "title": "Method GetFirstLineFloat | seztion-parser",
+    "keywords": "Method GetFirstLineFloat | Improve this Doc View Source GetFirstLineFloat(ISectionsData, String, IFormatProvider) Gets the first line of the section in float format. Declaration public static float GetFirstLineFloat(this ISectionsData sections, string sectionName, IFormatProvider provider = null) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. IFormatProvider provider An object that provides culture-specific formatting information. Returns Type Description Single The first line in float format. Remarks provider is null , the default culture is InvariantCulture . Exceptions Type Condition FormatException If the first line is not an float . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.GetFirstLineInt.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineInt.html",
+    "title": "Method GetFirstLineInt | seztion-parser",
+    "keywords": "Method GetFirstLineInt | Improve this Doc View Source GetFirstLineInt(ISectionsData, String) Gets the first line of the section in integer format. Declaration public static int GetFirstLineInt(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description Int32 The first line in integer format. Exceptions Type Condition FormatException If the first line is not an integer . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.GetFirstLineLong.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineLong.html",
+    "title": "Method GetFirstLineLong | seztion-parser",
+    "keywords": "Method GetFirstLineLong | Improve this Doc View Source GetFirstLineLong(ISectionsData, String) Gets the first line of the section in long format. Declaration public static long GetFirstLineLong(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description Int64 The first line in long format. Exceptions Type Condition FormatException If the first line is not an long . SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.GetFirstLineString.html": {
+    "href": "api/SeztionParser.SingleLineSection.GetFirstLineString.html",
+    "title": "Method GetFirstLineString | seztion-parser",
+    "keywords": "Method GetFirstLineString | Improve this Doc View Source GetFirstLineString(ISectionsData, String) Gets the first line of the section in string format. Declaration public static string GetFirstLineString(this ISectionsData sections, string sectionName) Parameters Type Name Description ISectionsData sections The data of sections. String sectionName The name of the section to gets in a specific format. Returns Type Description String The first line in string format. Exceptions Type Condition SectionNotFoundException If the section does not exist."
+  },
+  "api/SeztionParser.SingleLineSection.html": {
+    "href": "api/SeztionParser.SingleLineSection.html",
+    "title": "Class SingleLineSection | seztion-parser",
+    "keywords": "Class SingleLineSection Defines operations used to gets the first line of a section in a specific format. Inheritance Object SingleLineSection Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : SeztionParser Assembly : SeztionParser.dll Syntax public static class SingleLineSection Methods Name Description GetFirstLineDecimal(ISectionsData, String, IFormatProvider) Gets the first line of the section in decimal format. GetFirstLineDouble(ISectionsData, String, IFormatProvider) Gets the first line of the section in double format. GetFirstLineFloat(ISectionsData, String, IFormatProvider) Gets the first line of the section in float format. GetFirstLineInt(ISectionsData, String) Gets the first line of the section in integer format. GetFirstLineLong(ISectionsData, String) Gets the first line of the section in long format. GetFirstLineString(ISectionsData, String) Gets the first line of the section in string format."
   },
   "articles/getting_started.html": {
     "href": "articles/getting_started.html",
     "title": "Getting Started with seztion parser | seztion-parser",
-    "keywords": "Getting Started with seztion parser Installation If you're an hardcore and want to do it manually, you must add the following to the csproj file: <PackageReference Include=\"seztion-parser\" Version=\"1.0.2\" /> If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the Tools > NuGet Package Manager > Package Manager Console command and run the install command: Install-Package seztion-parser If you are making use of the dotnet CLI, then run the following in your terminal: dotnet add package seztion-parser Usage Let's imagine that there is this file named Aim_Headshot.ini : # Section(1). [Positions1] # Data: -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 # Section(2). [Positions2] # Data: -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 This file has comments and sections. Positions1 and Positions2 are sections and each has a data set . Load You must import all namespace types: using SeztionParser.Facades; You can then use the Load method of the SectionsFile class to load the sections file and it will return an instance of type ISectionsData that will allow you to access the sections data . // Load the sections file. var sections = SectionsFile.Load(\"Aim_Headshot.ini\"); You can then gets the data for a specific section: ISectionData positions1 = sections[\"Positions1\"]; ISectionData positions2 = sections[\"Positions2\"]; You can then iterate over the data in a specified section: Console.WriteLine(\"[Positions1]\"); // This prints the data of the 'Positions1' section. foreach (string data in sections[\"Positions1\"]) Console.WriteLine(data); Console.WriteLine(); Console.WriteLine(\"[Positions2]\"); // This prints the data of the 'Positions2' section. foreach (string data in sections[\"Positions2\"]) Console.WriteLine(data); /* The example displays the following output: [Positions1] -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 [Positions2] -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 */ GetNames If you want to gets the names of all the sections, use the GetNames method of the ISectionsData interface: foreach (string sectionName in sections.GetNames()) Console.WriteLine($\"Section: {sectionName}\"); /* The example displays the following output: Section: Positions1 Section: Positions2 */ GetAll If you want to gets the data of all sections, use the GetAll method of the ISectionsData interface: foreach (ISectionData data in sections.GetAll()) Console.Write(data.ToString()); /* The example displays the following output: [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ Iterate all sections You can iterate over all sections using the SectionModel class: foreach (SectionModel section in sections) Console.Write(section.ToString()); /* The example displays the following output: Section: Positions1 -> [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] Section: Positions2 -> [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ Note: Do not forget to import all namespace types: using SeztionParser.Models; SectionsData To String You can also convert the instance of type ISectionsData into an object of type String : Console.WriteLine(sections.ToString()); /* The example displays the following output: Section: Positions1 -> [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] Section: Positions2 -> [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ Properties SectionModel class You can also gets the amount of data and name for each section: // You must import all the types. using SeztionParser.Models; foreach (SectionModel section in sections) Console.WriteLine($\"{section.Name}, {section.Data.Count}\"); /* The example displays the following output: Positions1, 5 Positions2, 5 */ Or you can also deconstruct the object: foreach (var(name, data) in sections) Console.WriteLine($\"{name}, {data.Count}\"); /* The example displays the following output: Positions1, 5 Positions2, 5 */ Note: If you don't know what each class does, don't forget to check the API documentation ."
+    "keywords": "Getting Started with seztion parser Installation If you're an hardcore and want to do it manually, you must add the following to the csproj file: <PackageReference Include=\"seztion-parser\" Version=\"3.0.0\" /> If you're want to install the package from Visual Studio, you must open the project/solution in Visual Studio, and open the console using the Tools > NuGet Package Manager > Package Manager Console command and run the install command: Install-Package seztion-parser If you are making use of the dotnet CLI, then run the following in your terminal: dotnet add package seztion-parser Usage Let's imagine that there is this file named Aim_Headshot.ini : # Section(1). [Positions1] # Data: -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 # Section(2). [Positions2] # Data: -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 This file has comments and sections. Positions1 and Positions2 are sections and each has a data set . Load You must import all namespace types: using SeztionParser; You can then use the Load method of the SectionsFile class to load the sections file and it will return an instance of type ISectionsData that will allow you to access the sections data . // Load the sections file. ISectionsData sections = SectionsFile.Load(\"Aim_Headshot.ini\"); You can then gets the data for a specific section: ISectionData positions1 = sections[\"Positions1\"]; ISectionData positions2 = sections[\"Positions2\"]; You can then iterate over the data in a specified section: Console.WriteLine(\"[Positions1]\"); ISectionData positions1 = sections[\"Positions1\"]; // This prints the data of the 'Positions1' section. foreach (string data in positions1) Console.WriteLine(data); Console.WriteLine(); Console.WriteLine(\"[Positions2]\"); ISectionData positions2 = sections[\"Positions2\"]; // This prints the data of the 'Positions2' section. foreach (string data in positions2) Console.WriteLine(data); /* The example displays the following output: [Positions1] -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 [Positions2] -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 */ GetNames If you want to gets the names of all the sections, use the GetNames method of the ISectionsData interface: ICollection<string> names = sections.GetNames(); foreach (string sectionName in names) Console.WriteLine($\"Section: {sectionName}\"); /* The example displays the following output: Section: Positions1 Section: Positions2 */ GetAll If you want to gets the data of all sections, use the GetAll method of the ISectionsData interface: ICollection<ISectionData> dataSet = sections.GetAll(); foreach (ISectionData data in dataSet) Console.Write(data.ToString()); /* The example displays the following output: [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ Iterate all sections You can iterate over all sections using the SectionModel class: foreach (SectionModel section in sections) Console.Write(section.ToString()); /* The example displays the following output: Section: Positions1 -> [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] Section: Positions2 -> [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ SectionsData To String You can also convert the instance of type ISectionsData into an object of type String : Console.WriteLine(sections.ToString()); /* The example displays the following output: Section: Positions1 -> [ -129.5612,81.0056,3.1172,156.7189 -127.6526,87.7695,3.1172,156.7189 -134.9525,90.2646,3.1172,167.0590 -138.4023,83.5352,3.1172,163.6123 -145.3216,85.1476,3.1172,163.6123 ] Section: Positions2 -> [ -277.0338,-85.0175,2.8617,345.0341 -277.7510,-90.4126,2.7030,345.0341 -270.0297,-92.0674,3.0969,345.0341 -263.8904,-93.2464,3.1172,345.0341 -262.2849,-87.2403,3.1172,345.0341 ] */ Properties SectionModel class You can also gets the amount of data and name for each section: foreach (SectionModel section in sections) Console.WriteLine($\"{section.Name}, {section.Data.Count}\"); /* The example displays the following output: Positions1, 5 Positions2, 5 */ Or you can also deconstruct the object: foreach ((string name, ISectionData data) in sections) Console.WriteLine($\"{name}, {data.Count}\"); /* The example displays the following output: Positions1, 5 Positions2, 5 */ Note: If you don't know what each class does, don't forget to check the API documentation ."
   },
   "articles/parser.html": {
     "href": "articles/parser.html",
     "title": "Parser | seztion-parser",
-    "keywords": "Parser You can also gets the section data using the parser. You must import all namespace types: using SeztionParser.Providers; You must use the Parse method of the SectionsParser class to return an instance of type ISectionsData : var parser = new SectionsParser(); var sections = parser.Parse(File.ReadAllText(\"test.ini\")); You can also customize the parser by inheriting from SectionsParser and override methods such as: IsComment , IsSection and ExtractSection . Example: class CustomParser : SectionsParser { public override string ExtractSection(string text) { // You can propose your own implementation. } } Parser rules 1. If the line begins with the # character, it is considered a comment . The line may have spaces at the starts, the parser will ignore it. Example: # comment # comment 2. A section starts with an opening square bracket ( [ ) and ends with a closing square bracket ( ] ). 3. Any line with whitespace will be ignored by the parser. 4. The name of a section cannot be empty or have only blanks. Example: [] [ ] 5. There can be no lines that are not part of any section, unless they are comments. Example: Bad: foofoo [mysection] 1 2 Good: # foofoo [mysection] 1 2 6. If the section has spaces at the beginning and at the end, the parser ignores it. Example: [section] 1 2 7. A section cannot be without data, the parser will throw an error. Example: [section] # Empty. [section2] # Empty. 8. The name of the section can have spaces at the beginning and at the end. Example: [ section1 ] 1 [section2 ] 2 9. A repeated section is not allowed. Example: Bad: [section1] 1 [section1] 2 Good: [section1] 1 [section2] 2 10. If the data source (such as a file ) is empty or has only blanks, the parser will throw an error."
+    "keywords": "Parser You can also gets the section data using the parser. You must import all namespace types: using SeztionParser; You must use the Parse method of the SectionsParser class to return an instance of type ISectionsData : var parser = new SectionsParser(); string data = File.ReadAllText(\"test.ini\"); ISectionsData sections = parser.Parse(data); Parser rules 1. If the line begins with the # character, it is considered a comment . The line may have spaces at the starts, the parser will ignore it. Example: # comment # comment 2. A section starts with an opening square bracket ( [ ) and ends with a closing square bracket ( ] ). 3. Any line with whitespace will be ignored by the parser. 4. The name of a section cannot be empty or have only blanks. Example: [] [ ] 5. There can be no lines that are not part of any section, unless they are comments. Example: Bad: foofoo [mysection] 1 2 Good: # foofoo [mysection] 1 2 6. If the section has spaces at the beginning and at the end, the parser ignores it. Example: [section] 1 2 7. A section cannot be without data, the parser will throw an error. Example: [section] # Empty. [section2] # Empty. 8. The name of the section can have spaces at the beginning and at the end. Example: [ section1 ] 1 [section2 ] 2 9. A repeated section is not allowed. Example: Bad: [section1] 1 [section1] 2 Good: [section1] 1 [section2] 2 10. If the data source (such as a file ) is empty or has only blanks, the parser will throw an error."
   },
   "articles/section_data_conversion.html": {
     "href": "articles/section_data_conversion.html",
     "title": "Section data conversion | seztion-parser",
-    "keywords": "Section data conversion Given the following file: # Section(1). [Prices1] 12.4 45.2 5676.313 56.2 # Section(2). [Prices2] 23.423 53.13 67.78 The data for each section can be gets in this way: ISectionsData sections = SectionsFile.Load(\"prices.ini\"); But the data in each section are by default of type string : Console.WriteLine(sections[\"Prices1\"][0]); Console.WriteLine(sections[\"Prices2\"][0]); /* The example displays the following output: 12.4 23.423 */ To convert all the data in a section to a particular type (such as int , double or float ), you must write the following: // Import all types to use the extension methods. using SeztionParser.Helpers; IEnumerable<double> prices = sections.ToDouble(\"Prices1\"); foreach (double data in prices) Console.WriteLine(data); The methods ToDouble , ToInt , etc. do not return all the data in a collection and this is to avoid memory consumption, so it returns an instance that implements the IEnumerable interface and this way, you can retrieve a data every time you need it. You can review all extension methods at this link ."
+    "keywords": "Section data conversion Given the following file: # Section(1). [Prices1] 12.4 45.2 5676.313 56.2 # Section(2). [Prices2] 23.423 53.13 67.78 The data for each section can be gets in this way: ISectionsData sections = SectionsFile.Load(\"prices.ini\"); But the data in each section are by default of type string : Console.WriteLine(sections[\"Prices1\"][0]); Console.WriteLine(sections[\"Prices2\"][0]); /* The example displays the following output: 12.4 23.423 */ To convert all the data in a section to a particular type (such as int , double or float ), you must write the following: // Import all types to use the extension methods. using SeztionParser; IEnumerable<double> prices = sections.ToDouble(\"Prices1\"); foreach (double data in prices) Console.WriteLine(data); The methods ToDouble , ToInt , etc. do not return all the data in a collection and this is to avoid memory consumption, so it returns an instance that implements the IEnumerable interface and this way, you can retrieve a data every time you need it. You can review all extension methods at this link ."
   },
   "articles/single_line_section.html": {
     "href": "articles/single_line_section.html",
     "title": "Single line section | seztion-parser",
-    "keywords": "Single line section Given the following file: # Section(1). [WorldTime] 23 # Section(2). [Weather] 45 The sections have only one data, so you can retrieve the data in this way: ISectionsData sections = SectionsFile.Load(\"test.ini\"); Console.WriteLine(int.Parse(sections[\"WorldTime\"][0])); Console.WriteLine(int.Parse(sections[\"Weather\"][0])); /* The example displays the following output: 23 45 */ Or we can also do it this way: // Import all types to use the extension methods. using SeztionParser.Helpers; Console.WriteLine(sections.GetFirstLineInt(\"WorldTime\")); Console.WriteLine(sections.GetFirstLineInt(\"Weather\")); /* The example displays the following output: 23 45 */ If the Weather section has more than one piece of data, the GetFirstLineInt method will always return the data from the first line of Weather . You can review all extension methods at this link ."
-  },
-  "diagrams/class_diagram.html": {
-    "href": "diagrams/class_diagram.html",
-    "title": "Class Diagram | seztion-parser",
-    "keywords": "Class Diagram Click here"
-  },
-  "diagrams/package_diagram.html": {
-    "href": "diagrams/package_diagram.html",
-    "title": "Package Diagram | seztion-parser",
-    "keywords": "Package Diagram The modules (or packages) of the library are: Interfaces : Here are all the interfaces that the consumer will be able to use. Providers : Here are all the classes that implement the interfaces. Exceptions : Here are all the classes that represent the exceptions that can occur when using the library methods. Helpers : Here are all the classes that help the client, these class do not have much to do with the purpose of the library but serve as an extra help for the client. Constants : Here are all the classes that store constant values. Models : Here are all the domain classes. The domain class are those that are taken depending on the problem to be solved, in this case, the problem that this library solves is to be able to read the data of the sections of a file, so a domain class is SectionModel (with attributes as Name and Data ). Facades : Here are all the facade classes, these classes only hide the implementation details, as they do not actually perform the task, but delegate that task to other classes. Click here"
+    "keywords": "Single line section Given the following file: # Section(1). [WorldTime] 23 # Section(2). [Weather] 45 The sections have only one data, so you can retrieve the data in this way: ISectionsData sections = SectionsFile.Load(\"test.ini\"); Console.WriteLine(int.Parse(sections[\"WorldTime\"][0])); Console.WriteLine(int.Parse(sections[\"Weather\"][0])); /* The example displays the following output: 23 45 */ Or we can also do it this way: // Import all types to use the extension methods. using SeztionParser; Console.WriteLine(sections.GetFirstLineInt(\"WorldTime\")); Console.WriteLine(sections.GetFirstLineInt(\"Weather\")); /* The example displays the following output: 23 45 */ If the Weather section has more than one piece of data, the GetFirstLineInt method will always return the data from the first line of Weather . You can review all extension methods at this link ."
   },
   "index.html": {
     "href": "index.html",
