@@ -17,20 +17,8 @@
       "source_relative_path": "api/SeztionParser.ISectionData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ISectionData.Count.html",
-          "hash": "Tq/UXOansythPRAg8Ws+4pXfXVgCp/1pkWMy6h+8UuQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.ISectionData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.ISectionData.Contains.html",
-          "hash": "iMpW7PCrofDQHtzCtq+jwVdsBwkCs+Si8rwVO+5VVgk="
+          "relative_path": "api/SeztionParser.ISectionData.Item.html",
+          "hash": "0j0yJ4kzHOEwTPmVcM4uanB+W9h4ys9LWgT11qcE9hM="
         }
       },
       "is_incremental": false,
@@ -53,8 +41,20 @@
       "source_relative_path": "api/SeztionParser.ISectionData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ISectionData.Item.html",
-          "hash": "0j0yJ4kzHOEwTPmVcM4uanB+W9h4ys9LWgT11qcE9hM="
+          "relative_path": "api/SeztionParser.ISectionData.Contains.html",
+          "hash": "iMpW7PCrofDQHtzCtq+jwVdsBwkCs+Si8rwVO+5VVgk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.ISectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.ISectionData.Count.html",
+          "hash": "Tq/UXOansythPRAg8Ws+4pXfXVgCp/1pkWMy6h+8UuQ="
         }
       },
       "is_incremental": false,
@@ -65,32 +65,8 @@
       "source_relative_path": "api/SeztionParser.ISectionsData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ISectionsData.TryGetData.html",
-          "hash": "jE1GbLFbvIOqaC8VesulKuKCgF53K4puIqBgUt1v65U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.ISectionsData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.ISectionsData.Item.html",
-          "hash": "pp3wxo1CaH88y7e4kwqeskgt0B+MiWE8WBfcK3CJyiw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.ISectionsData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.ISectionsData.GetNames.html",
-          "hash": "faE7uG2uG6snPfyhSs23SC1yvybARz2QnB2qCsIHLk0="
+          "relative_path": "api/SeztionParser.ISectionsData.html",
+          "hash": "NMSTqplKQujfmHoYRIvPETI0bF09rJE6LyaIM78Ycf4="
         }
       },
       "is_incremental": false,
@@ -113,8 +89,8 @@
       "source_relative_path": "api/SeztionParser.ISectionsData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ISectionsData.html",
-          "hash": "NMSTqplKQujfmHoYRIvPETI0bF09rJE6LyaIM78Ycf4="
+          "relative_path": "api/SeztionParser.ISectionsData.GetNames.html",
+          "hash": "faE7uG2uG6snPfyhSs23SC1yvybARz2QnB2qCsIHLk0="
         }
       },
       "is_incremental": false,
@@ -122,11 +98,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.ISectionsParser.yml",
+      "source_relative_path": "api/SeztionParser.ISectionsData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ISectionsParser.html",
-          "hash": "PM32g5A9j9tQ25NJzj6t9KEBaKzwERJOax55xgpPBnk="
+          "relative_path": "api/SeztionParser.ISectionsData.Item.html",
+          "hash": "pp3wxo1CaH88y7e4kwqeskgt0B+MiWE8WBfcK3CJyiw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.ISectionsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.ISectionsData.TryGetData.html",
+          "hash": "jE1GbLFbvIOqaC8VesulKuKCgF53K4puIqBgUt1v65U="
         }
       },
       "is_incremental": false,
@@ -146,11 +134,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.ParserException.yml",
+      "source_relative_path": "api/SeztionParser.ISectionsParser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ParserException.html",
-          "hash": "Ci/kpAV0ta9BXTVmkGpEfMleblKhuZnx8uPUnd671bE="
+          "relative_path": "api/SeztionParser.ISectionsParser.html",
+          "hash": "PM32g5A9j9tQ25NJzj6t9KEBaKzwERJOax55xgpPBnk="
         }
       },
       "is_incremental": false,
@@ -161,8 +149,8 @@
       "source_relative_path": "api/SeztionParser.ParserException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ParserException.ActualValue.html",
-          "hash": "dCjrjpq78IAQOe4BMgKHDgZajDca2gPmBrixkvcCaD0="
+          "relative_path": "api/SeztionParser.ParserException.Message.html",
+          "hash": "MTaVfNOeDkkOG8JY5yYuzFzrZx7YDu8ZUHhFi0uBXRg="
         }
       },
       "is_incremental": false,
@@ -185,8 +173,20 @@
       "source_relative_path": "api/SeztionParser.ParserException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.ParserException.Message.html",
-          "hash": "MTaVfNOeDkkOG8JY5yYuzFzrZx7YDu8ZUHhFi0uBXRg="
+          "relative_path": "api/SeztionParser.ParserException.ActualValue.html",
+          "hash": "dCjrjpq78IAQOe4BMgKHDgZajDca2gPmBrixkvcCaD0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.ParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.ParserException.html",
+          "hash": "Ci/kpAV0ta9BXTVmkGpEfMleblKhuZnx8uPUnd671bE="
         }
       },
       "is_incremental": false,
@@ -197,44 +197,8 @@
       "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionDataConversion.ToLong.html",
-          "hash": "prmwrPEO1qa7wj7YR1MiALzjnneHhHjT2B/ZuLxddYk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionDataConversion.ToDouble.html",
-          "hash": "Yx9MIMFEOvGuDB3Lk3Jh+WjTNq9k/spVXW43UwiMFwc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionDataConversion.ToDecimal.html",
-          "hash": "C7ptYWSq6xP3yDTIjuLY5eW+8ZZyLKWIydeWZ/T2Xc8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionDataConversion.ToFloat.html",
-          "hash": "BJlxmsSMwlwcNO8P6q+l6PSE8pIhPKLlWsySlTP4fpY="
+          "relative_path": "api/SeztionParser.SectionDataConversion.html",
+          "hash": "nIA339QbkYjd5KDkze3aFJJjmQVekmbdJpVVmLUgWGE="
         }
       },
       "is_incremental": false,
@@ -257,8 +221,44 @@
       "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionDataConversion.html",
-          "hash": "nIA339QbkYjd5KDkze3aFJJjmQVekmbdJpVVmLUgWGE="
+          "relative_path": "api/SeztionParser.SectionDataConversion.ToFloat.html",
+          "hash": "BJlxmsSMwlwcNO8P6q+l6PSE8pIhPKLlWsySlTP4fpY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SectionDataConversion.ToDecimal.html",
+          "hash": "C7ptYWSq6xP3yDTIjuLY5eW+8ZZyLKWIydeWZ/T2Xc8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SectionDataConversion.ToDouble.html",
+          "hash": "Yx9MIMFEOvGuDB3Lk3Jh+WjTNq9k/spVXW43UwiMFwc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SectionDataConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SectionDataConversion.ToLong.html",
+          "hash": "prmwrPEO1qa7wj7YR1MiALzjnneHhHjT2B/ZuLxddYk="
         }
       },
       "is_incremental": false,
@@ -269,44 +269,8 @@
       "source_relative_path": "api/SeztionParser.SectionModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionModel.-ctor.html",
-          "hash": "j1khEMS8VM5FnGK3QR5gKTPtKFqneWqG//xssvpmw9g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionModel.html",
-          "hash": "t2zTSK3dIgA6F7sd2bcdg4RP4agqR+ojBrMlAae4acI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionModel.Deconstruct.html",
-          "hash": "2DWyaqknPiDx643Z/2j4KbXGWKpShxpBFPDh37efyZ0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SectionModel.ToString.html",
-          "hash": "LUSYFz06SDHqAwOcafORH9jLq2MCLgz5wAcTiKZ5ops="
+          "relative_path": "api/SeztionParser.SectionModel.Data.html",
+          "hash": "ugnnUEBain8GRQNmtz09WbCMw0SHpRoM5gHrEN+JPuE="
         }
       },
       "is_incremental": false,
@@ -329,8 +293,8 @@
       "source_relative_path": "api/SeztionParser.SectionModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionModel.Data.html",
-          "hash": "ugnnUEBain8GRQNmtz09WbCMw0SHpRoM5gHrEN+JPuE="
+          "relative_path": "api/SeztionParser.SectionModel.ToString.html",
+          "hash": "LUSYFz06SDHqAwOcafORH9jLq2MCLgz5wAcTiKZ5ops="
         }
       },
       "is_incremental": false,
@@ -338,11 +302,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionNotFoundException.yml",
+      "source_relative_path": "api/SeztionParser.SectionModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionNotFoundException.-ctor.html",
-          "hash": "RbiT3Vc/EgGZev/8L6TJ1d61/kNdlrl+9Kj5bisFtC8="
+          "relative_path": "api/SeztionParser.SectionModel.Deconstruct.html",
+          "hash": "2DWyaqknPiDx643Z/2j4KbXGWKpShxpBFPDh37efyZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SectionModel.html",
+          "hash": "t2zTSK3dIgA6F7sd2bcdg4RP4agqR+ojBrMlAae4acI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SectionModel.-ctor.html",
+          "hash": "j1khEMS8VM5FnGK3QR5gKTPtKFqneWqG//xssvpmw9g="
         }
       },
       "is_incremental": false,
@@ -362,11 +350,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionsFile.yml",
+      "source_relative_path": "api/SeztionParser.SectionNotFoundException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionsFile.Load.html",
-          "hash": "BiiW5bLcl3CHx5jv7+0tkPkKxuFXnZbfWZZGTqUn+1E="
+          "relative_path": "api/SeztionParser.SectionNotFoundException.-ctor.html",
+          "hash": "RbiT3Vc/EgGZev/8L6TJ1d61/kNdlrl+9Kj5bisFtC8="
         }
       },
       "is_incremental": false,
@@ -386,11 +374,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SectionsParser.yml",
+      "source_relative_path": "api/SeztionParser.SectionsFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SectionsParser.Parse.html",
-          "hash": "XCpOcjzWcC5iq79k0QaC4v659o8hrY/Bbsn1Ds/wd3U="
+          "relative_path": "api/SeztionParser.SectionsFile.Load.html",
+          "hash": "BiiW5bLcl3CHx5jv7+0tkPkKxuFXnZbfWZZGTqUn+1E="
         }
       },
       "is_incremental": false,
@@ -410,11 +398,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
+      "source_relative_path": "api/SeztionParser.SectionsParser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineFloat.html",
-          "hash": "821JhsghLtKaddrQdHaomqLrznh7SH41QRPCnLZgf68="
+          "relative_path": "api/SeztionParser.SectionsParser.Parse.html",
+          "hash": "XCpOcjzWcC5iq79k0QaC4v659o8hrY/Bbsn1Ds/wd3U="
         }
       },
       "is_incremental": false,
@@ -425,44 +413,8 @@
       "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineString.html",
-          "hash": "fZP14PHN5XxwdBuNiqyNIfpnUjCr3g6SIopp0RwAEXc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.html",
-          "hash": "ESrIOM+BNlOs7skRK5wl3yA83swxqaGsdjwOoGewr1Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html",
-          "hash": "eO22smSBXU0vyOtOZ7dSEf/C1JhX+z7a5OKKlm6l2h8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineDouble.html",
-          "hash": "Lp+PuqF8R+QLIsmonjyipxDaowMRAy8b1GbeSJvPzzY="
+          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineLong.html",
+          "hash": "L/FTANakJ9JYh/P51EiFn5IsDvaJb6DA2HcGS0OmVIU="
         }
       },
       "is_incremental": false,
@@ -485,8 +437,56 @@
       "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineLong.html",
-          "hash": "L/FTANakJ9JYh/P51EiFn5IsDvaJb6DA2HcGS0OmVIU="
+          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineDouble.html",
+          "hash": "Lp+PuqF8R+QLIsmonjyipxDaowMRAy8b1GbeSJvPzzY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineDecimal.html",
+          "hash": "eO22smSBXU0vyOtOZ7dSEf/C1JhX+z7a5OKKlm6l2h8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SingleLineSection.html",
+          "hash": "ESrIOM+BNlOs7skRK5wl3yA83swxqaGsdjwOoGewr1Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineString.html",
+          "hash": "fZP14PHN5XxwdBuNiqyNIfpnUjCr3g6SIopp0RwAEXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SeztionParser.SingleLineSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SeztionParser.SingleLineSection.GetFirstLineFloat.html",
+          "hash": "821JhsghLtKaddrQdHaomqLrznh7SH41QRPCnLZgf68="
         }
       },
       "is_incremental": false,
@@ -604,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MxaYAbscu1R9AkW4y/Y3pCG22lu+cYsn4o6J2dRuAiM="
+          "hash": "fZEaYPepDAm1ZHcVf2lhS5/60qzkZ2VDWL4tT79pdGs="
         }
       },
       "is_incremental": false,
@@ -626,25 +626,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 5,
-          "skipped_file_count": 0
+          "skipped_file_count": 4
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 11,
-          "skipped_file_count": 0
+          "skipped_file_count": 11
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
