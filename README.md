@@ -60,9 +60,10 @@ dotnet add package seztion-parser
 using SeztionParser;
 
 // Load the sections file.
-var sections = SectionsFile.Load("my_file.ini");
+ISectionsData sections = SectionsFile.Load("my_file.ini");
+ISectionData alphaSection = sections["Alpha"];
 // This prints the data of the 'Alpha' section.
-foreach (var data in sections["Alpha"])
+foreach (string data in alphaSection)
     Console.WriteLine(data);
 ```
 For more information, see the [articles](https://mrdave1999.github.io/seztion-parser/articles/getting_started.html).

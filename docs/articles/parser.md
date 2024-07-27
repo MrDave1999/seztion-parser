@@ -10,7 +10,8 @@ using SeztionParser;
 You must use the `Parse` method of the `SectionsParser` class to return an instance of type `ISectionsData`:
 ```cs
 var parser = new SectionsParser();
-var sections = parser.Parse(File.ReadAllText("test.ini"));
+string data = File.ReadAllText("test.ini");
+ISectionsData sections = parser.Parse(data);
 ```
 
 ## Parser rules

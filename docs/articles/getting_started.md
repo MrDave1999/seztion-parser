@@ -47,7 +47,7 @@ using SeztionParser;
 You can then use the `Load` method of the `SectionsFile` class to load the **sections file** and it will return an instance of type `ISectionsData` that will allow you to access the **sections data**.
 ```cs
 // Load the sections file.
-var sections = SectionsFile.Load("Aim_Headshot.ini");
+ISectionsData sections = SectionsFile.Load("Aim_Headshot.ini");
 ```
 You can then gets the data for a specific section:
 ```cs
@@ -57,15 +57,17 @@ ISectionData positions2 = sections["Positions2"];
 You can then iterate over the data in a specified section:
 ```cs
 Console.WriteLine("[Positions1]");
+ISectionData positions1 = sections["Positions1"];
 // This prints the data of the 'Positions1' section.
-foreach (string data in sections["Positions1"])
+foreach (string data in positions1)
     Console.WriteLine(data);
 
 Console.WriteLine();
 
 Console.WriteLine("[Positions2]");
+ISectionData positions2 = sections["Positions2"];
 // This prints the data of the 'Positions2' section.
-foreach (string data in sections["Positions2"])
+foreach (string data in positions2)
     Console.WriteLine(data);
 
 /*
@@ -88,7 +90,8 @@ foreach (string data in sections["Positions2"])
 ### GetNames
 If you want to gets the names of all the sections, use the `GetNames` method of the `ISectionsData` interface:
 ```cs
-foreach (string sectionName in sections.GetNames())
+ICollection<string> names = sections.GetNames();
+foreach (string sectionName in names)
     Console.WriteLine($"Section: {sectionName}");
 /*
     The example displays the following output:
@@ -99,7 +102,8 @@ foreach (string sectionName in sections.GetNames())
 ### GetAll
 If you want to gets the data of all sections, use the `GetAll` method of the `ISectionsData` interface:
 ```cs
-foreach (ISectionData data in sections.GetAll())
+ICollection<ISectionData> dataSet = sections.GetAll();
+foreach (ISectionData data in dataSet)
     Console.Write(data.ToString());
 /*
     The example displays the following output:
@@ -181,7 +185,7 @@ foreach (SectionModel section in sections)
 ```
 Or you can also [deconstruct](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/deconstruct) the object:
 ```cs
-foreach (var(name, data) in sections)
+foreach ((string name, ISectionData data) in sections)
     Console.WriteLine($"{name}, {data.Count}");
 /*
     The example displays the following output:
@@ -191,4 +195,3 @@ foreach (var(name, data) in sections)
 ```
 
 **Note:** If you don't know what each class does, don't forget to check the [API documentation](https://mrdave1999.github.io/seztion-parser/api/SeztionParser.html).
-
