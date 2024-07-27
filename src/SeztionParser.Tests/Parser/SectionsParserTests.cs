@@ -17,7 +17,7 @@ public class SectionsParserTests
         string[] expectedValues = ["A", "B"];
 
         // Act
-        var sections = parser.Parse(data);
+        ISectionsData sections = parser.Parse(data);
 
         // Asserts
         sections["Section"].Should().BeEquivalentTo(expectedValues);
@@ -44,8 +44,8 @@ public class SectionsParserTests
         string[] expectedSections = ["section1", "section2", "section3"];
 
         // Act
-        var sections = parser.Parse(data);
-        var sectionNames = sections.GetNames();
+        ISectionsData sections = parser.Parse(data);
+        ICollection<string> sectionNames = sections.GetNames();
 
         // Assert
         sectionNames.Should().BeEquivalentTo(expectedSections);
@@ -71,7 +71,7 @@ public class SectionsParserTests
         string[] expectedValues = ["1", "2", "3", "4"];
 
         // Act
-        var sections = parser.Parse(data);
+        ISectionsData sections = parser.Parse(data);
 
         // Assert
         sections["section1"].Should().Contain(expectedValues);
@@ -107,7 +107,7 @@ public class SectionsParserTests
         string[] unexpected2 = ["#comment5", "#comment6"];
 
         // Act
-        var sections = parser.Parse(data);
+        ISectionsData sections = parser.Parse(data);
 
         // Assert
         sections["section1"].Should().NotContain(unexpected1);

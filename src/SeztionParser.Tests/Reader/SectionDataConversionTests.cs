@@ -18,8 +18,8 @@ public class SectionDataConversionTests
         decimal[] expected = [12.456M, 13.564M, 67.21M];
 
         // Act
-        var enumerable = sections.ToDecimal("section1");
-        var actual = enumerable.ToArray();
+        IEnumerable<decimal> enumerable = sections.ToDecimal("section1");
+        decimal[] actual = enumerable.ToArray();
 
         // Assert
         actual.Should().BeEquivalentTo(expected);
@@ -40,8 +40,8 @@ public class SectionDataConversionTests
         double[] expected = [12.456, 13.564, 67.21];
 
         // Act
-        var enumerable = sections.ToDouble("section1");
-        var actual = enumerable.ToArray();
+        IEnumerable<double> enumerable = sections.ToDouble("section1");
+        double[] actual = enumerable.ToArray();
 
         // Assert
         actual.Should().BeEquivalentTo(expected);
@@ -62,8 +62,8 @@ public class SectionDataConversionTests
         float[] expected = [12.456f, 13.564f, 67.21f];
 
         // Act
-        var enumerable = sections.ToFloat("section1");
-        var actual = enumerable.ToArray();
+        IEnumerable<float> enumerable = sections.ToFloat("section1");
+        float[] actual = enumerable.ToArray();
 
         // Assert
         actual.Should().BeEquivalentTo(expected);
@@ -84,8 +84,8 @@ public class SectionDataConversionTests
         int[] expected = [12, 13, 67];
 
         // Act
-        var enumerable = sections.ToInt("section1");
-        var actual = enumerable.ToArray();
+        IEnumerable<int> enumerable = sections.ToInt("section1");
+        int[] actual = enumerable.ToArray();
 
         // Assert
         actual.Should().BeEquivalentTo(expected);
@@ -106,8 +106,8 @@ public class SectionDataConversionTests
         long[] expected = [12, 13, 67];
 
         // Act
-        var enumerable = sections.ToLong("section1");
-        var actual = enumerable.ToArray();
+        IEnumerable<long> enumerable = sections.ToLong("section1");
+        long[] actual = enumerable.ToArray();
 
         // Assert
         actual.Should().BeEquivalentTo(expected);

@@ -11,7 +11,7 @@ public class SectionsFileTests
         string[] expectedValues = ["Value1", "Value2"];
 
         // Act
-        var sections = SectionsFile.Load(path);
+        ISectionsData sections = SectionsFile.Load(path);
 
         // Asserts
         sections["Section1"].Should().BeEquivalentTo(expectedValues);

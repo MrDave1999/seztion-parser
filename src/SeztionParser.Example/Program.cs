@@ -1,15 +1,17 @@
 ﻿using SeztionParser;
 
-var sections = SectionsFile.Load("Aim_Headshot.ini");
+ISectionsData sections = SectionsFile.Load("Aim_Headshot.ini");
 
 Console.WriteLine("[Alpha]");
-foreach (var data in sections["Alpha"])
+ISectionData alphaSection = sections["Alpha"];
+foreach (string data in alphaSection)
     Console.WriteLine(data);
 
 Console.WriteLine();
 
 Console.WriteLine("[Beta]");
-foreach (var data in sections["Beta"])
+ISectionData betaSection = sections["Beta"];
+foreach (string data in betaSection)
     Console.WriteLine(data);
 
 int interior = sections.GetFirstLineInt("Interior");
